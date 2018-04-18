@@ -1,3 +1,5 @@
+package sort;
+
 public class QuickSort {
     private long[] array;
     private int nElems;

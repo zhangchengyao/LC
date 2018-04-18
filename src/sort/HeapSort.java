@@ -1,3 +1,5 @@
+package sort;
+
 public class HeapSort {
     private long[] array;
     private int nElems;

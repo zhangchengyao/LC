@@ -1,3 +1,5 @@
+package sort;
+
 public class ShellSort {
     private long[] array;
     private int nElems;

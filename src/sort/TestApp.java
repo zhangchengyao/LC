@@ -1,3 +1,10 @@
+package sort;
+
+import sort.HeapSort;
+import sort.MergeSort;
+import sort.QuickSort;
+import sort.ShellSort;
+
 public class TestApp {
     public static void main(String[] args){
         MergeSort mergeSort = new MergeSort(20);
