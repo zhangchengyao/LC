@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Stack;
-
 public class LC79_WordSearch {
     public boolean exist(char[][] board, String word){
         for(int i=0;i<board.length;i++){
