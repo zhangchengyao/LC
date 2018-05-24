@@ -17,3 +17,9 @@ public class LC_62UniquePaths {
         return (int)(numerator/denominator);
     }
 }
+
+// another way to calculate combination
+//int result = 1;
+//for(int i=0;i<Math.min(m-1, n-1);i++){
+//    return *= (m+n-2-i)/(i+1);
+//}
