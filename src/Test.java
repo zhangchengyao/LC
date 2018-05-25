@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Test {
     public static void main(String[] args){
-        LC_62UniquePaths up = new LC_62UniquePaths();
+        LC62_UniquePaths up = new LC62_UniquePaths();
         System.out.println(up.uniquePaths(100, 3));
     }
 }

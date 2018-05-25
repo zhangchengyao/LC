@@ -1,4 +1,4 @@
-public class LC_62UniquePaths {
+public class LC62_UniquePaths {
     public int uniquePaths(int m, int n) {
         if(m==1 || n==1) return 1;
         long numerator = 1;

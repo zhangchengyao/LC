@@ -1,6 +1,6 @@
 public class LC64_MinimumPathSum {
     public int minPathSum(int[][] grid) {
-        if(grid==null) return 0;
+        if(grid==null) return -1;
         int m = grid.length;
         int n = grid[0].length;
 
