@@ -27,7 +27,6 @@ public class LC64_MinimumPathSum {
     }
 
     private boolean isValid(int i, int j){
-        if(i>=0 && j>=0) return true;
-        else return false;
+        return i >= 0 && j >= 0;
     }
 }

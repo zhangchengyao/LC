@@ -18,10 +18,8 @@ public class LC337_HouseRobberIII {
         int[] res = new int[2];
         if(root==null) return res;
 
-        int[] leftInfo = new int[2];
-        int[] rightInfo = new int[2];
-        if(root.left!=null) leftInfo = robRec(root.left);
-        if(root.right!=null) rightInfo = robRec(root.right);
+        int[] leftInfo = robRec(root.left);
+        int[] rightInfo = robRec(root.right);
 
         res[0] = Math.max(leftInfo[0], leftInfo[1]) + Math.max(rightInfo[0], rightInfo[1]);
         res[1] = root.val + leftInfo[0] + rightInfo[0];
