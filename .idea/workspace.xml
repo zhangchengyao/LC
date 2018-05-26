@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC463_IslandPerimeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC216_CombinationSumIII.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,35 +23,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC109_ConvertSortedListToBinarySearchTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC109_ConvertSortedListToBinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC200_NumberOfIslands.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC200_NumberOfIslands.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC695_MaxAreaOfIsland.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC695_MaxAreaOfIsland.java">
+      <file leaf-file-name="LC463_IslandPerimeter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC463_IslandPerimeter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC463_IslandPerimeter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC463_IslandPerimeter.java">
+      <file leaf-file-name="LC216_CombinationSumIII.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC216_CombinationSumIII.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -107,6 +89,7 @@
         <option value="$PROJECT_DIR$/src/LC200_NumberOfIslands.java" />
         <option value="$PROJECT_DIR$/src/LC695_MaxAreaOfIsland.java" />
         <option value="$PROJECT_DIR$/src/LC463_IslandPerimeter.java" />
+        <option value="$PROJECT_DIR$/src/LC216_CombinationSumIII.java" />
       </list>
     </option>
   </component>
@@ -253,12 +236,12 @@
       <workItem from="1527211114963" duration="1622000" />
       <workItem from="1527218942683" duration="86000" />
       <workItem from="1527219059456" duration="526000" />
-      <workItem from="1527237985834" duration="4184000" />
+      <workItem from="1527237985834" duration="4421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41195000" />
+    <option name="totallyTimeSpent" value="41432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -306,13 +289,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC198_HouseRobber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -686,6 +662,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC463_IslandPerimeter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC216_CombinationSumIII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
