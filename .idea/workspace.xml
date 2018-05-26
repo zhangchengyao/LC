@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="" />
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LC219_ContainsDuplicateII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,16 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC463_IslandPerimeter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC463_IslandPerimeter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC216_CombinationSumIII.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC216_CombinationSumIII.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC216_CombinationSumIII.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -38,6 +32,27 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC217_ContainsDuplicate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC217_ContainsDuplicate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC219_ContainsDuplicateII.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC219_ContainsDuplicateII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -91,6 +106,8 @@
         <option value="$PROJECT_DIR$/src/LC695_MaxAreaOfIsland.java" />
         <option value="$PROJECT_DIR$/src/LC463_IslandPerimeter.java" />
         <option value="$PROJECT_DIR$/src/LC216_CombinationSumIII.java" />
+        <option value="$PROJECT_DIR$/src/LC217_ContainsDuplicate.java" />
+        <option value="$PROJECT_DIR$/src/LC219_ContainsDuplicateII.java" />
       </list>
     </option>
   </component>
@@ -237,12 +254,12 @@
       <workItem from="1527211114963" duration="1622000" />
       <workItem from="1527218942683" duration="86000" />
       <workItem from="1527219059456" duration="526000" />
-      <workItem from="1527237985834" duration="5234000" />
+      <workItem from="1527237985834" duration="5866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42245000" />
+    <option name="totallyTimeSpent" value="42877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -290,20 +307,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC213_HouseRobberII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC198_HouseRobber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -676,6 +679,23 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC217_ContainsDuplicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC219_ContainsDuplicateII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
