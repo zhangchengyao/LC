@@ -1,1 +1,2 @@
-# LC73_SetMatrixZeroes
+# Goal
+Record the process of cracking LeetCode.
