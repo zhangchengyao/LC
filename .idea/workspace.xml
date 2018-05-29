@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC240_SearchA2DMatrixII.java" afterDir="false" />
-    </list>
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="LC240_SearchA2DMatrixII.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LC240_SearchA2DMatrixII.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="220">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -270,12 +268,12 @@
       <workItem from="1527237985834" duration="6222000" />
       <workItem from="1527347471660" duration="5095000" />
       <workItem from="1527404630064" duration="1843000" />
-      <workItem from="1527490885935" duration="6487000" />
+      <workItem from="1527490885935" duration="6854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56658000" />
+    <option name="totallyTimeSpent" value="57025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -710,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC240_SearchA2DMatrixII.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="220">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
