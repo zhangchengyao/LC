@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC228_SummaryRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC54_Spiral_Matrix.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC228_SummaryRange.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC228_SummaryRange.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC228_SummaryRange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC54_Spiral_Matrix.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC54_Spiral_Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -49,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/TestApp.java" />
         <option value="$PROJECT_DIR$/src/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/sort/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/sort/MergeSort.java" />
@@ -100,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/LC349_IntersectionOfTwoArrays.java" />
         <option value="$PROJECT_DIR$/src/LC350_IntersectionOfTwoArraysII.java" />
         <option value="$PROJECT_DIR$/src/LC228_SummaryRange.java" />
+        <option value="$PROJECT_DIR$/src/LC54_Spiral_Matrix.java" />
       </list>
     </option>
   </component>
@@ -249,12 +261,12 @@
       <workItem from="1527237985834" duration="6222000" />
       <workItem from="1527347471660" duration="5095000" />
       <workItem from="1527404630064" duration="1843000" />
-      <workItem from="1527490885935" duration="9803000" />
+      <workItem from="1527490885935" duration="11153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59974000" />
+    <option name="totallyTimeSpent" value="61324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,13 +323,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sort/TestApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sort/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -694,6 +699,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC228_SummaryRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC54_Spiral_Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
