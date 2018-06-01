@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="" />
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LC59_SpiralMatrixII.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,15 +23,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC54_Spiral_Matrix.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC54_Spiral_Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC54_Spiral_Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="140">
+              <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#130#139#0" expanded="true" />
+                <element signature="e#182#191#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC59_SpiralMatrixII.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC59_SpiralMatrixII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -251,12 +262,12 @@
       <workItem from="1527237985834" duration="6222000" />
       <workItem from="1527347471660" duration="5095000" />
       <workItem from="1527404630064" duration="1843000" />
-      <workItem from="1527490885935" duration="11728000" />
+      <workItem from="1527490885935" duration="12558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61899000" />
+    <option name="totallyTimeSpent" value="62729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,13 +324,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sort/HeapSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sort/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -700,12 +704,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC54_Spiral_Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="140">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#130#139#0" expanded="true" />
+            <element signature="e#182#191#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC59_SpiralMatrixII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
