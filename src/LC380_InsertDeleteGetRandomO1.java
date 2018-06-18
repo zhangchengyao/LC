@@ -7,7 +7,7 @@ public class LC380_InsertDeleteGetRandomO1 {
     List<Integer> nums;
     Map<Integer, Integer> loc;
     /** Initialize your data structure here. */
-    public RandomizedSet() {
+    public LC380_InsertDeleteGetRandomO1() {
         nums = new ArrayList<>();
         loc = new HashMap<>();
     }
