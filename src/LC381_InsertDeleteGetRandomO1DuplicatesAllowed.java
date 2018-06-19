@@ -28,15 +28,14 @@ public class LC381_InsertDeleteGetRandomO1DuplicatesAllowed {
         if(locs.containsKey(val)){
             int index = locs.get(val).iterator().next();
             int lastElement = nums.get(nums.size()-1);
+            locs.get(val).remove(index);
             if(index!=nums.size()-1){
                 // the element is not the last element
                 // then swap it with the last element
-
                 locs.get(lastElement).add(index);
                 locs.get(lastElement).remove(nums.size()-1);
                 nums.set(index, lastElement);
             }
-            if(val!=lastElement) locs.get(val).remove(index);
             if(locs.get(val).isEmpty()){
                 locs.remove(val);
             }
