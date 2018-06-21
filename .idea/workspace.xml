@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC289_GameOfLife.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC128_LongestConsecutiveSequence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC289_GameOfLife.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC289_GameOfLife.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC289_GameOfLife.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC128_LongestConsecutiveSequence.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC128_LongestConsecutiveSequence.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -58,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC212_WordSearchII.java" />
         <option value="$PROJECT_DIR$/src/LC208_ImplementTrie_PrefixTree.java" />
         <option value="$PROJECT_DIR$/src/LC39_CombinationSum.java" />
         <option value="$PROJECT_DIR$/src/LC40_CombinationSumII.java" />
@@ -109,6 +121,7 @@
         <option value="$PROJECT_DIR$/src/LC381_InsertDeleteGetRandomO1DuplicatesAllowed.java" />
         <option value="$PROJECT_DIR$/src/LC485_MaxConsecutiveOnes.java" />
         <option value="$PROJECT_DIR$/src/LC289_GameOfLife.java" />
+        <option value="$PROJECT_DIR$/src/LC128_LongestConsecutiveSequence.java" />
       </list>
     </option>
   </component>
@@ -263,12 +276,12 @@
       <workItem from="1528298006877" duration="85000" />
       <workItem from="1529289518227" duration="1876000" />
       <workItem from="1529422510195" duration="370000" />
-      <workItem from="1529459035521" duration="279000" />
+      <workItem from="1529459035521" duration="952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70544000" />
+    <option name="totallyTimeSpent" value="71217000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,13 +338,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC212_WordSearchII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC39_CombinationSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -679,6 +685,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC289_GameOfLife.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC128_LongestConsecutiveSequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
