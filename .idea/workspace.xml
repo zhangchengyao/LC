@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC703_KthLargestElementInAStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC127_WordLadder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC703_KthLargestElementInAStream.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC703_KthLargestElementInAStream.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC703_KthLargestElementInAStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="45" selection-start-column="45" selection-end-column="45" />
+            <state relative-caret-position="40">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC127_WordLadder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC127_WordLadder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -49,8 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC167_TwoSumII_InputArrayIsSorted.java" />
-        <option value="$PROJECT_DIR$/src/LC1_TwoSum.java" />
         <option value="$PROJECT_DIR$/src/LC653_TwoSumIV_InputIsABST.java" />
         <option value="$PROJECT_DIR$/src/LC_62UniquePaths.java" />
         <option value="$PROJECT_DIR$/src/LC63_UniquePathII.java" />
@@ -100,6 +107,8 @@
         <option value="$PROJECT_DIR$/src/LC106_ConstructBinaryTreeFromInorderAndPostorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/LC414_ThirdMaximumNumber.java" />
         <option value="$PROJECT_DIR$/src/LC215_KthLargestElementInAnArray.java" />
+        <option value="$PROJECT_DIR$/src/LC703_KthLargestElementInAStream.java" />
+        <option value="$PROJECT_DIR$/src/LC127_WordLadder.java" />
       </list>
     </option>
   </component>
@@ -259,12 +268,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="1511000" />
+      <workItem from="1536573729863" duration="2657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75322000" />
+    <option name="totallyTimeSpent" value="76468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,13 +330,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC653_TwoSumIV_InputIsABST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC62_UniquePaths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -664,8 +666,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC703_KthLargestElementInAStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        <state relative-caret-position="40">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC127_WordLadder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
