@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args){
-        LC231_PowerOfTwo lc = new LC231_PowerOfTwo();
-        System.out.println(lc.isPowerOfTwo(-2));
+        LC326_PowerOfThree lc = new LC326_PowerOfThree();
+        System.out.println(lc.isPowerOfThree(82));
     }
 }

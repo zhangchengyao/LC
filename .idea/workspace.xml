@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC231_PowerOfTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC326_PowerOfThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,34 +19,7 @@
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC338_CountingBits.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC338_CountingBits.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC191_NumberOf1Bits.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC191_NumberOf1Bits.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC190_ReverseBits.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC190_ReverseBits.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -55,8 +27,17 @@
       <file leaf-file-name="LC231_PowerOfTwo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC231_PowerOfTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="200">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC326_PowerOfThree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC326_PowerOfThree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -78,7 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC238_ProductOfArrayExceptSelf.java" />
         <option value="$PROJECT_DIR$/src/LC.java" />
         <option value="$PROJECT_DIR$/src/LC73_SetMatrixZeroes.java" />
         <option value="$PROJECT_DIR$/src/LC78_Subsets.java" />
@@ -128,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/LC191_NumberOf1Bits.java" />
         <option value="$PROJECT_DIR$/src/LC190_ReverseBits.java" />
         <option value="$PROJECT_DIR$/src/LC231_PowerOfTwo.java" />
+        <option value="$PROJECT_DIR$/src/LC326_PowerOfThree.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
       </list>
     </option>
@@ -288,12 +269,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="17369000" />
+      <workItem from="1536573729863" duration="17596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91180000" />
+    <option name="totallyTimeSpent" value="91407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,8 +299,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.327787" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32612312" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.327787" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32612312" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.30210015" />
@@ -354,13 +335,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC238_ProductOfArrayExceptSelf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC73_SetMatrixZeroes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -704,15 +678,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC231_PowerOfTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC326_PowerOfThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>
