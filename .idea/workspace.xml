@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC486_PredictTheWinner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC464_CanIWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +24,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC486_PredictTheWinner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC486_PredictTheWinner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC486_PredictTheWinner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC464_CanIWin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC464_CanIWin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -49,7 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/ttt.xml.fxml" />
         <option value="$PROJECT_DIR$/LC.iml" />
@@ -100,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/LC461_HammingDistance.java" />
         <option value="$PROJECT_DIR$/src/LC477_TotalHammingDistance.java" />
         <option value="$PROJECT_DIR$/src/LC486_PredictTheWinner.java" />
+        <option value="$PROJECT_DIR$/src/LC464_CanIWin.java" />
       </list>
     </option>
   </component>
@@ -259,12 +269,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="22449000" />
+      <workItem from="1536573729863" duration="23190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96260000" />
+    <option name="totallyTimeSpent" value="97001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,7 +335,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/test.xml" />
     <entry file="file://$PROJECT_DIR$/LC.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -687,6 +696,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC486_PredictTheWinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC464_CanIWin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
