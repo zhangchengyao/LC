@@ -1,23 +1,31 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class LC140_WordBreakII {
     public List<String> wordBreak(String s, List<String> wordDict) {
-        List<String> res = new ArrayList<>();
-        wordBreakRec(s, wordDict, res, new StringBuilder());
-        return res;
+        HashMap<String, List<String>> map = new HashMap<>();
+        return wordBreakRec(s, wordDict, map);
     }
-    private void wordBreakRec(String s, List<String> dict, List<String> res, StringBuilder tmp){
+    private List<String> wordBreakRec(String s, List<String> dict, HashMap<String, List<String>> map){
+        List<String> res = new ArrayList<>();
         if(s.equals("")){
-            res.add(tmp.toString().trim());
-            return;
+            res.add("");
+            return res;
         }
-        for(int i=1;i<=s.length();i++){
-            if(dict.contains(s.substring(0,i))){
-                tmp.append(s.substring(0,i)+" ");
-                wordBreakRec(s.substring(i), dict, res, tmp);
-                tmp.delete(tmp.length()-(i+1), tmp.length());
+        if(map.containsKey(s)) return map.get(s);
+        for(String word:dict){
+            if(word.length()<=s.length() && word.equals(s.substring(0, word.length()))){
+                List<String> subres = wordBreakRec(s.substring(word.length()), dict, map);
+                for(String str:subres){
+                    StringBuilder sb = new StringBuilder(word);
+                    sb.append(" ");
+                    sb.append(str);
+                    res.add(sb.toString().trim());
+                }
             }
         }
+        map.put(s, res);
+        return res;
     }
 }
