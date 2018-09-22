@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args){
-        LC446_ArithmeticSlicesIISubsequence lc = new LC446_ArithmeticSlicesIISubsequence();
-        System.out.println(lc.numberOfArithmeticSlices(new int[]{1,7,7,13,19}));
+        LC376_WiggleSubsequence lc = new LC376_WiggleSubsequence();
+        lc.wiggleMaxLength(new int[]{0, 0});
     }
 }
