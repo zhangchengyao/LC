@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args){
-        LC376_WiggleSubsequence lc = new LC376_WiggleSubsequence();
-        lc.wiggleMaxLength(new int[]{0, 0});
+        LC343_IntegerBreak lc = new LC343_IntegerBreak();
+        System.out.println(lc.integerBreak(10));
     }
 }
