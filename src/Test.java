@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args){
-        LC717_1BitAnd2BitCharacters lc = new LC717_1BitAnd2BitCharacters();
-        lc.isOneBitCharacter(new int[]{1,1,1,0});
+        LC309_BestTimeToBuyAndSellStockWithCooldown lc = new LC309_BestTimeToBuyAndSellStockWithCooldown();
+        System.out.println(lc.maxProfit(new int[]{1,2,3,0,2}));
     }
 }
