@@ -1,4 +1,15 @@
 public class LC376_WiggleSubsequence {
+    // Greedy algorithm with run time O(n)
+//    public int wiggleMaxLength(int[] nums) {
+//        if(nums.length<2) return nums.length;
+//        int p = 1; // p denotes the longest wiggle sequence ending in ascending order
+//        int q = 1; // q denotes the longest wiggle sequence ending in descending order
+//        for(int i=1;i<nums.length;i++){
+//            if(nums[i]>nums[i-1]) p = q + 1;
+//            else if(nums[i]<nums[i-1]) q = p + 1;
+//        }
+//        return Math.max(p, q);
+//    }
     public int wiggleMaxLength(int[] nums) {
         if(nums.length<2) return nums.length;
         int[] dp = new int[nums.length];
