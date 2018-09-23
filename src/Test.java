@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args){
-        LC343_IntegerBreak lc = new LC343_IntegerBreak();
-        System.out.println(lc.integerBreak(10));
+        LC746_MinCostClimbingStairs lc = new LC746_MinCostClimbingStairs();
+        System.out.println(lc.minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
     }
 }
