@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC617_MergeTwoBinaryTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC258_AddDigits.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,29 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC292_NimGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC292_NimGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC226_InvertBinaryTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC226_InvertBinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC617_MergeTwoBinaryTrees.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC617_MergeTwoBinaryTrees.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC617_MergeTwoBinaryTrees.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC258_AddDigits.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC258_AddDigits.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -71,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC313_SuperUglyNumber.java" />
         <option value="$PROJECT_DIR$/src/LC279_PerfectSquares.java" />
         <option value="$PROJECT_DIR$/src/LC303_RangeSumQueryImmutable.java" />
         <option value="$PROJECT_DIR$/src/LC307_RangeSumQueryMutable.java" />
@@ -122,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/LC292_NimGame.java" />
         <option value="$PROJECT_DIR$/src/LC226_InvertBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/LC617_MergeTwoBinaryTrees.java" />
+        <option value="$PROJECT_DIR$/src/LC258_AddDigits.java" />
       </list>
     </option>
   </component>
@@ -281,12 +271,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="58475000" />
+      <workItem from="1536573729863" duration="58971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132286000" />
+    <option name="totallyTimeSpent" value="132782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,13 +337,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC313_SuperUglyNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC279_PerfectSquares.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -739,8 +722,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC617_MergeTwoBinaryTrees.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC258_AddDigits.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
