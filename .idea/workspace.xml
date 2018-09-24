@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC258_AddDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC202_HappyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,17 +27,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC617_MergeTwoBinaryTrees.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC617_MergeTwoBinaryTrees.java">
+      <file leaf-file-name="LC258_AddDigits.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC258_AddDigits.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="100">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC258_AddDigits.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC258_AddDigits.java">
+      <file leaf-file-name="LC202_HappyNumber.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC202_HappyNumber.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -61,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC279_PerfectSquares.java" />
         <option value="$PROJECT_DIR$/src/LC303_RangeSumQueryImmutable.java" />
         <option value="$PROJECT_DIR$/src/LC307_RangeSumQueryMutable.java" />
         <option value="$PROJECT_DIR$/src/LC300_LongestIncreasingSubsequence.java" />
@@ -112,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/LC226_InvertBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/LC617_MergeTwoBinaryTrees.java" />
         <option value="$PROJECT_DIR$/src/LC258_AddDigits.java" />
+        <option value="$PROJECT_DIR$/src/LC202_HappyNumber.java" />
       </list>
     </option>
   </component>
@@ -271,12 +272,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="58971000" />
+      <workItem from="1536573729863" duration="59628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132782000" />
+    <option name="totallyTimeSpent" value="133439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,13 +338,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC279_PerfectSquares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC303_RangeSumQueryImmutable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -728,6 +722,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC258_AddDigits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC202_HappyNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
