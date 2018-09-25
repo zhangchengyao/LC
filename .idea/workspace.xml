@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC100_SameTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC371_SumofTwoIntegers.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC371_SumofTwoIntegers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="220">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC100_SameTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC100_SameTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -52,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC300_LongestIncreasingSubsequence.java" />
         <option value="$PROJECT_DIR$/src/LC322_CoinChange.java" />
         <option value="$PROJECT_DIR$/src/LC338_CountingBits.java" />
         <option value="$PROJECT_DIR$/src/LC191_NumberOf1Bits.java" />
@@ -103,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/LC202_HappyNumber.java" />
         <option value="$PROJECT_DIR$/src/LC389_FindTheDifference.java" />
         <option value="$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java" />
+        <option value="$PROJECT_DIR$/src/LC100_SameTree.java" />
       </list>
     </option>
   </component>
@@ -262,12 +271,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="61068000" />
+      <workItem from="1536573729863" duration="61702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134879000" />
+    <option name="totallyTimeSpent" value="135513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,13 +337,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC300_LongestIncreasingSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC322_CoinChange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -712,8 +714,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="220">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC100_SameTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
