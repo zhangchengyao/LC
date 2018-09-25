@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +27,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC404_SumOfLeftLeaves.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC404_SumOfLeftLeaves.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC94_BinaryTreeInorderTraversal.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
               <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
@@ -52,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC231_PowerOfTwo.java" />
         <option value="$PROJECT_DIR$/src/LC342_PowerOfFour.java" />
         <option value="$PROJECT_DIR$/src/LC401_BinaryWatch.java" />
         <option value="$PROJECT_DIR$/src/LC461_HammingDistance.java" />
@@ -103,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/LC462_MinimumMovesToEqualArrayElementsII.java" />
         <option value="$PROJECT_DIR$/src/LC427_ConstructQuadTree.java" />
         <option value="$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java" />
+        <option value="$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java" />
       </list>
     </option>
   </component>
@@ -262,12 +272,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="66045000" />
+      <workItem from="1536573729863" duration="66884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139856000" />
+    <option name="totallyTimeSpent" value="140695000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,13 +338,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC326_PowerOfThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC342_PowerOfFour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -714,6 +717,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
