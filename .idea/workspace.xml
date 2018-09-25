@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC427_ConstructQuadTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC427_ConstructQuadTree.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC427_ConstructQuadTree.java">
+      <file leaf-file-name="LC404_SumOfLeftLeaves.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC462_MinimumMovesToEqualArrayElementsII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC462_MinimumMovesToEqualArrayElementsII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="140">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -61,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC326_PowerOfThree.java" />
         <option value="$PROJECT_DIR$/src/LC231_PowerOfTwo.java" />
         <option value="$PROJECT_DIR$/src/LC342_PowerOfFour.java" />
         <option value="$PROJECT_DIR$/src/LC401_BinaryWatch.java" />
@@ -112,6 +102,7 @@
         <option value="$PROJECT_DIR$/src/LC453_MinimumMovesToEqualArrayElements.java" />
         <option value="$PROJECT_DIR$/src/LC462_MinimumMovesToEqualArrayElementsII.java" />
         <option value="$PROJECT_DIR$/src/LC427_ConstructQuadTree.java" />
+        <option value="$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java" />
       </list>
     </option>
   </component>
@@ -271,12 +262,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="65413000" />
+      <workItem from="1536573729863" duration="66045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139224000" />
+    <option name="totallyTimeSpent" value="139856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,13 +328,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC231_PowerOfTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC326_PowerOfThree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -715,6 +699,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC427_ConstructQuadTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -722,10 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC427_ConstructQuadTree.java">
+    <entry file="file://$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="140">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
