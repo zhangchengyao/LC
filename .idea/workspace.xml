@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="" />
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,14 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC144_BinaryTreePreorderTraversal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java">
+      <file leaf-file-name="LC387_FirstUniqueCharacterInAString.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -65,7 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC461_HammingDistance.java" />
         <option value="$PROJECT_DIR$/src/LC477_TotalHammingDistance.java" />
         <option value="$PROJECT_DIR$/src/LC486_PredictTheWinner.java" />
         <option value="$PROJECT_DIR$/src/LC464_CanIWin.java" />
@@ -114,8 +112,9 @@
         <option value="$PROJECT_DIR$/src/LC427_ConstructQuadTree.java" />
         <option value="$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java" />
         <option value="$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java" />
-        <option value="$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/LC589_NAryTreePreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java" />
       </list>
     </option>
   </component>
@@ -275,12 +274,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="68928000" />
+      <workItem from="1536573729863" duration="69463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142739000" />
+    <option name="totallyTimeSpent" value="143274000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,13 +340,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC461_HammingDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC477_TotalHammingDistance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -695,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -731,11 +716,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="162">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
