@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC451_SortCharactersByFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,16 +22,16 @@
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC387_FirstUniqueCharacterInAString.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java">
+      <file leaf-file-name="LC451_SortCharactersByFrequency.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC451_SortCharactersByFrequency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="100">
+              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -64,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC477_TotalHammingDistance.java" />
         <option value="$PROJECT_DIR$/src/LC486_PredictTheWinner.java" />
         <option value="$PROJECT_DIR$/src/LC464_CanIWin.java" />
         <option value="$PROJECT_DIR$/src/LC374_GuessNumberHigherOrLower.java" />
@@ -106,7 +106,6 @@
         <option value="$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java" />
         <option value="$PROJECT_DIR$/src/LC100_SameTree.java" />
         <option value="$PROJECT_DIR$/src/LC257_BinaryTreePaths.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC453_MinimumMovesToEqualArrayElements.java" />
         <option value="$PROJECT_DIR$/src/LC462_MinimumMovesToEqualArrayElementsII.java" />
         <option value="$PROJECT_DIR$/src/LC427_ConstructQuadTree.java" />
@@ -114,7 +113,9 @@
         <option value="$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/LC589_NAryTreePreorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java" />
+        <option value="$PROJECT_DIR$/src/LC451_SortCharactersByFrequency.java" />
       </list>
     </option>
   </component>
@@ -274,12 +275,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="69463000" />
+      <workItem from="1536573729863" duration="70393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143274000" />
+    <option name="totallyTimeSpent" value="144204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,13 +341,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC477_TotalHammingDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC486_PredictTheWinner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -727,14 +721,21 @@
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC451_SortCharactersByFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
         </state>
       </provider>
     </entry>
