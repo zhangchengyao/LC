@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args){
-        LC309_BestTimeToBuyAndSellStockWithCooldown lc = new LC309_BestTimeToBuyAndSellStockWithCooldown();
-        System.out.println(lc.maxProfit(new int[]{1,2,3,0,2}));
+        LC453_MinimumMovesToEqualArrayElements lc = new LC453_MinimumMovesToEqualArrayElements();
+        lc.minMoves(new int[]{1,1, 2147483647});
     }
 }
