@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC137_SingleNumberII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC384_ShuffleAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,26 +21,23 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="160">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC260_SingleNumberIII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC260_SingleNumberIII.java">
+      <file leaf-file-name="LC384_ShuffleAnArray.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC384_ShuffleAnArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC137_SingleNumberII.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC137_SingleNumberII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="e#129#130#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC70_ClimbingStairs.java" />
-        <option value="$PROJECT_DIR$/src/LC746_MinCostClimbingStairs.java" />
         <option value="$PROJECT_DIR$/src/LC717_1BitAnd2BitCharacters.java" />
         <option value="$PROJECT_DIR$/src/LC121_BestTimeToBuyAndSellStock.java" />
         <option value="$PROJECT_DIR$/src/LC309_BestTimeToBuyAndSellStockWithCooldown.java" />
@@ -112,6 +108,8 @@
         <option value="$PROJECT_DIR$/src/LC192_WordFrequency.java" />
         <option value="$PROJECT_DIR$/src/LC260_SingleNumberIII.java" />
         <option value="$PROJECT_DIR$/src/LC137_SingleNumberII.java" />
+        <option value="$PROJECT_DIR$/src/LC136_SingleNumber.java" />
+        <option value="$PROJECT_DIR$/src/LC384_ShuffleAnArray.java" />
       </list>
     </option>
   </component>
@@ -271,12 +269,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="89194000" />
+      <workItem from="1536573729863" duration="90121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163005000" />
+    <option name="totallyTimeSpent" value="163932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,20 +335,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC70_ClimbingStairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC717_1BitAnd2BitCharacters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC746_MinCostClimbingStairs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -664,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC400_NthDigit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -719,6 +696,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC136_SingleNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC137_SingleNumberII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC260_SingleNumberIII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -726,10 +717,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC137_SingleNumberII.java">
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC384_ShuffleAnArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
