@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC406_QueueReconstructionByHeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC347_TopKFrequentElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,23 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC419_BattleshipsInABoard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC419_BattleshipsInABoard.java">
+      <file leaf-file-name="LC406_QueueReconstructionByHeight.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC406_QueueReconstructionByHeight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="140">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC406_QueueReconstructionByHeight.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC406_QueueReconstructionByHeight.java">
+      <file leaf-file-name="LC347_TopKFrequentElements.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC347_TopKFrequentElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -65,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC377_CombinationSumIV.java" />
         <option value="$PROJECT_DIR$/src/LC376_WiggleSubsequence.java" />
         <option value="$PROJECT_DIR$/src/LC368_LargestDivisibleSubset.java" />
         <option value="$PROJECT_DIR$/src/LC343_IntegerBreak.java" />
@@ -116,6 +115,7 @@
         <option value="$PROJECT_DIR$/src/LC728_SelfDividingNumbers.java" />
         <option value="$PROJECT_DIR$/src/LC419_BattleshipsInABoard.java" />
         <option value="$PROJECT_DIR$/src/LC406_QueueReconstructionByHeight.java" />
+        <option value="$PROJECT_DIR$/src/LC347_TopKFrequentElements.java" />
       </list>
     </option>
   </component>
@@ -275,12 +275,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="86075000" />
+      <workItem from="1536573729863" duration="86728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159886000" />
+    <option name="totallyTimeSpent" value="160539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,13 +341,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC377_CombinationSumIV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC376_WiggleSubsequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -736,11 +729,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC406_QueueReconstructionByHeight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="140">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC347_TopKFrequentElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
