@@ -19,7 +19,7 @@ public class LC241_DifferentWaysToAddParentheses {
                 }
             }
         }
-        if(res.size()==0) res.add(Integer.valueOf(input));
+        if(res.size()==0) res.add(Integer.parseInt(input));
         map.put(input, res);
         return res;
     }
