@@ -1,8 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC384_ShuffleAnArray lc = new LC384_ShuffleAnArray(new int[]{1,2,3});
-        lc.shuffle();
+        LC241_DifferentWaysToAddParentheses lc = new LC241_DifferentWaysToAddParentheses();
+        List<Integer> res = lc.diffWaysToCompute("2*3-4*5");
+        for(int i:res){
+            System.out.println(i);
+        }
     }
 }
