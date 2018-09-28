@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC529_Minesweeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC230_KthSmallestElementInABST.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,27 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC677_MapSumPairs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC677_MapSumPairs.java">
+      <file leaf-file-name="LC529_Minesweeper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC529_Minesweeper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#135#136#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC529_Minesweeper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC529_Minesweeper.java">
+      <file leaf-file-name="LC230_KthSmallestElementInABST.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC230_KthSmallestElementInABST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="140">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -68,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC102_BinaryTreeLevelOrderTraversal.java" />
         <option value="$PROJECT_DIR$/src/LC107_BinaryTreeLevelOrderTraversalII.java" />
         <option value="$PROJECT_DIR$/src/LC637_AverageOfLevelsInBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/LC701_InsertIntoABinarySearchTree.java" />
@@ -119,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/LC421_MaximumXOROfTwoNumbersInAnArray.java" />
         <option value="$PROJECT_DIR$/src/LC677_MapSumPairs.java" />
         <option value="$PROJECT_DIR$/src/LC529_Minesweeper.java" />
+        <option value="$PROJECT_DIR$/src/LC230_KthSmallestElementInABST.java" />
       </list>
     </option>
   </component>
@@ -278,12 +271,12 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="94828000" />
+      <workItem from="1536573729863" duration="95377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168639000" />
+    <option name="totallyTimeSpent" value="169188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,16 +337,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC102_BinaryTreeLevelOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC107_BinaryTreeLevelOrderTraversalII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -756,8 +739,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC529_Minesweeper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="207">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC230_KthSmallestElementInABST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
