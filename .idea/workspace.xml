@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC378_KthSmallestElementInASortedMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC481_MagicalString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +22,29 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="140">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC357_CountNumbersWithUniqueDigits.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC357_CountNumbersWithUniqueDigits.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC481_MagicalString.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC481_MagicalString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -46,8 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC202_HappyNumber.java" />
-        <option value="$PROJECT_DIR$/src/LC389_FindTheDifference.java" />
         <option value="$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java" />
         <option value="$PROJECT_DIR$/src/LC100_SameTree.java" />
         <option value="$PROJECT_DIR$/src/LC257_BinaryTreePaths.java" />
@@ -91,12 +109,14 @@
         <option value="$PROJECT_DIR$/src/LC671_SecondMinimumNodeInABinaryTree.java" />
         <option value="$PROJECT_DIR$/src/LC501_FindModeInBinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/LC98_ValidateBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC241_DifferentWaysToAddParentheses.java" />
         <option value="$PROJECT_DIR$/src/LC318_MaximumProductOfWordLengths.java" />
         <option value="$PROJECT_DIR$/src/LC476_NumberComplement.java" />
         <option value="$PROJECT_DIR$/src/LC328_OddEvenLinkedList.java" />
         <option value="$PROJECT_DIR$/src/LC378_KthSmallestElementInASortedMatrix.java" />
+        <option value="$PROJECT_DIR$/src/LC357_CountNumbersWithUniqueDigits.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/LC481_MagicalString.java" />
       </list>
     </option>
   </component>
@@ -119,9 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,6 +155,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,12 +276,13 @@
       <workItem from="1529644311610" duration="932000" />
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
-      <workItem from="1536573729863" duration="106351000" />
+      <workItem from="1536573729863" duration="107349000" />
+      <workItem from="1538175165526" duration="893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180162000" />
+    <option name="totallyTimeSpent" value="182053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -273,12 +294,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="695" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="695" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.327787" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3277592" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -286,11 +307,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.32943144" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32608697" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.32943144" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32608697" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.30210015" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.3069467" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.5037037" side_tool="true" weight="0.30210015" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
@@ -322,20 +343,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC202_HappyNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC389_FindTheDifference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC371_SumofTwoIntegers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -392,9 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -402,9 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,9 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,19 +537,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC192_WordFrequency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC192_WordFrequency.java" />
     <entry file="file://$PROJECT_DIR$/src/LC347_TopKFrequentElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -622,20 +611,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC655_PrintBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC655_PrintBinaryTree.java" />
     <entry file="file://$PROJECT_DIR$/src/LC421_MaximumXOROfTwoNumbersInAnArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,9 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -729,10 +703,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC357_CountNumbersWithUniqueDigits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC481_MagicalString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="140">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
