@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC43_MultiplyStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC593_ValidSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,20 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC415_AddStrings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC415_AddStrings.java">
+      <file leaf-file-name="LC67_AddBinary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC67_AddBinary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="96">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC43_MultiplyStrings.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC43_MultiplyStrings.java">
+      <file leaf-file-name="LC593_ValidSquare.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC593_ValidSquare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+            <state relative-caret-position="58">
+              <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -66,8 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java" />
-        <option value="$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java" />
         <option value="$PROJECT_DIR$/src/LC451_SortCharactersByFrequency.java" />
         <option value="$PROJECT_DIR$/src/LC101_SymmetricTree.java" />
         <option value="$PROJECT_DIR$/src/LC547_FriendCircles.java" />
@@ -117,6 +114,8 @@
         <option value="$PROJECT_DIR$/src/LC415_AddStrings.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC43_MultiplyStrings.java" />
+        <option value="$PROJECT_DIR$/src/LC67_AddBinary.java" />
+        <option value="$PROJECT_DIR$/src/LC593_ValidSquare.java" />
       </list>
     </option>
   </component>
@@ -277,12 +276,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="12856000" />
+      <workItem from="1538175165526" duration="14190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194016000" />
+    <option name="totallyTimeSpent" value="195350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,8 +306,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.32943144" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32608697" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.32943144" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32608697" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.3069467" />
@@ -343,20 +342,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC144_BinaryTreePreorderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC387_FirstUniqueCharacterInAString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC451_SortCharactersByFrequency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -733,8 +718,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC43_MultiplyStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        <state relative-caret-position="174">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC67_AddBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC593_ValidSquare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
         </state>
       </provider>
     </entry>
