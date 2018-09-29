@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.HashMap;
-
 public class LC881_BoatsToSavePeople {
     // two pointers
 //    public int numRescueBoats(int[] people, int limit) {
