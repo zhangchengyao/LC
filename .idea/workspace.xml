@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC134_GasStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC881_BoatsToSavePeople.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC134_GasStation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC134_GasStation.java">
+      <file leaf-file-name="LC881_BoatsToSavePeople.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC881_BoatsToSavePeople.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+            <state relative-caret-position="40">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -56,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC427_ConstructQuadTree.java" />
         <option value="$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java" />
         <option value="$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/LC589_NAryTreePreorderTraversal.java" />
@@ -107,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/LC630_CourseScheduleIII.java" />
         <option value="$PROJECT_DIR$/src/LC455_AssignCookies.java" />
         <option value="$PROJECT_DIR$/src/LC134_GasStation.java" />
+        <option value="$PROJECT_DIR$/src/LC881_BoatsToSavePeople.java" />
       </list>
     </option>
   </component>
@@ -267,12 +267,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="5536000" />
+      <workItem from="1538175165526" duration="6215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186696000" />
+    <option name="totallyTimeSpent" value="187375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,13 +333,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC427_ConstructQuadTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC404_SumOfLeftLeaves.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -720,8 +713,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC134_GasStation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="140">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC881_BoatsToSavePeople.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
