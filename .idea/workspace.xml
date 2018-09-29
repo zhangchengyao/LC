@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC775_GlobalAndLocalInversions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC665_NonDecreasingArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LC775_GlobalAndLocalInversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LC775_GlobalAndLocalInversions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="60">
+              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,8 +30,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC775_GlobalAndLocalInversions.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC775_GlobalAndLocalInversions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC775_GlobalAndLocalInversions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC665_NonDecreasingArray.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC665_NonDecreasingArray.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -55,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC547_FriendCircles.java" />
         <option value="$PROJECT_DIR$/src/LC657_RobotReturnToOrigin.java" />
         <option value="$PROJECT_DIR$/src/LC405_ConvertANumberToHexadecimal.java" />
         <option value="$PROJECT_DIR$/src/LC235_LowestCommonAncestorOfABinarySearchTree.java" />
@@ -106,6 +115,7 @@
         <option value="$PROJECT_DIR$/src/LC593_ValidSquare.java" />
         <option value="$PROJECT_DIR$/src/LC365_WaterAndJugProblem.java" />
         <option value="$PROJECT_DIR$/src/LC775_GlobalAndLocalInversions.java" />
+        <option value="$PROJECT_DIR$/src/LC665_NonDecreasingArray.java" />
       </list>
     </option>
   </component>
@@ -266,12 +276,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="15429000" />
+      <workItem from="1538175165526" duration="16009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196589000" />
+    <option name="totallyTimeSpent" value="197169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,10 +307,10 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.32943144" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32608697" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32608697" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.3069467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.3069467" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.5037037" side_tool="true" weight="0.30210015" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
@@ -332,13 +342,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC547_FriendCircles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC657_RobotReturnToOrigin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -709,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="60">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -718,6 +721,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC775_GlobalAndLocalInversions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC665_NonDecreasingArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />

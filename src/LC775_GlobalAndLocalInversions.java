@@ -1,4 +1,12 @@
 public class LC775_GlobalAndLocalInversions {
+//    public boolean isIdealPermutation(int[] A) {
+//        int preMax = -1;
+//        for(int i=1;i<A.length;i++){
+//            if(preMax>A[i]) return false;
+//            preMax = Math.max(preMax, A[i-1]);
+//        }
+//        return true;
+//    }
     public boolean isIdealPermutation(int[] A) {
         int local = 0;
         for(int i=0;i<A.length-1;i++){
