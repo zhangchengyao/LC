@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC274_HIndex lc = new LC274_HIndex();
-        System.out.println(lc.hIndex(new int[]{1,1,1}));
+        LC275_HIndexII lc = new LC275_HIndexII();
+        System.out.println(lc.hIndex(new int[]{0,1,1,5,6}));
     }
 }
