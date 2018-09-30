@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC43_MultiplyStrings lc = new LC43_MultiplyStrings();
-        System.out.println(lc.multiply("1237", "456"));
+        LC621_TaskScheduler lc = new LC621_TaskScheduler();
+        System.out.println(lc.leastInterval(new char[]{'A','D','E','F','B','C'}, 2));
     }
 }
