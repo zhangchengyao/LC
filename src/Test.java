@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC621_TaskScheduler lc = new LC621_TaskScheduler();
-        System.out.println(lc.leastInterval(new char[]{'A','D','E','F','B','C'}, 2));
+        LC767_ReorganizeString lc = new LC767_ReorganizeString();
+        System.out.println(lc.reorganizeString("aaabbbcc"));
     }
 }
