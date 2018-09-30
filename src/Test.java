@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC767_ReorganizeString lc = new LC767_ReorganizeString();
-        System.out.println(lc.reorganizeString("aaabbbcc"));
+        LC274_HIndex lc = new LC274_HIndex();
+        System.out.println(lc.hIndex(new int[]{1,1,1}));
     }
 }

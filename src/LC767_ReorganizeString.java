@@ -1,5 +1,5 @@
+import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.PriorityQueue;
 
 public class LC767_ReorganizeString {
@@ -32,7 +32,7 @@ public class LC767_ReorganizeString {
         if((S.length()-maxNum*max) >= (max-1)){
             PriorityQueue<Letter> maxHeap = new PriorityQueue<>(2, new Comparator<Letter>(){
                 public int compare(Letter l1, Letter l2){
-                    return( (Integer)l2.num).compareTo((Integer)l1.num);
+                    return Integer.compare(l2.num, l1.num);
                 }
             });
             for(int i=0;i<num.length;i++){
