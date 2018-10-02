@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC319_BulbSwitcher lc = new LC319_BulbSwitcher();
-        System.out.println(lc.bulbSwitch(11));
+        LC390_EliminationGame LC = new LC390_EliminationGame();
+        System.out.println(LC.lastRemaining(12));
     }
 }
