@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC450_DeleteNodeInABST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC388_LongestAbsoluteFilePath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,25 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC452_MinimumNumberOfArrowsToBurstBalloons.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC452_MinimumNumberOfArrowsToBurstBalloons.java">
+      <file leaf-file-name="LC388_LongestAbsoluteFilePath.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC388_LongestAbsoluteFilePath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC450_DeleteNodeInABST.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC450_DeleteNodeInABST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -70,7 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC481_MagicalString.java" />
         <option value="$PROJECT_DIR$/src/LC207_CourseSchedule.java" />
         <option value="$PROJECT_DIR$/src/LC210_CourseScheduleII.java" />
         <option value="$PROJECT_DIR$/src/LC630_CourseScheduleIII.java" />
@@ -114,13 +100,14 @@
         <option value="$PROJECT_DIR$/src/LC672_BulbSwitcherII.java" />
         <option value="$PROJECT_DIR$/src/LC390_EliminationGame.java" />
         <option value="$PROJECT_DIR$/src/LC394_DecodeString.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC386_LexicographicalNumbers.java" />
         <option value="$PROJECT_DIR$/src/LC506_RelativeRanks.java" />
         <option value="$PROJECT_DIR$/src/Proj1.java" />
         <option value="$PROJECT_DIR$/src/LC435_NonOverlappingIntervals.java" />
         <option value="$PROJECT_DIR$/src/LC452_MinimumNumberOfArrowsToBurstBalloons.java" />
         <option value="$PROJECT_DIR$/src/LC450_DeleteNodeInABST.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/LC388_LongestAbsoluteFilePath.java" />
       </list>
     </option>
   </component>
@@ -281,12 +268,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="46955000" />
+      <workItem from="1538175165526" duration="50348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228115000" />
+    <option name="totallyTimeSpent" value="231508000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,7 +286,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="695" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
@@ -339,7 +325,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -347,13 +333,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC481_MagicalString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC207_CourseSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -700,16 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC386_LexicographicalNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -766,8 +735,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC450_DeleteNodeInABST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="172">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC388_LongestAbsoluteFilePath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>

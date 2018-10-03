@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC386_LexicographicalNumbers lc = new LC386_LexicographicalNumbers();
-        System.out.println(lc.lexicalOrder(192));
+        LC388_LongestAbsoluteFilePath lc = new LC388_LongestAbsoluteFilePath();
+        System.out.println(lc.lengthLongestPath("dir\nfile.txt"));;
     }
 }
