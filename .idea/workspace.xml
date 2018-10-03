@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC223_RectangleArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC836_RectangleOverlap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC223_RectangleArea.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC223_RectangleArea.java">
+      <file leaf-file-name="LC836_RectangleOverlap.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC836_RectangleOverlap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -55,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC630_CourseScheduleIII.java" />
         <option value="$PROJECT_DIR$/src/LC455_AssignCookies.java" />
         <option value="$PROJECT_DIR$/src/LC134_GasStation.java" />
         <option value="$PROJECT_DIR$/src/LC881_BoatsToSavePeople.java" />
@@ -106,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/LC388_LongestAbsoluteFilePath.java" />
         <option value="$PROJECT_DIR$/src/LC706_DesignHashMap.java" />
         <option value="$PROJECT_DIR$/src/LC223_RectangleArea.java" />
+        <option value="$PROJECT_DIR$/src/LC836_RectangleOverlap.java" />
       </list>
     </option>
   </component>
@@ -266,12 +267,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="51469000" />
+      <workItem from="1538175165526" duration="51992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232629000" />
+    <option name="totallyTimeSpent" value="233152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,21 +333,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC630_CourseScheduleIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#363#372#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC455_AssignCookies.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -729,16 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC706_DesignHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -754,8 +730,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC223_RectangleArea.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC836_RectangleOverlap.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
