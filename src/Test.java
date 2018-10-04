@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args){
-        LC388_LongestAbsoluteFilePath lc = new LC388_LongestAbsoluteFilePath();
-        System.out.println(lc.lengthLongestPath("dir\nfile.txt"));;
+        LC5_LongestPalindromicSubstring lc = new LC5_LongestPalindromicSubstring();
+        System.out.println(lc.longestPalindrome("bbaabb"));
     }
 }
