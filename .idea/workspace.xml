@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC246_StrobogrammaticNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC247_StrobogrammaticNumberII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC246_StrobogrammaticNumber.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LC246_StrobogrammaticNumber.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC246_StrobogrammaticNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="40" selection-start-column="40" selection-end-column="40" />
+            <state relative-caret-position="20">
+              <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC247_StrobogrammaticNumberII.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC247_StrobogrammaticNumberII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -64,8 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC672_BulbSwitcherII.java" />
-        <option value="$PROJECT_DIR$/src/LC390_EliminationGame.java" />
         <option value="$PROJECT_DIR$/src/LC394_DecodeString.java" />
         <option value="$PROJECT_DIR$/src/LC386_LexicographicalNumbers.java" />
         <option value="$PROJECT_DIR$/src/LC506_RelativeRanks.java" />
@@ -115,6 +123,8 @@
         <option value="$PROJECT_DIR$/src/LC205_IsomorphicStrings.java" />
         <option value="$PROJECT_DIR$/src/LC218_TheSkylineProblem.java" />
         <option value="$PROJECT_DIR$/src/LC222_CountCompleteTreeNodes.java" />
+        <option value="$PROJECT_DIR$/src/LC246_StrobogrammaticNumber.java" />
+        <option value="$PROJECT_DIR$/src/LC247_StrobogrammaticNumberII.java" />
       </list>
     </option>
   </component>
@@ -275,12 +285,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="99080000" />
+      <workItem from="1538175165526" duration="100092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280240000" />
+    <option name="totallyTimeSpent" value="281252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,18 +351,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC452_MinimumNumberOfArrowsToBurstBalloons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC450_DeleteNodeInABST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -727,8 +725,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC246_StrobogrammaticNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        <state relative-caret-position="20">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC247_StrobogrammaticNumberII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
