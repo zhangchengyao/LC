@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LC252_MeetingRooms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LC253_MeetingRoomsII.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,32 +29,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC249_GroupShiftedStrings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC249_GroupShiftedStrings.java">
+      <file leaf-file-name="LC253_MeetingRoomsII.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC253_MeetingRoomsII.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="40">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC252_MeetingRooms.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC252_MeetingRooms.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC248_StrobogrammaticNumberIII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC248_StrobogrammaticNumberIII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -77,7 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Proj1.java" />
         <option value="$PROJECT_DIR$/src/LC435_NonOverlappingIntervals.java" />
         <option value="$PROJECT_DIR$/src/LC452_MinimumNumberOfArrowsToBurstBalloons.java" />
         <option value="$PROJECT_DIR$/src/LC450_DeleteNodeInABST.java" />
@@ -128,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/LC249_GroupShiftedStrings.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC252_MeetingRooms.java" />
+        <option value="$PROJECT_DIR$/src/LC253_MeetingRoomsII.java" />
       </list>
     </option>
   </component>
@@ -288,12 +270,12 @@
       <workItem from="1531127365575" duration="23000" />
       <workItem from="1534929288292" duration="73000" />
       <workItem from="1536573729863" duration="107349000" />
-      <workItem from="1538175165526" duration="104817000" />
+      <workItem from="1538175165526" duration="105363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285977000" />
+    <option name="totallyTimeSpent" value="286523000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,13 +336,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC223_RectangleArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC836_RectangleOverlap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -713,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC249_GroupShiftedStrings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -735,8 +700,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC252_MeetingRooms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="100">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC253_MeetingRoomsII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
