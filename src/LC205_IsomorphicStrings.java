@@ -3,20 +3,17 @@ import java.util.HashMap;
 public class LC205_IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
         HashMap<Character, Character> map = new HashMap<>();
-        StringBuilder sbs = new StringBuilder(s);
-        StringBuilder sbt = new StringBuilder(t);
-        for(int i=0;i<s.length();i++){
-            if(map.containsKey(sbs.charAt(i))){
-                if(map.get(sbs.charAt(i))==sbt.charAt(i)){
-                    sbs.setCharAt(i, sbt.charAt(i));
-                }
-                else return false;
+        char[] sarr = s.toCharArray();
+        char[] tarr = t.toCharArray();
+        int i = 0;
+        for(;i<sarr.length;i++){
+            if(map.containsKey(sarr[i])){
+                if(map.get(sarr[i])!=tarr[i]) return false;
             }else{
-                if(map.containsValue(sbt.charAt(i))) return false;
-                map.put(sbs.charAt(i), sbt.charAt(i));
-                sbs.setCharAt(i, sbt.charAt(i));
+                if(map.containsValue(tarr[i])) return false;
+                map.put(sarr[i], tarr[i]);
             }
         }
-        return sbs.toString().equals(sbt.toString());
+        return i==sarr.length;
     }
 }

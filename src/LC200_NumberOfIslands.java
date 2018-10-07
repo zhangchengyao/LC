@@ -18,9 +18,7 @@ public class LC200_NumberOfIslands {
     private void mark(char[][] grid, int[][] tag, int i, int j, int val){
         if(i<0 || i>=grid.length || j<0 || j>=grid[0].length) return;
         if(grid[i][j]=='0' || tag[i][j]!=0) return;
-        if(grid[i][j]=='1' && tag[i][j]==0){
-            tag[i][j] = val;
-        }
+        tag[i][j] = val;
         mark(grid, tag, i-1, j, val);
         mark(grid, tag, i+1, j, val);
         mark(grid, tag, i, j-1, val);
