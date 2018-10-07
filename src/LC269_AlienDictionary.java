@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 public class LC269_AlienDictionary {
+    // could be solved using topological sorting
+    // todo
     public String alienOrder(String[] words) {
         ArrayList<Character> dic = new ArrayList<>();
         TreeSet<Character> set = new TreeSet<>();
@@ -29,7 +31,7 @@ public class LC269_AlienDictionary {
                         if(index1<index2){
                             if(index1==-1){
                                 dic.add(index2+1, c1);
-                                if(set.contains(c1)) set.remove(c1);
+                                set.remove(c1);
                             }
                             else return "";
                         }
