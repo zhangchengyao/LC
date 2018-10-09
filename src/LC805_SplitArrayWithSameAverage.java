@@ -5,8 +5,8 @@ public class LC805_SplitArrayWithSameAverage {
     public boolean splitArraySameAverage(int[] A) {
         int total = 0;
         int n = A.length;
-        int k = 1; // num of elements in A, suppose size of A <= size of B
-        for(int i=0;i<n;i++) total += A[i];
+        int k = 1; // num of elements in B, suppose size of B <= size of C
+        for (int aA : A) total += aA;
         boolean possible = false;
         for(; k<=n/2; k++){
             if((total*k)%n==0){
