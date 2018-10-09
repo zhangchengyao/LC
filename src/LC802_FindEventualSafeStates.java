@@ -11,7 +11,6 @@ public class LC802_FindEventualSafeStates {
         return res;
     }
     private boolean dfs(int i, int[] color, int[][] graph){
-        // System.out.println("current i ="+i);
         if(color[i]==2) return true;
         if(color[i]==1) return false;
         color[i] = 1;
