@@ -1,17 +1,17 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class LC527_WordAbbreviation {
     public String[] wordsAbbreviation(String[] dict) {
         ArrayList<String> arr = new ArrayList<>();
-        for(String s: dict) arr.add(s);
+        Collections.addAll(arr, dict);
         String[] res = new String[dict.length];
         HashMap<String, String> map = new HashMap<>();
         boolean finish = false;
         int size = 1;
         while(!finish){
             finish = true;
-            // map = new HashMap<>();
             for(int i=0;i<dict.length;i++){
                 if(res[i]!=null) continue;
                 String abb = getAbbr(dict[i], size);
