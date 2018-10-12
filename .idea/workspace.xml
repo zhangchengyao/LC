@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ForOA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LC727_MinimumWindowSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,20 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC721_AccountsMerge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LC727_MinimumWindowSubsequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+            <state relative-caret-position="100">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -202,7 +188,7 @@
     <property name="SearchEverywhereHistoryKey" value="water&#9;PSI&#9;JAVA://LC42_TrappingRainWater" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539306585489" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539309214584" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
@@ -308,12 +294,12 @@
       <workItem from="1538175165526" duration="120512000" />
       <workItem from="1539043159747" duration="5235000" />
       <workItem from="1539062021356" duration="19557000" />
-      <workItem from="1539222594508" duration="5740000" />
+      <workItem from="1539222594508" duration="5973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332204000" />
+    <option name="totallyTimeSpent" value="332437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,7 +322,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.5037037" side_tool="true" weight="0.30210015" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.3283582" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -344,7 +330,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32504147" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32504147" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32669982" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -718,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC727_MinimumWindowSubsequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        <state relative-caret-position="100">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
