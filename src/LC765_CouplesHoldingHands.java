@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
 public class LC765_CouplesHoldingHands {
+    // greedy algorithm, but why works?
     public int minSwapsCouples(int[] row) {
         HashMap<Integer, Integer> map = new HashMap<>(); // label => index
         for(int i=0;i<row.length;i++) map.put(row[i], i);
