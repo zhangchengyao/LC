@@ -19,7 +19,7 @@ public class LC218_TheSkylineProblem {
         for(int[] point: res){
             for(int[] building: buildings){
                 if(building[0]>point[0]) break;
-                if(point[0]>=building[0] && point[0]<building[1]) point[1] = Math.max(point[1], building[2]);
+                if(point[0] < building[1]) point[1] = Math.max(point[1], building[2]);
             }
         }
         for(int i=1;i<res.size();i++){

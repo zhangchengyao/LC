@@ -208,7 +208,7 @@
     <property name="SearchEverywhereHistoryKey" value="water&#9;PSI&#9;JAVA://LC42_TrappingRainWater" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539485081554" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539491793051" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
@@ -223,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ATencent">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
