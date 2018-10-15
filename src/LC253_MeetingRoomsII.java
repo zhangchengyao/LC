@@ -12,7 +12,6 @@ public class LC253_MeetingRoomsII {
         }
     }
     public int minMeetingRooms(List<Interval> intervals) {
-        // Write your code here
         Collections.sort(intervals, new Comparator<Interval>(){
             public int compare(Interval i, Interval j){
                 return i.start==j.start?i.end-j.end:i.start-j.start;

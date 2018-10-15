@@ -1,54 +1,49 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.TreeSet;
 
 public class LC269_AlienDictionary {
     // could be solved using topological sorting
-    // todo
     public String alienOrder(String[] words) {
-        ArrayList<Character> dic = new ArrayList<>();
-        TreeSet<Character> set = new TreeSet<>();
-        boolean finish = false;
-        int p = 0;
-        while(!finish){
-            finish = true;
-            for(int i=0;i<words.length;i++){
-                if(p>=words[i].length()) continue;
-                finish = false;
-                if(i==0){
-                    if(!dic.contains(words[i].charAt(p))) set.add(words[i].charAt(p));
-                    continue;
-                }
-                if(words[i-1].substring(0,p).equals(words[i].substring(0,p))){
-                    char c1 = words[i].charAt(p);
-                    char c2 = words[i-1].charAt(p);
-                    if(c1!=c2){
-                        if(set.contains(c2)){
-                            dic.add(c2);
-                            set.remove(c2);
-                        }
-                        int index1 = dic.indexOf((Character)c1);
-                        int index2 = dic.indexOf((Character)c2);
-                        if(index1<index2){
-                            if(index1==-1){
-                                dic.add(index2+1, c1);
-                                set.remove(c1);
-                            }
-                            else return "";
-                        }
-                    }
-                }else{
-                    if(!dic.contains(words[i].charAt(p))) set.add(words[i].charAt(p));
-                }
+        ArrayList<Character>[] graph = new ArrayList[26];
+        int[] in = new int[26];
+        for(String str: words){
+            for(int i=0;i<str.length();i++){
+                char c = str.charAt(i);
+                if(graph[c-'a']==null) graph[c-'a'] = new ArrayList<>();
             }
-            p++;
+        }
+
+        for(int i=1;i<words.length;i++){
+            int p = 0;
+            while(p<words[i-1].length() && p<words[i].length() && words[i-1].charAt(p)==words[i].charAt(p)) p++;
+            if(p==words[i-1].length() || p==words[i].length()) continue;
+            char from = words[i-1].charAt(p);
+            char to = words[i].charAt(p);
+            int index1 = from-'a';
+            int index2 = to-'a';
+            graph[index1].add(to);
+            in[index2]++;
+        }
+        for(int i=0;i<graph.length;i++){
+            if(graph[i]==null) in[i] = -1;
+        }
+        Queue<Character> q = new LinkedList<>();
+        for(int i=0;i<in.length;i++){
+            if(in[i]==0) q.offer((char)(i+'a'));
         }
         StringBuilder sb = new StringBuilder();
-        for(char c: dic) sb.append(c);
-        int i = 0;
-        for(char c: set){
-            while(i<sb.length() && c>sb.charAt(i)) i++;
-            sb.insert(i, c);
+        while(!q.isEmpty()){
+            char cur = q.poll();
+            sb.append(cur);
+            if(graph[cur-'a']==null) continue;
+            for(char c: graph[cur-'a']){
+                in[c-'a']--;
+                if(in[c-'a']==0) q.offer(c);
+            }
         }
+        for(int i: in) if(i!=0 && i!=-1) return "";
         return sb.toString();
     }
 }

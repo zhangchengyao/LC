@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 public class Test {
     public static void main(String[] args){
-        LC753_CrackingTheSafe lc = new LC753_CrackingTheSafe();
-        System.out.println(lc.crackSafe(2,2));
+        LC269_AlienDictionary LC = new LC269_AlienDictionary();
+        System.out.println(LC.alienOrder(new String[]{"ac","ab","b"}));
     }
 }
