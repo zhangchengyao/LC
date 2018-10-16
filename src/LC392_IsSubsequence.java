@@ -1,4 +1,5 @@
 public class LC392_IsSubsequence {
+    // todo
     public boolean isSubsequence(String s, String t) {
         return isSubsequenceRec(s, 0, t, 0);
     }

@@ -25,6 +25,24 @@ public class LC337_HouseRobberIII {
         res[1] = root.val + leftInfo[0] + rightInfo[0];
         return res;
     }
+
+    // HashMap<TreeNode, Integer> map = new HashMap<>();
+    // public int rob(TreeNode root){
+    //     return robRec(root);
+    // }
+    // private int robRec(TreeNode root){
+    //     if(map.containsKey(root)) return map.get(root);
+    //     if(root==null) return 0;
+    //     if(root.left==null&&root.right==null) return root.val;
+    //     int robRoot = root.val;
+    //     if(root.left!=null) robRoot += robRec(root.left.left)+robRec(root.left.right);
+    //     if(root.right!=null) robRoot += robRec(root.right.left)+robRec(root.right.right);
+    //     int notRobRoot = robRec(root.left) + robRec(root.right);
+    //     int res = Math.max(robRoot, notRobRoot);
+    //     map.put(root, res);
+    //     return res;
+    // }
+
     // This is an example of dynamic programming
 //    public int rob(TreeNode root) {
 //        return rob(root, new HashMap<TreeNode, Integer>());
