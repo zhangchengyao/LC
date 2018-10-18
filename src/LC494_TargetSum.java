@@ -1,29 +1,36 @@
 import java.util.HashMap;
 
 public class LC494_TargetSum {
+    // dynamic programming
+//    public int findTargetSumWays(int[] nums, int S) {
+//        if(nums==null || nums.length==0) return 0;
+//        int total = 0;
+//        for(int i=0;i<nums.length;i++) total+=nums[i];
+//        if((total+S)%2!=0 || total<Math.abs(S)) return 0;
+//        int target = (total+S)/2;
+//        int[] dp = new int[target+1];
+//        dp[0] = 1;
+//        for(int i=0;i<nums.length;i++){
+//            for(int j=target;j>=nums[i];j--){
+//                dp[j] += dp[j-nums[i]];
+//            }
+//        }
+//        return dp[target];
+//    }
+    HashMap<String, Integer> map = new HashMap<>();
     public int findTargetSumWays(int[] nums, int S) {
-        HashMap<String, Integer> map = new HashMap<>();
-        return findRec(nums, 0, nums.length-1, S, map);
+        return findRec(nums, 0, S);
     }
-    private int findRec(int[] nums, int left, int right, int S, HashMap<String, Integer> map){
-        String cur = left+" "+right+" "+S;
-        if(map.containsKey(cur)) return map.get(cur);
-        if(left==right) {
-            if(nums[left]==0 && S==0){
-                map.put(cur, 2);
-                return 2;
-            }
-            if(nums[left]==S || nums[left]==-S){
-                map.put(cur, 1);
-                return 1;
-            }else{
-                map.put(cur, 0);
-                return 0;
-            }
+    private int findRec(int[] nums, int left, int target){
+        String str = left+" "+target;
+        if(map.containsKey(str)) return map.get(str);
+        if(left==nums.length-1){
+            if(target==0 && nums[left]==0) return 2;
+            if(nums[left]==target || nums[left]==-target) return 1;
+            return 0;
         }
-        int s1 = findRec(nums, left, right-1, S-nums[right], map);
-        int s2 = findRec(nums, left, right-1, S+nums[right], map);
-        map.put(cur, s1+s2);
-        return s1+s2;
+        int total = findRec(nums, left+1, target-nums[left])+findRec(nums, left+1, target+nums[left]);
+        map.put(str, total);
+        return total;
     }
 }
