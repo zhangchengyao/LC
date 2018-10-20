@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 public class Test {
     public static void main(String[] args){
-        LC269_AlienDictionary LC = new LC269_AlienDictionary();
-        System.out.println(LC.alienOrder(new String[]{"ac","ab","b"}));
+        LC844_BackspaceStringCompare lc = new LC844_BackspaceStringCompare();
+        System.out.println(lc.backspaceCompare("a#c", "b"));
     }
 }
