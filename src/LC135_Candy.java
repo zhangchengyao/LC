@@ -15,9 +15,6 @@ public class LC135_Candy {
                 else left += candy++;
                 cur++;
             }
-            if(cur==ratings.length-1){
-                candy = ratings[cur]==ratings[cur-1]?1:candy;
-            }
             int curMin;
             if(cur>0 && ratings[cur]==ratings[cur-1]) curMin = 1;
             else curMin = candy;
@@ -27,20 +24,11 @@ public class LC135_Candy {
             int right = 0;
             candy = 1;
             while(cur>pivot){
-                if(cur==pivot+1){
-                    if(cur==ratings.length-1 || ratings[cur]==ratings[cur+1]){
-                        right += 1;
-                        candy = 2;
-                    }
-                    else right += candy++;
+                if(cur<p && ratings[cur]==ratings[cur+1]){
+                    right += 1;
+                    if(ratings[cur]!=ratings[cur-1]) candy = 2;
                 }
-                else{
-                    if(cur<p && ratings[cur]==ratings[cur+1]){
-                        right += 1;
-                        if(ratings[cur]!=ratings[cur-1]) candy = 2;
-                    }
-                    else right += candy++;
-                }
+                else right += candy++;
                 cur--;
             }
             res += (left+right+Math.max(candy, curMin));
