@@ -1,5 +1,5 @@
 public class LC803_BricksFallingWhenHit {
-    // running time might be high
+    // running time might be high todo
     int num;
     int cnt = 0;
     public int[] hitBricks(int[][] grid, int[][] hits) {
