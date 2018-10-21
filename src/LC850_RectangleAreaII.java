@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class LC850_RectangleAreaII {
     class Interval{
@@ -24,7 +21,7 @@ public class LC850_RectangleAreaII {
             intervals[i++] = new Interval(rect[1], rect[0], rect[2], 0);
             intervals[i++] = new Interval(rect[3], rect[0], rect[2], 1);
         }
-        Arrays.sort(intervals, (a, b) -> Long.compare(a.y, b.y));
+        Arrays.sort(intervals, Comparator.comparingLong(a -> a.y));
         List<Interval> active = new ArrayList<>();
         long res = 0;
         long basey = intervals[0].y;
@@ -41,7 +38,7 @@ public class LC850_RectangleAreaII {
             res %= M;
             if(interval.tag==0){
                 active.add(interval);
-                Collections.sort(active, (a, b) -> Long.compare(a.left, b.left));
+                Collections.sort(active, Comparator.comparingLong(a -> a.left));
             }
             else{
                 for(i=0;i<active.size();i++){
