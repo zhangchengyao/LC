@@ -20,4 +20,20 @@ public class LC403_FrogJump {
         map.put(str, res);
         return res;
     }
+    // another solution
+//    public boolean canCross(int[] stones) {
+//        if(stones==null||stones.length<=1) return true;
+//        if(stones[1]!=1) return false;
+//        HashMap<Integer, HashSet<Integer>> map = new HashMap<>();
+//        for(int i: stones) map.put(i, new HashSet<>());
+//        map.get(1).add(1);
+//        for(int i=1;i<stones.length-1;i++){
+//            for(int jump: map.get(stones[i])){
+//                if(jump>1 && map.containsKey(stones[i]+jump-1)) map.get(stones[i]+jump-1).add(jump-1);
+//                if(map.containsKey(stones[i]+jump)) map.get(stones[i]+jump).add(jump);
+//                if(map.containsKey(stones[i]+jump+1)) map.get(stones[i]+jump+1).add(jump+1);
+//            }
+//        }
+//        return !map.get(stones[stones.length-1]).isEmpty();
+//    }
 }
