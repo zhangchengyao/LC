@@ -7,4 +7,5 @@ public class Test {
         LC254_FactorCombinations lc = new LC254_FactorCombinations();
         System.out.println(lc.getFactors(32));
     }
+    // 69 332
 }
