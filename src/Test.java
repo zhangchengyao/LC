@@ -4,8 +4,8 @@ import java.util.TreeSet;
 
 public class Test {
     public static void main(String[] args) {
-        LC254_FactorCombinations lc = new LC254_FactorCombinations();
-        System.out.println(lc.getFactors(32));
+        LC69_SqrtX lc = new LC69_SqrtX();
+        System.out.println(lc.mySqrt(2147395599));
     }
     // 69 332
 }
