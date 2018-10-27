@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="LC803">
-      <change afterPath="$PROJECT_DIR$/src/LC135_Candy.java" afterDir="false" />
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="LC94 Morris inorder traversal">
+      <change afterPath="$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,35 +16,41 @@
     <session id="1648678311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="java" value="2220" />
-          <entry key="txt" value="91" />
+          <entry key="gitignore" value="6" />
+          <entry key="java" value="3591" />
+          <entry key="txt" value="260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2220" />
-          <entry key="PLAIN_TEXT" value="96" />
+          <entry key="JAVA" value="3591" />
+          <entry key="PLAIN_TEXT" value="271" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="77" />
+          <entry key="gitignore" value="3" />
+          <entry key="java" value="124" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="77" />
+          <entry key="JAVA" value="124" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -55,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="180">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,29 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC392_IsSubsequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC299_BullsAndCows.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC135_Candy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <caret line="4" column="58" lean-forward="true" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -112,49 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC674_LongestContinuousIncreasingSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/LC721_AccountsMerge.java" />
-        <option value="$PROJECT_DIR$/src/AMcKinsey.java" />
-        <option value="$PROJECT_DIR$/src/LC727_MinimumWindowSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/LC729_MyCalendarI.java" />
-        <option value="$PROJECT_DIR$/src/LC731_MyCalendarII.java" />
-        <option value="$PROJECT_DIR$/src/LC734_SentenceSimilarity.java" />
-        <option value="$PROJECT_DIR$/src/LC737_SentenceSimilarityII.java" />
-        <option value="$PROJECT_DIR$/src/LC739_DailyTemperatures.java" />
-        <option value="$PROJECT_DIR$/src/LC753_CrackingTheSafe.java" />
-        <option value="$PROJECT_DIR$/src/LC765_CouplesHoldingHands.java" />
-        <option value="$PROJECT_DIR$/src/LC44_WildcardMatching.java" />
-        <option value="$PROJECT_DIR$/src/LC56_MergeIntervals.java" />
-        <option value="$PROJECT_DIR$/src/LC639_DecodeWaysII.java" />
-        <option value="$PROJECT_DIR$/src/LC96_UniqueBinarySearchTrees.java" />
-        <option value="$PROJECT_DIR$/src/LC305_NumberOfIslandsII.java" />
-        <option value="$PROJECT_DIR$/src/ATencent.java" />
-        <option value="$PROJECT_DIR$/src/LC218_TheSkylineProblem.java" />
-        <option value="$PROJECT_DIR$/src/LC769_MaxChunksToMakeSorted.java" />
-        <option value="$PROJECT_DIR$/src/LC248_StrobogrammaticNumberIII.java" />
-        <option value="$PROJECT_DIR$/src/LC249_GroupShiftedStrings.java" />
-        <option value="$PROJECT_DIR$/src/LC253_MeetingRoomsII.java" />
-        <option value="$PROJECT_DIR$/src/LC269_AlienDictionary.java" />
-        <option value="$PROJECT_DIR$/src/LC308_RangeSumQuery2DMutable.java" />
-        <option value="$PROJECT_DIR$/src/LC317_ShortestDistanceFromAllBuildings.java" />
-        <option value="$PROJECT_DIR$/src/LC312_BurstBalloons.java" />
-        <option value="$PROJECT_DIR$/src/LC334_IncreasingTripletSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/LC337_HouseRobberIII.java" />
-        <option value="$PROJECT_DIR$/src/LC392_IsSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/LC904_FruitIntoBaskets.java" />
-        <option value="$PROJECT_DIR$/src/LC399_EvaluateDivision.java" />
-        <option value="$PROJECT_DIR$/src/LC438_FindAllAnagramsInAString.java" />
-        <option value="$PROJECT_DIR$/src/LC486_PredictTheWinner.java" />
-        <option value="$PROJECT_DIR$/src/LC494_TargetSum.java" />
-        <option value="$PROJECT_DIR$/src/LC496_NextGreaterElementI.java" />
-        <option value="$PROJECT_DIR$/src/LC503_NextGreaterElementII.java" />
-        <option value="$PROJECT_DIR$/src/LC556_NextGreaterElementIII.java" />
-        <option value="$PROJECT_DIR$/src/LC340_LongestSubstringWithAtMostKDistinctCharacters.java" />
-        <option value="$PROJECT_DIR$/src/LC346_MovingAverageFromDataStream.java" />
-        <option value="$PROJECT_DIR$/src/LC359_LoggerRateLimiter.java" />
-        <option value="$PROJECT_DIR$/src/LC362_DesignHitCounter.java" />
-        <option value="$PROJECT_DIR$/src/LC361_BombEnemy.java" />
-        <option value="$PROJECT_DIR$/src/LC482_LicenseKeyFormatting.java" />
         <option value="$PROJECT_DIR$/src/LC843_GuessTheWord.java" />
         <option value="$PROJECT_DIR$/src/LC857_MinimumCostToHireKWorkers.java" />
         <option value="$PROJECT_DIR$/src/LC844_BackspaceStringCompare.java" />
@@ -162,7 +106,50 @@
         <option value="$PROJECT_DIR$/src/LC299_BullsAndCows.java" />
         <option value="$PROJECT_DIR$/src/LC686_RepeatedStringMatch.java" />
         <option value="$PROJECT_DIR$/src/LC135_Candy.java" />
+        <option value="$PROJECT_DIR$/src/LC833_FindAndReplaceInString.java" />
+        <option value="$PROJECT_DIR$/src/LC846_HandOfStraights.java" />
+        <option value="$PROJECT_DIR$/src/LC849_MaximizeDistanceToClosestPerson.java" />
+        <option value="$PROJECT_DIR$/src/LC766_ToeplitzMatrix.java" />
+        <option value="$PROJECT_DIR$/src/LC457_CircularArrayLoop.java" />
+        <option value="$PROJECT_DIR$/src/LC753_CrackingTheSafe.java" />
+        <option value="$PROJECT_DIR$/src/LC850_RectangleAreaII.java" />
+        <option value="$PROJECT_DIR$/src/LC818_RaceCar.java" />
+        <option value="$PROJECT_DIR$/src/LC679_24Game.java" />
+        <option value="$PROJECT_DIR$/src/LC307_RangeSumQueryMutable.java" />
+        <option value="$PROJECT_DIR$/src/LC447_NumberOfBoomerangs.java" />
+        <option value="$PROJECT_DIR$/src/LC424_LongestRepeatingCharacterReplacement.java" />
+        <option value="$PROJECT_DIR$/src/LC403_FrogJump.java" />
+        <option value="$PROJECT_DIR$/src/LC736_ParseLispExpression.java" />
+        <option value="$PROJECT_DIR$/src/LC900_RLEIterator.java" />
+        <option value="$PROJECT_DIR$/src/LC809_ExpressiveWords.java" />
+        <option value="$PROJECT_DIR$/src/LC745_PrefixAndSuffixSearch.java" />
+        <option value="$PROJECT_DIR$/src/LC524_LongestWordInDictionaryThroughDeleting.java" />
+        <option value="$PROJECT_DIR$/src/LC855_ExamRoom.java" />
+        <option value="$PROJECT_DIR$/src/LC681_NextClosestTime.java" />
+        <option value="$PROJECT_DIR$/src/LC159_LongestSubstringWithAtMostTwoDistinctCharacters.java" />
+        <option value="$PROJECT_DIR$/src/LC489_RobotRoomCleaner.java" />
+        <option value="$PROJECT_DIR$/src/LC642_DesignSearchAutocompleteSystem.java" />
+        <option value="$PROJECT_DIR$/src/LC800_SimilarRGBColor.java" />
+        <option value="$PROJECT_DIR$/src/LC254_FactorCombinations.java" />
+        <option value="$PROJECT_DIR$/src/ForOA.java" />
+        <option value="$PROJECT_DIR$/src/LC369_PlusOneLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/LC356_LineReflection.java" />
+        <option value="$PROJECT_DIR$/src/LC358_RearrangeStringKDistanceApart.java" />
+        <option value="$PROJECT_DIR$/src/LC69_SqrtX.java" />
+        <option value="$PROJECT_DIR$/src/LC332_ReconstructItinerary.java" />
+        <option value="$PROJECT_DIR$/src/LC418_SentenceScreenFitting.java" />
+        <option value="$PROJECT_DIR$/src/LC465_OptimalAccountBalancing.java" />
+        <option value="$PROJECT_DIR$/src/LC562_LongestLineOfConsecutiveOneInMatrix.java" />
+        <option value="$PROJECT_DIR$/src/LC428_SerializeAndDeserializeNaryTree.java" />
+        <option value="$PROJECT_DIR$/src/LC158_ReadNCharactersGivenRead4IICallMultipleTimes.java" />
+        <option value="$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/LC99_RecoverBinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/LC21_MergeTwoSortedLists.java" />
+        <option value="$PROJECT_DIR$/src/LC23_MergeKSortedLists.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/LC568_MaximumVacationDays.java" />
+        <option value="$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java" />
       </list>
     </option>
   </component>
@@ -189,6 +176,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,15 +193,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="water&#9;PSI&#9;JAVA://LC42_TrappingRainWater" />
+    <property name="SearchEverywhereHistoryKey" value="merge&#9;PSI&#9;JAVA://LC56_MergeIntervals&#10;inorder&#9;PSI&#9;JAVA://LC94_BinaryTreeInorderTraversal&#10;350&#9;PSI&#9;JAVA://LC350_IntersectionOfTwoArraysII&#10;water&#9;PSI&#9;JAVA://LC42_TrappingRainWater" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540051653106" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540577488100" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
@@ -332,105 +319,9 @@
       <workItem from="1539222594508" duration="25081000" />
       <workItem from="1539562578538" duration="14685000" />
       <workItem from="1539829998820" duration="3992000" />
-      <workItem from="1539882082198" duration="18866000" />
-    </task>
-    <task id="LOCAL-00001" summary="LC308 &amp; changes to previous solutions">
-      <created>1539619448089</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1539619448093</updated>
-    </task>
-    <task id="LOCAL-00002" summary="LC317">
-      <created>1539625655055</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1539625655055</updated>
-    </task>
-    <task id="LOCAL-00003" summary="LC312">
-      <created>1539665040676</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1539665040676</updated>
-    </task>
-    <task id="LOCAL-00004" summary="LC334">
-      <created>1539668272709</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1539668272709</updated>
-    </task>
-    <task id="LOCAL-00005" summary="LC904">
-      <created>1539717418618</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1539717418618</updated>
-    </task>
-    <task id="LOCAL-00006" summary="LC399">
-      <created>1539834969647</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1539834969647</updated>
-    </task>
-    <task id="LOCAL-00007" summary="LC438">
-      <created>1539840268141</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1539840268141</updated>
-    </task>
-    <task id="LOCAL-00008" summary="LC496">
-      <created>1539885920227</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1539885920227</updated>
-    </task>
-    <task id="LOCAL-00009" summary="LC503">
-      <created>1539886980084</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1539886980084</updated>
-    </task>
-    <task id="LOCAL-00010" summary="LC556">
-      <created>1539889258417</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1539889258417</updated>
-    </task>
-    <task id="LOCAL-00011" summary="LC340">
-      <created>1539889762071</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1539889762071</updated>
-    </task>
-    <task id="LOCAL-00012" summary="LC346">
-      <created>1539891082670</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1539891082670</updated>
-    </task>
-    <task id="LOCAL-00013" summary="LC359">
-      <created>1539901139648</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1539901139648</updated>
-    </task>
-    <task id="LOCAL-00014" summary="LC362">
-      <created>1539903459457</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1539903459457</updated>
+      <workItem from="1539882082198" duration="55703000" />
+      <workItem from="1540446877302" duration="46000" />
+      <workItem from="1540446976496" duration="17284000" />
     </task>
     <task id="LOCAL-00015" summary="LC361">
       <created>1539906916696</created>
@@ -488,11 +379,298 @@
       <option name="project" value="LOCAL" />
       <updated>1540013305581</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="LC135">
+      <created>1540051679346</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1540051679346</updated>
+    </task>
+    <task id="LOCAL-00024" summary="LC135 modify">
+      <created>1540052380957</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1540052380957</updated>
+    </task>
+    <task id="LOCAL-00025" summary="LC833">
+      <created>1540072572033</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1540072572033</updated>
+    </task>
+    <task id="LOCAL-00026" summary="LC846">
+      <created>1540073765229</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1540073765229</updated>
+    </task>
+    <task id="LOCAL-00027" summary="LC849">
+      <created>1540076939420</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1540076939420</updated>
+    </task>
+    <task id="LOCAL-00028" summary="LC457">
+      <created>1540083812529</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1540083812529</updated>
+    </task>
+    <task id="LOCAL-00029" summary="LC850">
+      <created>1540139076100</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1540139076100</updated>
+    </task>
+    <task id="LOCAL-00030" summary="LC818">
+      <created>1540145363787</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1540145363787</updated>
+    </task>
+    <task id="LOCAL-00031" summary="LC679">
+      <created>1540160091460</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1540160091460</updated>
+    </task>
+    <task id="LOCAL-00032" summary="LC447">
+      <created>1540166412751</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1540166412751</updated>
+    </task>
+    <task id="LOCAL-00033" summary="LC424">
+      <created>1540168551025</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1540168551025</updated>
+    </task>
+    <task id="LOCAL-00034" summary="LC403">
+      <created>1540170282251</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1540170282251</updated>
+    </task>
+    <task id="LOCAL-00035" summary="LC736">
+      <created>1540182343897</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1540182343897</updated>
+    </task>
+    <task id="LOCAL-00036" summary="LC900">
+      <created>1540227108091</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1540227108091</updated>
+    </task>
+    <task id="LOCAL-00037" summary="LC809">
+      <created>1540263269225</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1540263269225</updated>
+    </task>
+    <task id="LOCAL-00038" summary="LC745">
+      <created>1540275124618</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1540275124618</updated>
+    </task>
+    <task id="LOCAL-00039" summary="LC524">
+      <created>1540276824688</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1540276824688</updated>
+    </task>
+    <task id="LOCAL-00040" summary="LC855">
+      <created>1540336071444</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1540336071444</updated>
+    </task>
+    <task id="LOCAL-00041" summary="LC681">
+      <created>1540339762757</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1540339762757</updated>
+    </task>
+    <task id="LOCAL-00042" summary="LC159">
+      <created>1540340212774</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1540340212774</updated>
+    </task>
+    <task id="LOCAL-00043" summary="LC489">
+      <created>1540344753603</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1540344753603</updated>
+    </task>
+    <task id="LOCAL-00044" summary="LC642">
+      <created>1540348643021</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1540348643021</updated>
+    </task>
+    <task id="LOCAL-00045" summary="LC800">
+      <created>1540399769597</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1540399769597</updated>
+    </task>
+    <task id="LOCAL-00046" summary="LC254">
+      <created>1540403277749</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1540403277749</updated>
+    </task>
+    <task id="LOCAL-00047" summary="LC369">
+      <created>1540442034715</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1540442034715</updated>
+    </task>
+    <task id="LOCAL-00048" summary="LC356">
+      <created>1540443184282</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1540443184282</updated>
+    </task>
+    <task id="LOCAL-00049" summary="LC358">
+      <created>1540446650908</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1540446650908</updated>
+    </task>
+    <task id="LOCAL-00050" summary="LC69">
+      <created>1540493058050</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1540493058051</updated>
+    </task>
+    <task id="LOCAL-00051" summary="LC332">
+      <created>1540497129771</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1540497129772</updated>
+    </task>
+    <task id="LOCAL-00052" summary="LC418">
+      <created>1540507363370</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1540507363370</updated>
+    </task>
+    <task id="LOCAL-00053" summary="LC465">
+      <created>1540511656379</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1540511656379</updated>
+    </task>
+    <task id="LOCAL-00054" summary="LC562">
+      <created>1540513287495</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1540513287495</updated>
+    </task>
+    <task id="LOCAL-00055" summary="LC428">
+      <created>1540517349096</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1540517349096</updated>
+    </task>
+    <task id="LOCAL-00056" summary="LC158">
+      <created>1540519956849</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1540519956849</updated>
+    </task>
+    <task id="LOCAL-00057" summary="LC94 Morris inorder traversal">
+      <created>1540525773376</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1540525773376</updated>
+    </task>
+    <task id="LOCAL-00058" summary="LC99">
+      <created>1540526384676</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1540526384676</updated>
+    </task>
+    <task id="LOCAL-00059" summary="LC21">
+      <created>1540531022595</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1540531022595</updated>
+    </task>
+    <task id="LOCAL-00060" summary="gitignore">
+      <created>1540531124503</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1540531124503</updated>
+    </task>
+    <task id="LOCAL-00061" summary="gitignore">
+      <created>1540531297049</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1540531297049</updated>
+    </task>
+    <task id="LOCAL-00062" summary="LC23">
+      <created>1540533622930</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1540533622930</updated>
+    </task>
+    <task id="LOCAL-00063" summary="LC568">
+      <created>1540574458772</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1540574458773</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="389088000" />
+    <option name="totallyTimeSpent" value="443255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,10 +682,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="701" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.26494345" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.273021" />
       <window_info id="Structure" order="1" sideWeight="0.5037037" side_tool="true" weight="0.30210015" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -515,7 +693,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.5037037" side_tool="true" weight="0.30210015" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.32512316" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.32669982" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -523,7 +701,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3234811" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3233831" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32512316" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -544,395 +722,87 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="LC308 &amp; changes to previous solutions" />
-    <MESSAGE value="LC317" />
-    <MESSAGE value="LC312" />
-    <MESSAGE value="LC334" />
-    <MESSAGE value="LC904" />
-    <MESSAGE value="LC399" />
-    <MESSAGE value="LC438" />
-    <MESSAGE value="LC496" />
-    <MESSAGE value="LC503" />
-    <MESSAGE value="LC556" />
-    <MESSAGE value="LC340" />
-    <MESSAGE value="LC346" />
-    <MESSAGE value="LC359" />
-    <MESSAGE value="LC362" />
-    <MESSAGE value="LC361" />
-    <MESSAGE value="LC482" />
-    <MESSAGE value="LC843" />
-    <MESSAGE value="LC857" />
-    <MESSAGE value="LC844" />
-    <MESSAGE value="LC803" />
-    <MESSAGE value="LC299" />
-    <MESSAGE value="LC686" />
-    <option name="LAST_COMMIT_MESSAGE" value="LC686" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LC135_Candy.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="LC745" />
+    <MESSAGE value="LC524" />
+    <MESSAGE value="LC855" />
+    <MESSAGE value="LC681" />
+    <MESSAGE value="LC159" />
+    <MESSAGE value="LC489" />
+    <MESSAGE value="LC642" />
+    <MESSAGE value="LC800" />
+    <MESSAGE value="LC254" />
+    <MESSAGE value="LC369" />
+    <MESSAGE value="LC356" />
+    <MESSAGE value="LC358" />
+    <MESSAGE value="LC69" />
+    <MESSAGE value="LC332" />
+    <MESSAGE value="LC418" />
+    <MESSAGE value="LC465" />
+    <MESSAGE value="LC562" />
+    <MESSAGE value="LC428" />
+    <MESSAGE value="LC158" />
+    <MESSAGE value="LC94 Morris inorder traversal" />
+    <MESSAGE value="LC99" />
+    <MESSAGE value="LC21" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="LC23" />
+    <MESSAGE value="LC568" />
+    <option name="LAST_COMMIT_MESSAGE" value="LC568" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC42_TrappingRainWater.java">
+    <entry file="file://$PROJECT_DIR$/src/LC135_Candy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="319">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC43_MultiplyStrings.java">
+    <entry file="file://$PROJECT_DIR$/src/LC846_HandOfStraights.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="62">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC849_MaximizeDistanceToClosestPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC44_WildcardMatching.java">
+    <entry file="file://$PROJECT_DIR$/src/LC766_ToeplitzMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC56_MergeIntervals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC639_DecodeWaysII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC59_SpiralMatrixII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC96_UniqueBinarySearchTrees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC305_NumberOfIslandsII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ATencent.java" />
-    <entry file="file://$PROJECT_DIR$/src/LC218_TheSkylineProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC769_MaxChunksToMakeSorted.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC753_CrackingTheSafe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="620">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC248_StrobogrammaticNumberIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC249_GroupShiftedStrings.java">
+    <entry file="file://$PROJECT_DIR$/src/LC457_CircularArrayLoop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC253_MeetingRoomsII.java">
+    <entry file="file://$PROJECT_DIR$/src/LC850_RectangleAreaII.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC270_ClosestBinarySearchTreeValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC272_ClosestBinarySearchTreeValueII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC269_AlienDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC298_BinaryTreeLongestConsecutiveSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC286_WallsAndGates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC307_RangeSumQueryMutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC308_RangeSumQuery2DMutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC317_ShortestDistanceFromAllBuildings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC312_BurstBalloons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC334_IncreasingTripletSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC337_HouseRobberIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC683_KEmptySlots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ForOA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC904_FruitIntoBaskets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC399_EvaluateDivision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC486_PredictTheWinner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC438_FindAllAnagramsInAString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC496_NextGreaterElementI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC494_TargetSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC503_NextGreaterElementII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC556_NextGreaterElementIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC340_LongestSubstringWithAtMostKDistinctCharacters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC346_MovingAverageFromDataStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC362_DesignHitCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC359_LoggerRateLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC482_LicenseKeyFormatting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC361_BombEnemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC857_MinimumCostToHireKWorkers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC843_GuessTheWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC844_BackspaceStringCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC803_BricksFallingWhenHit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="620">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -943,34 +813,352 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC686_RepeatedStringMatch.java">
+    <entry file="file://$PROJECT_DIR$/src/LC307_RangeSumQueryMutable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="20">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding>
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC299_BullsAndCows.java">
+    <entry file="file://$PROJECT_DIR$/src/LC679_24Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC447_NumberOfBoomerangs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC424_LongestRepeatingCharacterReplacement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC403_FrogJump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC900_RLEIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC736_ParseLispExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC745_PrefixAndSuffixSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC809_ExpressiveWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC524_LongestWordInDictionaryThroughDeleting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC818_RaceCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC855_ExamRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC681_NextClosestTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC683_KEmptySlots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC159_LongestSubstringWithAtMostTwoDistinctCharacters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC135_Candy.java">
+    <entry file="file://$PROJECT_DIR$/src/LC642_DesignSearchAutocompleteSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="1141">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC489_RobotRoomCleaner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC800_SimilarRGBColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC254_FactorCombinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC369_PlusOneLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC356_LineReflection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC358_RearrangeStringKDistanceApart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForOA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC69_SqrtX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC350_IntersectionOfTwoArraysII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC332_ReconstructItinerary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC418_SentenceScreenFitting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC465_OptimalAccountBalancing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC562_LongestLineOfConsecutiveOneInMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC428_SerializeAndDeserializeNaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC158_ReadNCharactersGivenRead4IICallMultipleTimes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC94_BinaryTreeInorderTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC99_RecoverBinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/zcy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC21_MergeTwoSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sort/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC56_MergeIntervals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC23_MergeKSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="180">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC568_MaximumVacationDays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="58" lean-forward="true" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
