@@ -7,5 +7,5 @@ public class Test {
         LC69_SqrtX lc = new LC69_SqrtX();
         System.out.println(lc.mySqrt(2147395599));
     }
-    // stock
+    //
 }
