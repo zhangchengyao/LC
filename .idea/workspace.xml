@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="LC94 Morris inorder traversal">
-      <change afterPath="$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java" afterDir="false" />
+    <list default="true" id="94b3c2c2-fa81-428a-a310-317c97e30f29" name="Default" comment="LC329">
+      <change afterPath="$PROJECT_DIR$/src/LC68_TextJustification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,26 +29,26 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="gitignore" value="6" />
-          <entry key="java" value="3591" />
-          <entry key="txt" value="260" />
+          <entry key="java" value="3592" />
+          <entry key="txt" value="263" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3591" />
-          <entry key="PLAIN_TEXT" value="271" />
+          <entry key="JAVA" value="3592" />
+          <entry key="PLAIN_TEXT" value="274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="3" />
-          <entry key="java" value="124" />
+          <entry key="java" value="125" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="124" />
+          <entry key="JAVA" value="125" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -73,10 +73,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java">
+        <entry file="file://$PROJECT_DIR$/src/LC68_TextJustification.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="58" lean-forward="true" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LC843_GuessTheWord.java" />
         <option value="$PROJECT_DIR$/src/LC857_MinimumCostToHireKWorkers.java" />
         <option value="$PROJECT_DIR$/src/LC844_BackspaceStringCompare.java" />
         <option value="$PROJECT_DIR$/src/LC803_BricksFallingWhenHit.java" />
@@ -150,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/LC568_MaximumVacationDays.java" />
         <option value="$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java" />
+        <option value="$PROJECT_DIR$/src/LC68_TextJustification.java" />
       </list>
     </option>
   </component>
@@ -200,7 +203,7 @@
     <property name="SearchEverywhereHistoryKey" value="merge&#9;PSI&#9;JAVA://LC56_MergeIntervals&#10;inorder&#9;PSI&#9;JAVA://LC94_BinaryTreeInorderTraversal&#10;350&#9;PSI&#9;JAVA://LC350_IntersectionOfTwoArraysII&#10;water&#9;PSI&#9;JAVA://LC42_TrappingRainWater" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540577488100" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540683328996" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
@@ -321,14 +324,7 @@
       <workItem from="1539829998820" duration="3992000" />
       <workItem from="1539882082198" duration="55703000" />
       <workItem from="1540446877302" duration="46000" />
-      <workItem from="1540446976496" duration="17284000" />
-    </task>
-    <task id="LOCAL-00015" summary="LC361">
-      <created>1539906916696</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1539906916696</updated>
+      <workItem from="1540446976496" duration="18218000" />
     </task>
     <task id="LOCAL-00016" summary="LC482">
       <created>1539908565553</created>
@@ -666,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540574458773</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="LC329">
+      <created>1540608134913</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1540608134913</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443255000" />
+    <option name="totallyTimeSpent" value="444189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,7 +725,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="LC745" />
     <MESSAGE value="LC524" />
     <MESSAGE value="LC855" />
     <MESSAGE value="LC681" />
@@ -747,20 +749,14 @@
     <MESSAGE value="gitignore" />
     <MESSAGE value="LC23" />
     <MESSAGE value="LC568" />
-    <option name="LAST_COMMIT_MESSAGE" value="LC568" />
+    <MESSAGE value="LC329" />
+    <option name="LAST_COMMIT_MESSAGE" value="LC329" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LC135_Candy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC846_HandOfStraights.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -1135,16 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LC568_MaximumVacationDays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1157,8 +1143,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC329_LongestIncreasingPathInAMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC68_TextJustification.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="58" lean-forward="true" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
