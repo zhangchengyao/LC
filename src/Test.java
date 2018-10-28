@@ -4,8 +4,8 @@ import java.util.TreeSet;
 
 public class Test {
     public static void main(String[] args) {
-        LC69_SqrtX lc = new LC69_SqrtX();
-        System.out.println(lc.mySqrt(2147395599));
+        LC837_New21Game lc = new LC837_New21Game();
+        System.out.println(lc.new21Game(13,1,10));
     }
     //
 }
