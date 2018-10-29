@@ -9,21 +9,14 @@ public class LC248_StrobogrammaticNumberIII {
     }
     private void construct(String str, int len, String low, String high){
         if(str.length()==len){
-            if(len==low.length()){
-                if(low.length()==high.length()){
-                    if(str.compareTo(low)>=0&&str.compareTo(high)<=0) res++;
-                }
-                else{
-                    if(str.compareTo(low)>=0) res++;
-                }
+            if(low.length()==high.length()){
+                if(str.compareTo(low)>=0&&str.compareTo(high)<=0) res++;
+            }
+            else if(len==low.length()){
+                if(str.compareTo(low)>=0) res++;
             }
             else if(len==high.length()){
-                if(low.length()==high.length()){
-                    if(str.compareTo(low)>=0&&str.compareTo(high)<=0) res++;
-                }
-                else{
-                    if(str.compareTo(high)<=0) res++;
-                }
+                if(str.compareTo(high)<=0) res++;
             }
             else res++;
             return;
