@@ -19,25 +19,25 @@ public class LC679_24Game {
 
                 list.add(a+b);
                 if(judge(new ArrayList<>(list))) return true;
-                list.remove((Double)(a+b));
+                list.remove((a+b));
                 list.add(a-b);
                 if(judge(new ArrayList<>(list))) return true;
-                list.remove((Double)(a-b));
+                list.remove((a-b));
                 list.add(b-a);
                 if(judge(new ArrayList<>(list))) return true;
-                list.remove((Double)(b-a));
+                list.remove((b-a));
                 list.add(a*b);
                 if(judge(new ArrayList<>(list))) return true;
-                list.remove((Double)(a*b));
+                list.remove((a*b));
                 if(b!=0){
                     list.add(a/b);
                     if(judge(new ArrayList<>(list))) return true;
-                    list.remove((Double)(a/b));
+                    list.remove((a/b));
                 }
                 if(a!=0){
                     list.add(b/a);
                     if(judge(new ArrayList<>(list))) return true;
-                    list.remove((Double)(b/a));
+                    list.remove((b/a));
                 }
 
                 list.add(i, a);

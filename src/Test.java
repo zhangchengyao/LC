@@ -7,5 +7,5 @@ public class Test {
 //        LC166_FractionToRecurringDecimal lc = new LC166_FractionToRecurringDecimal();
 //        System.out.println(lc.fractionToDecimal(-1,-2147483648));
     }
-    //543
+    //543 282 22
 }
