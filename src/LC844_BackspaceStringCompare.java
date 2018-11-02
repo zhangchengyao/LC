@@ -29,8 +29,26 @@ public class LC844_BackspaceStringCompare {
                 else p--;
             }
             else{
+                if(S.charAt(p)!='#') cnt1--;
+                if(T.charAt(q)!='#') cnt2--;
                 p--;
                 q--;
+            }
+        }
+        if(p<0){
+            while(q>=0){
+                if(T.charAt(q)=='#') cnt2++;
+                else cnt2--;
+                if(cnt2<0) return false;
+                q--;
+            }
+        }
+        else{
+            while(p>=0){
+                if(S.charAt(p)=='#') cnt1++;
+                else cnt1--;
+                if(cnt1<0) return false;
+                p--;
             }
         }
         return true;

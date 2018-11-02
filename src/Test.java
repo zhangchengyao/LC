@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-//        LC166_FractionToRecurringDecimal lc = new LC166_FractionToRecurringDecimal();
-//        System.out.println(lc.fractionToDecimal(-1,-2147483648));
+        LC844_BackspaceStringCompare lc = new LC844_BackspaceStringCompare();
+        System.out.println(lc.backspaceCompare("31#","12#"));
     }
     //543 282 22
 }
