@@ -1,7 +1,25 @@
 import java.util.ArrayList;
 
 public class LC787_CheapestFlightsWithinKStops {
-    // todo Bellman Ford algorithm
+    // dynamic programming
+//    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
+//        int[][] dist = new int[K+2][n];
+//        for(int[] d: dist) Arrays.fill(d, Integer.MAX_VALUE);
+//        dist[0][src] = 0;
+//        for(int i=1;i<=K+1;i++){
+//            dist[i][src] = 0;
+//            for(int[] edge: flights){
+//                if(dist[i-1][edge[0]]!=Integer.MAX_VALUE && dist[i-1][edge[0]] + edge[2]<dist[i][edge[1]]){
+//                    dist[i][edge[1]] = dist[i-1][edge[0]] + edge[2];
+//                }
+//            }
+//        }
+//        int res = Integer.MAX_VALUE;
+//        for(int i=0;i<=K+1;i++){
+//            res = Math.min(res, dist[i][dst]);
+//        }
+//        return res==Integer.MAX_VALUE?-1:res;
+//    }
     class Edge{
         int dest;
         int weight;
