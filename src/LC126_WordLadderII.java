@@ -20,7 +20,7 @@ public class LC126_WordLadderII {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         List<List<String>> res = new ArrayList<>();
         if(!wordList.contains(endWord)) return res;
-        Vertex[] vertices = null;
+        Vertex[] vertices;
         if(wordList.contains(beginWord)) vertices = new Vertex[wordList.size()];
         else  vertices = new Vertex[wordList.size()+1];
         vertices[0] = new Vertex(beginWord);
@@ -64,7 +64,7 @@ public class LC126_WordLadderII {
             }
         }
         if(found){
-            backtrack(res, new ArrayList<String>(), cur, beginWord);
+            backtrack(res, new ArrayList<>(), cur, beginWord);
         }
         return res;
     }
@@ -76,7 +76,7 @@ public class LC126_WordLadderII {
             return;
         }
         for(Vertex vertex:v.edges){
-            if(vertex.visited==true && vertex.layer<v.layer){
+            if(vertex.visited && vertex.layer<v.layer){
                 backtrack(res, tmp, vertex, beginWord);
                 tmp.remove(0);
             }
