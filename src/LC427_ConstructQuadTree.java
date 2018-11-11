@@ -36,7 +36,7 @@ public class LC427_ConstructQuadTree {
         }
         Node node = null;
         if(isLeaf){
-            node = new Node(t==1?true:false, true, null, null, null, null);
+            node = new Node(t == 1, true, null, null, null, null);
         }
         else{
             int d = (x2-x1)/2;
