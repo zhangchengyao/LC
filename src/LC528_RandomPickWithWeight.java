@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class LC528_RandomPickWithWeight {
-    int[] wa;
-    int total;
-    Random random;
+    private int[] wa;
+    private int total;
+    private Random random;
     public LC528_RandomPickWithWeight(int[] w) {
         wa = new int[w.length];
         total = 0;
@@ -16,14 +16,15 @@ public class LC528_RandomPickWithWeight {
     }
 
     public int pickIndex() {
-        int res = 0;
-        int val = random.nextInt(total);
-        for(int i=0;i<wa.length;i++){
-            if(val<wa[i]){
-                res = i;
-                break;
-            }
+        int val = random.nextInt(total)+1;
+        int left = 0;
+        int right = wa.length-1;
+        while(left<=right){
+            int mid = left+(right-left)/2;
+            if(wa[mid]==val) return mid;
+            else if(wa[mid]>val) right = mid-1;
+            else left = mid+1;
         }
-        return res;
+        return left;
     }
 }
