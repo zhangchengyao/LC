@@ -1,6 +1,6 @@
 public class LC307_RangeSumQueryMutable {
-    int[] nums;
-    int[] bit;
+    private int[] nums;
+    private int[] bit;
 
     public LC307_RangeSumQueryMutable(int[] nums) {
         this.nums = new int[nums.length+1];
