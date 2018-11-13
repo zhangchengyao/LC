@@ -18,18 +18,11 @@ public class LC833_FindAndReplaceInString {
         for(int i=0;i<indexes.length;i++){
             opes[i] = new Operation(indexes[i], sources[i], targets[i]);
         }
-        Arrays.sort(opes, new Comparator<Operation>(){
-            public int compare(Operation o1, Operation o2){
-                return o1.index-o2.index;
-            }
-        });
-        int lenInc = 0;
+        Arrays.sort(opes, (a,b) -> b.index-a.index);
         for(Operation o: opes){
-            int idx = o.index+lenInc;
-            if(sb.substring(idx, idx+o.src.length()).equals(o.src)){
-                lenInc += o.target.length()-o.src.length();
-                for(int i=0;i<o.src.length();i++) sb.deleteCharAt(idx);
-                sb.insert(idx, o.target);
+            if(sb.substring(o.index, o.index+o.src.length()).equals(o.src)){
+                for(int i=0;i<o.src.length();i++) sb.deleteCharAt(o.index);
+                sb.insert(o.index, o.target);
             }
         }
         return sb.toString();

@@ -17,11 +17,7 @@ public class LC857_MinimumCostToHireKWorkers {
         Worker[] workers = new Worker[quality.length];
         for(int i=0;i<workers.length;i++) workers[i] = new Worker(quality[i], wage[i]);
         Arrays.sort(workers, (a, b) -> Double.compare(b.ratio, a.ratio));
-        PriorityQueue<Worker> maxHeap = new PriorityQueue<>(11, new Comparator<Worker>(){
-            public int compare(Worker a, Worker b){
-                return b.Q-a.Q;
-            }
-        });
+        PriorityQueue<Worker> maxHeap = new PriorityQueue<>(11, (a, b) -> b.Q-a.Q);
         double res = Double.MAX_VALUE;
         double sum = 0.0;
         for(int i=0;i<workers.length;i++){

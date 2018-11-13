@@ -6,13 +6,13 @@ public class LC116_PopulatingNextRightPointersnEachNode {
     }
     public void connect(TreeLinkNode root) {
         if(root==null || root.left==null) return;
-        root.left.next = root.right;
         TreeLinkNode cur = root;
         while(cur.next!=null){
+            cur.left.next = cur.right;
             cur.right.next = cur.next.left;
             cur = cur.next;
         }
+        cur.left.next = cur.right;
         connect(root.left);
-        connect(root.right);
     }
 }

@@ -5,11 +5,11 @@ public class LC117_PopulatingNextRightPointersInEachNodeII {
         TreeLinkNode(int x) { val = x; }
     }
     public void connect(TreeLinkNode root) {
-        if(root==null || (root.left==null&&root.right==null)) return;
+        if(root==null) return;
         TreeLinkNode cur = root;
-        TreeLinkNode child = null;
         while(cur!=null && cur.left==null && cur.right==null) cur = cur.next;
         if(cur==null) return;
+        TreeLinkNode child = null;
         if(cur.left==null){
             child = cur.right;
         }
@@ -48,7 +48,6 @@ public class LC117_PopulatingNextRightPointersInEachNodeII {
                 child = cur.right;
             }
         }
-        while(root!=null && root.left==null && root.right==null) root = root.next;
         connect(root);
     }
 }
