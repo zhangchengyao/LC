@@ -12,7 +12,6 @@ public class LC110_BalancedBinaryTree {
         return !imbalance;
     }
     private int calculateHeight(TreeNode root){
-        if(imbalance) return -1;
         if(root==null) return 0;
         int left = calculateHeight(root.left);
         int right = calculateHeight(root.right);
