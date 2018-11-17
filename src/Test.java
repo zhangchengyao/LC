@@ -12,6 +12,6 @@ public class Test {
 //        KM km = new KM(graph);
 //        System.out.println(km.KM());
     }
-    // 114，658， 251， 14， 676， 410, 278, 442，32, 233
+    // 658， 251， 14， 676， 410, 278, 442，32, 233
     // premium:311, 280，323, 277
 }
