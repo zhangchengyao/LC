@@ -1,5 +1,13 @@
 public class LC392_IsSubsequence {
-    // todo
+//    public boolean isSubsequence(String s, String t) {
+//        int idx = 0;
+//        for(int i=0;i<s.length();i++){
+//            while(idx<t.length() && t.charAt(idx)!=s.charAt(i)) idx++;
+//            if(idx>=t.length()) return false;
+//            idx++;
+//        }
+//        return true;
+//    }
     public boolean isSubsequence(String s, String t) {
         return isSubsequenceRec(s, 0, t, 0);
     }
