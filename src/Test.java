@@ -13,5 +13,5 @@ public class Test {
 //        System.out.println(km.KM());
     }
     //
-    // premium:277，544，411, 251
+    // premium:544，411, 251
 }
