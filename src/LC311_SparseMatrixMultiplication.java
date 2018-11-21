@@ -1,6 +1,20 @@
 import java.util.HashMap;
 
 public class LC311_SparseMatrixMultiplication {
+    // faster solution
+//    public int[][] multiply(int[][] A, int[][] B) {
+//        if(A.length==0 || A[0].length==0) return null;
+//        int[][] res = new int[A.length][B[0].length];
+//        for(int i=0;i<A.length;i++){
+//            for(int j=0;j<A[0].length;j++){
+//                if(A[i][j]==0) continue;
+//                for(int k=0;k<B[0].length;k++){
+//                    if(B[j][k]!=0) res[i][k] += A[i][j]*B[j][k];
+//                }
+//            }
+//        }
+//        return res;
+//    }
     public int[][] multiply(int[][] A, int[][] B) {
         HashMap<Integer, Integer>[] arows = new HashMap[A.length];
         HashMap<Integer, Integer>[] bcols = new HashMap[B[0].length];
