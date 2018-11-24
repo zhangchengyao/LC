@@ -12,7 +12,7 @@ public class LC23_MergeKSortedLists {
 //        if(lists.length==0) return null;
 //        ListNode res = null;
 //        ListNode cur = null;
-//        PriorityQueue<ListNode> pq = new PriorityQueue<>(11, Comparator.comparingInt(a->a.val));
+//        PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt(a->a.val));
 //        for(ListNode node: lists){
 //            if(node!=null) pq.offer(node);
 //        }
