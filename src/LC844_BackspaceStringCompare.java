@@ -7,30 +7,22 @@ public class LC844_BackspaceStringCompare {
         while(p>=0&&q>=0){
             if(S.charAt(p)=='#') cnt1++;
             if(T.charAt(q)=='#') cnt2++;
-            if(cnt1==0){
-                if(cnt2==0){
-                    if(S.charAt(p)!=T.charAt(q)) return false;
-                    p--;
-                    q--;
-                }
-                else{
-                    if(T.charAt(q)!='#'){
-                        q--;
-                        cnt2--;
-                    }
-                    else q--;
-                }
-            }
-            else if(cnt2==0){
-                if(S.charAt(p)!='#'){
-                    p--;
-                    cnt1--;
-                }
-                else p--;
-            }
-            else{
+            if(cnt1>0 && cnt2>0){
                 if(S.charAt(p)!='#') cnt1--;
                 if(T.charAt(q)!='#') cnt2--;
+                p--;
+                q--;
+            }
+            else if(cnt1>0){
+                if(S.charAt(p)!='#') cnt1--;
+                p--;
+            }
+            else if(cnt2>0){
+                if(T.charAt(q)!='#') cnt2--;
+                q--;
+            }
+            else{
+                if(S.charAt(p)!=T.charAt(q)) return false;
                 p--;
                 q--;
             }
