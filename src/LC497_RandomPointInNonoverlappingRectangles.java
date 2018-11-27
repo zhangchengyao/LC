@@ -24,8 +24,8 @@ public class LC497_RandomPointInNonoverlappingRectangles {
             else r = mid-1;
         }
         int[] rect = rects[l];
-        int x = rect[2]==rect[0]?0:rand.nextInt(rect[2]-rect[0]+1);
-        int y = rect[3]==rect[1]?0:rand.nextInt(rect[3]-rect[1]+1);
+        int x = rand.nextInt(rect[2]-rect[0]+1);
+        int y = rand.nextInt(rect[3]-rect[1]+1);
         return new int[]{rect[0]+x, rect[1]+y};
     }
 }
