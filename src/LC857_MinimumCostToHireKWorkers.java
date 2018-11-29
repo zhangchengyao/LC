@@ -17,7 +17,7 @@ public class LC857_MinimumCostToHireKWorkers {
         Worker[] workers = new Worker[quality.length];
         for(int i=0;i<workers.length;i++) workers[i] = new Worker(quality[i], wage[i]);
         Arrays.sort(workers, (a, b) -> Double.compare(b.ratio, a.ratio));
-        PriorityQueue<Worker> maxHeap = new PriorityQueue<>(11, (a, b) -> b.Q-a.Q);
+        PriorityQueue<Worker> maxHeap = new PriorityQueue<>((a, b) -> b.Q-a.Q);
         double res = Double.MAX_VALUE;
         double sum = 0.0;
         for(int i=0;i<workers.length;i++){
@@ -26,22 +26,6 @@ public class LC857_MinimumCostToHireKWorkers {
             if(maxHeap.size()>K) sum -= maxHeap.poll().Q;
             if(maxHeap.size()==K) res = Math.min(res, sum/workers[i].ratio);
         }
-        // for(int i=0;i<K-1;i++) maxHeap.offer(workers[i]);
-        // for(int i=K-1;i<workers.length;i++){
-        //     double ratio = workers[i].ratio;
-        //     double sum = workers[i].W*1.0;
-        //     ArrayList<Worker> list = new ArrayList<>();
-        //     while(!maxHeap.isEmpty()){
-        //         sum += maxHeap.peek().Q/ratio;
-        //         list.add(maxHeap.poll());
-        //     }
-        //     res = Math.min(res, sum);
-        //     for(Worker w: list) maxHeap.offer(w);
-        //     if(!maxHeap.isEmpty() && workers[i].Q<maxHeap.peek().Q){
-        //         maxHeap.poll();
-        //         maxHeap.offer(workers[i]);
-        //     }
-        // }
         return res;
     }
 }
