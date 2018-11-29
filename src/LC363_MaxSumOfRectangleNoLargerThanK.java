@@ -1,6 +1,40 @@
-public class LC363_MaxSumOfRectangleNoLargerThanK {
-    // todo
+import java.util.Arrays;
+import java.util.TreeSet;
 
+public class LC363_MaxSumOfRectangleNoLargerThanK {
+    // faster solution
+//    public int maxSumSubmatrix(int[][] matrix, int k) {
+//        int m = matrix.length;
+//        int n = matrix[0].length;
+//        int[] arr = new int[m];
+//        int max = Integer.MIN_VALUE;
+//        for(int i=0;i<n;i++){
+//            Arrays.fill(arr, 0);
+//            for(int j=i;j<n;j++){
+//                for(int r=0;r<m;r++){
+//                    arr[r] += matrix[r][j];
+//                }
+//                int cur = maxSum(arr, k);
+//                if(cur>max) max = cur;
+//            }
+//        }
+//        return max;
+//    }
+//    private int maxSum(int[] arr, int k){
+//        int cum = 0;
+//        int max = Integer.MIN_VALUE;
+//        TreeSet<Integer> set = new TreeSet<>();
+//        set.add(0);
+//        for(int i=0;i<arr.length;i++){
+//            cum += arr[i];
+//            Integer cur = set.ceiling(cum-k);
+//            if(cur!=null){
+//                if(cum-cur>max) max = cum-cur;
+//            }
+//            set.add(cum);
+//        }
+//        return max;
+//    }
     public int maxSumSubmatrix(int[][] matrix, int k) {
         int m = matrix.length;
         int n = matrix[0].length;

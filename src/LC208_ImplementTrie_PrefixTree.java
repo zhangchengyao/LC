@@ -2,10 +2,10 @@ class LC208_ImplementTrie_PrefixTree {
 
     class Node{
         char val;
-        boolean isWord;
+        String word;
         Node[] children;
         Node(){
-            isWord = false;
+            word = null;
             children = new Node[26];
         }
     }
@@ -27,7 +27,7 @@ class LC208_ImplementTrie_PrefixTree {
             }
             cur = cur.children[word.charAt(i)-'a'];
         }
-        cur.isWord = true;
+        cur.word = word;
     }
 
     /** Returns if the word is in the trie. */
@@ -38,7 +38,7 @@ class LC208_ImplementTrie_PrefixTree {
             cur = cur.children[word.charAt(i)-'a'];
             i++;
         }
-        return i == word.length() && cur.isWord;
+        return i == word.length() && cur.word != null;
     }
 
     /** Returns if there is any word in the trie that starts with the given prefix. */

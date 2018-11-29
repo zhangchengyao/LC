@@ -1,11 +1,11 @@
 public class LC427_ConstructQuadTree {
     class Node {
-        public boolean val;
-        public boolean isLeaf;
-        public Node topLeft;
-        public Node topRight;
-        public Node bottomLeft;
-        public Node bottomRight;
+        boolean val;
+        boolean isLeaf;
+        Node topLeft;
+        Node topRight;
+        Node bottomLeft;
+        Node bottomRight;
 
         public Node() {}
 
