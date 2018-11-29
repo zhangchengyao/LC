@@ -7,7 +7,7 @@ public class LC282_ExpressionAddOperators {
         dfs(num, target, 0, 0, "", res);
         return res;
     }
-    private void dfs(String num, long target, long curNum, long last, String tmp, List<String> res){
+    private void dfs(String num, int target, long curNum, long last, String tmp, List<String> res){
         if(num.equals("") && target==curNum) res.add(tmp);
         for(int i=0;i<num.length();i++){
             long val = Long.parseLong(num.substring(0, i+1));
