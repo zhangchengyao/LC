@@ -4,13 +4,15 @@ public class LC300_LongestIncreasingSubsequence {
     // binary search O(nlogn)
 //    public int lengthOfLIS(int[] nums) {
 //        if(nums.length<=1) return nums.length;
-//        int[] tail = new int[nums.length];
+//        // tail[i] denotes the last element of length-i subsequence
+//        int[] tail = new int[nums.length+1];
 //        Arrays.fill(tail, Integer.MAX_VALUE);
+//        tail[0] = Integer.MIN_VALUE;
+//        tail[1] = nums[0];
 //        int len = 1;
-//        tail[0] = nums[0];
 //        for(int i=1;i<nums.length;i++){
-//            if(nums[i]>tail[len-1]){
-//                tail[len++] = nums[i];
+//            if(nums[i]>tail[len]){
+//                tail[++len] = nums[i];
 //            }
 //            else{
 //                int idx = Arrays.binarySearch(tail, nums[i]);
