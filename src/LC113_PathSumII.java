@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC_113_PathSumII {
+public class LC113_PathSumII {
     class TreeNode {
         int val;
         TreeNode left;
