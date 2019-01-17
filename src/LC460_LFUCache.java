@@ -25,7 +25,6 @@ public class LC460_LFUCache {
 
     private int capacity;
     private Node head;
-    private Node tail;
     private HashMap<Integer, Entry> keyToEntry;
     private HashMap<Entry, Node> entryToNode;
     private HashMap<Integer, Node> freqToNode;
@@ -117,7 +116,6 @@ public class LC460_LFUCache {
     private void insertFirst(Node node){
         if(head==null){
             head = node;
-            tail = node;
         } else {
             node.next = head;
             head.prev = node;
@@ -129,8 +127,6 @@ public class LC460_LFUCache {
         newNode.prev = original;
         if(original.next!=null){
             original.next.prev = newNode;
-        } else {
-            tail = newNode;
         }
         original.next = newNode;
     }
@@ -142,13 +138,10 @@ public class LC460_LFUCache {
                 head = head.next;
             } else {
                 head = null;
-                tail = null;
             }
         } else {
             node.prev.next = node.next;
-            if(node.next==null){
-                tail = node.prev;
-            } else {
+            if(node.next!=null){
                 node.next.prev = node.prev;
             }
         }
