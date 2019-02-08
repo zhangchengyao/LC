@@ -1,32 +1,43 @@
 public class LC394_DecodeString {
     public String decodeString(String s) {
-        int cnt = 0;
-        boolean hasBracket = false;
-        int l = 0;
-        int r = 0;
-        StringBuilder res = new StringBuilder();
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)=='['){
-                if(!hasBracket){
-                    hasBracket = true;
-                    l = i;
+        if(s == null || s.length() == 0) return s;
+
+        int i = 0;
+        StringBuilder sb = new StringBuilder();
+        StringBuilder number = new StringBuilder();
+        while(i < s.length()){
+            if(s.charAt(i) == '['){
+                int end = indexOfCloseBracket(s, i);
+                String sub = decodeString(s.substring(i + 1, end));
+
+                int repeat = Integer.parseInt(number.toString());
+                for(int k = 0; k < repeat; k++){
+                    sb.append(sub);
                 }
-                cnt++;
-            }else if(s.charAt(i)==']'){
-                cnt--;
-                if(cnt==0){
-                    r = i;
-                    int k = l-1;
-                    while(k>=0 && s.charAt(k)>='0' && s.charAt(k)<='9') k--;
-                    int repeat = Integer.parseInt(s.substring(k+1, l));
-                    String str = decodeString(s.substring(l+1, r));
-                    for(int j=0;j<repeat;j++){
-                        res.append(str);
-                    }
-                    hasBracket = false;
-                }
-            }else if(!(s.charAt(i)>='0' && s.charAt(i)<='9') && !hasBracket) res.append(s.charAt(i));
+
+                i = end + 1;
+                number = new StringBuilder();
+            } else if(Character.isLetter(s.charAt(i))){
+                sb.append(s.charAt(i));
+                i++;
+            } else {
+                number.append(s.charAt(i));
+                i++;
+            }
         }
-        return res.toString();
+
+        return sb.toString();
+    }
+
+    private int indexOfCloseBracket(String s, int i){
+        int cnt = 0;
+        while(i < s.length()){
+            if(s.charAt(i) == '[') cnt++;
+            else if(s.charAt(i) == ']') cnt--;
+
+            if(cnt == 0) break;
+            i ++;
+        }
+        return i;
     }
 }
