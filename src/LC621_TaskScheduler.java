@@ -8,11 +8,7 @@ public class LC621_TaskScheduler {
         for(int i=0;i<tasks.length;i++){
             num[tasks[i]-'A']++;
         }
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(6, new Comparator<Integer>(){
-            public int compare(Integer a, Integer b){
-                return b.compareTo(a);
-            }
-        });
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
         for(int i=0;i<num.length;i++){
             if(num[i]!=0) maxHeap.offer(num[i]);
         }

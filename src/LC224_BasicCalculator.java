@@ -35,36 +35,80 @@ public class LC224_BasicCalculator {
         else return a-b;
     }
     // recusion slow
+//    class Term{
+//        char operator;
+//        int val;
+//        Term(char o, int v){
+//            operator = o;
+//            val = v;
+//        }
+//    }
+//
 //    public int calculate(String s) {
-//        s = s.trim();
-//        int idx = s.indexOf('(');
-//        if(idx<0){
-//            int res = 0;
-//            int l = 0;
-//            while(l<s.length()){
-//                int r = l+1;
-//                while(r<s.length() && s.charAt(r)!='+' && s.charAt(r)!='-') r++;
-//                if(l==0 || s.charAt(l-1)=='+') res += Integer.parseInt(s.substring(l, r).trim());
-//                else res -= Integer.parseInt(s.substring(l, r).trim());
-//                l = r+1;
-//            }
-//            return res;
+//        s = s.replace(" ", "");
+//        return cal(s);
+//    }
+//
+//    private int cal(String s){
+//        int i = 0;
+//        int j = i;
+//        Term res = null;
+//        Term cur = null;
+//        if(s.charAt(i) == '('){
+//            j = getCloseParen(s, i);
+//            int val = cal(s.substring(i + 1, j));
+//            res = new Term('+', val);
+//        } else {
+//            j++;
+//            while(j < s.length() && Character.isDigit(s.charAt(j))) j++;
+//            res = new Term('+', Integer.parseInt(s.substring(i, j)));
 //        }
-//        else{
-//            int cnt = 0;
-//            int idxClose = 0;
-//            for(int i=idx;i<s.length();i++){
-//                if(s.charAt(i)=='(') cnt++;
-//                else if(s.charAt(i)==')') cnt--;
-//                if(cnt==0){
-//                    idxClose = i;
-//                    break;
-//                }
+//
+//        i = j;
+//        while(i < s.length()){
+//            if(s.charAt(i) == ')'){
+//                i++;
+//                continue;
 //            }
-//            StringBuilder sb = new StringBuilder(s);
-//            sb.delete(idx, idxClose+1);
-//            sb.insert(idx, calculate(s.substring(idx+1, idxClose)));
-//            return calculate(sb.toString());
+//            char ope = s.charAt(i);
+//            j = i + 1;
+//            if(s.charAt(j) == '('){
+//                j = getCloseParen(s, j);
+//                cur = new Term(ope, cal(s.substring(i + 2, j)));
+//            } else {
+//                while(j < s.length() && Character.isDigit(s.charAt(j))) j++;
+//                cur = new Term(ope, Integer.parseInt(s.substring(i + 1, j)));
+//            }
+//
+//            res = collapse(res, cur);
+//
+//            i = j;
 //        }
+//
+//        return res.val;
+//    }
+//
+//    private int getCloseParen(String s, int i){
+//        int cnt = 1;
+//        i++;
+//        while(i < s.length() && cnt != 0){
+//            if(s.charAt(i) == '(') cnt++;
+//            else if(s.charAt(i) == ')') cnt--;
+//
+//            i++;
+//        }
+//        return i;
+//    }
+//
+//    private Term collapse(Term a, Term b){
+//        char ope = b.operator;
+//        int val = 0;
+//        if(ope == '+'){
+//            val = a.val + b.val;
+//        } else if(ope == '-'){
+//            val = a.val - b.val;
+//        }
+//
+//        return new Term('+', val);
 //    }
 }
