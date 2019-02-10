@@ -7,18 +7,9 @@ public class LC112_PathSum {
     }
 
     public boolean hasPathSum(TreeNode root, int sum) {
-        return dfs(root, 0, sum);
-    }
+        if(root == null) return false;
+        if(root.left == null && root.right == null) return root.val == sum;
 
-    private boolean dfs(TreeNode root, int curSum, int target){
-        if(root==null) return false;
-
-        curSum += root.val;
-
-        if(root.left==null && root.right==null){
-            return curSum == target;
-        }
-
-        return dfs(root.left, curSum, target) || dfs(root.right, curSum, target);
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }
