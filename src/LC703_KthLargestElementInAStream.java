@@ -6,8 +6,11 @@ public class LC703_KthLargestElementInAStream {
     public LC703_KthLargestElementInAStream(int k, int[] nums) {
         data = new PriorityQueue<>();
         this.k = k;
-        for(int i=0;i<nums.length;i++){
-            add(nums[i]);
+        for(int num: nums){
+            data.offer(num);
+            if(data.size() > k){
+                data.poll();
+            }
         }
     }
 
