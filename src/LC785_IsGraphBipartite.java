@@ -18,8 +18,6 @@ public class LC785_IsGraphBipartite {
     }
 
     private boolean bfs(int[][] graph, int start, HashSet<Integer> a, HashSet<Integer> b){
-        int n = graph.length;
-
         a.add(start);
         Queue<Integer> q = new LinkedList<>();
         q.offer(start);
