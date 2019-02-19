@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class LC146_LRUCache {
     class Entry{
@@ -11,33 +12,25 @@ public class LC146_LRUCache {
             this.val = val;
         }
     }
-    HashMap<Integer, Entry> map;
-    Entry head;
-    Entry tail;
-    int cap;
+    private HashMap<Integer, Entry> map;
+    private Entry head;
+    private Entry tail;
+    private int capacity;
     public LC146_LRUCache(int capacity) {
         map = new HashMap<>();
         head = null;
         tail = null;
-        cap = capacity;
+        this.capacity = capacity;
     }
 
     public int get(int key) {
         Entry cur = map.get(key);
-        if(cur==null) return -1;
+        if(cur == null) return -1;
+
         // update linkedlist
-        if(cur!=head){
-            if(cur==tail){
-                cur.prev.next = null;
-                tail = cur.prev;
-            }else{
-                cur.prev.next = cur.next;
-                cur.next.prev = cur.prev;
-            }
-            cur.next = head;
-            cur.prev = null;
-            head.prev = cur;
-            head = cur;
+        if(cur != head){
+            removeEntry(cur);
+            addFirst(cur);
         }
         return cur.val;
     }
@@ -45,37 +38,74 @@ public class LC146_LRUCache {
     public void put(int key, int value) {
         if(map.containsKey(key)){
             Entry cur = map.get(key);
-            if(cur!=head){
-                if(cur==tail){
-                    cur.prev.next = null;
-                    tail = cur.prev;
-                }else{
-                    cur.prev.next = cur.next;
-                    cur.next.prev = cur.prev;
-                }
-                cur.next = head;
-                cur.prev = null;
-                head.prev = cur;
-                head = cur;
+            if(cur != head){
+                removeEntry(cur);
+                addFirst(cur);
             }
             cur.val = value;
-        }else{
+        } else {
             Entry e = new Entry(key, value);
-            if(head==null){
-                head = e;
-                tail = e;
-            }
-            else{
-                e.next = head;
-                head.prev = e;
-                head = e;
-            }
-            if(map.size()==cap){
-                tail.prev.next = null;
+            addFirst(e);
+
+            if(map.size() == capacity){
                 map.remove(tail.key);
-                tail = tail.prev;
+                removeEntry(tail);
             }
+
             map.put(key, e);
         }
     }
+
+    private void removeEntry(Entry e){
+        if(e == head){
+            head = null;
+            tail = null;
+            return;
+        }
+
+        e.prev.next = e.next;
+        if(e != tail){
+            e.next.prev = e.prev;
+        } else {
+            tail = e.prev;
+        }
+    }
+
+    private void addFirst(Entry e){
+        e.next = head;
+        e.prev = null;
+
+        if(head == null){
+            head = e;
+            tail = e;
+        } else {
+            head.prev = e;
+            head = e;
+        }
+    }
+
+    // use LinkedHashMap
+//    LinkedHashMap<Integer, Integer> lmap;
+//    int capacity;
+//
+//    public LRUCache(int capacity) {
+//        lmap = new LinkedHashMap<>(capacity, 0.75f, true);
+//        this.capacity = capacity;
+//    }
+//
+//    public int get(int key) {
+//        if(!lmap.containsKey(key)){
+//            return -1;
+//        }
+//
+//        return lmap.get(key);
+//    }
+//
+//    public void put(int key, int value) {
+//        lmap.put(key, value);
+//        if(lmap.size() > capacity){
+//            int oldest = lmap.keySet().iterator().next();
+//            lmap.remove(oldest);
+//        }
+//    }
 }
