@@ -37,15 +37,15 @@ public class LC347_TopKFrequentElements {
 //            count.put(num, count.getOrDefault(num, 0) + 1);
 //        }
 //
-//        PriorityQueue<Integer> minHeap = new PriorityQueue<>((x, y) -> count.get(x) - count.get(y));
+//        PriorityQueue<Integer> MinHeap = new PriorityQueue<>((x, y) -> count.get(x) - count.get(y));
 //
 //        for(int key: count.keySet()){
-//            minHeap.offer(key);
-//            if(minHeap.size() > k){
-//                minHeap.poll();
+//            MinHeap.offer(key);
+//            if(MinHeap.size() > k){
+//                MinHeap.poll();
 //            }
 //        }
 //
-//        return new ArrayList<>(minHeap);
+//        return new ArrayList<>(MinHeap);
 //    }
 }

@@ -30,7 +30,7 @@ public class LC295_FindMedianFromDataStream {
                     maxHeap.offer(num);
                 }
             }else{
-                // insert into minHeap;
+                // insert into MinHeap;
                 int max = maxHeap.peek();
                 if(num<max){
                     minHeap.offer(maxHeap.poll());
