@@ -15,8 +15,7 @@ public class LC403_FrogJump {
         if(pos>lastStone || k==0 || !set.contains(pos)) return false;
         String str = pos+" "+k;
         if(map.containsKey(str)) return map.get(str);
-        boolean res = false;
-        res = check(lastStone, pos+k-1, k-1) || check(lastStone, pos+k, k) || check(lastStone, pos+k+1, k+1);
+        boolean res = check(lastStone, pos+k-1, k-1) || check(lastStone, pos+k, k) || check(lastStone, pos+k+1, k+1);
         map.put(str, res);
         return res;
     }
