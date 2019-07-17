@@ -10,18 +10,18 @@ public class LC254_FactorCombinations {
         return res;
     }
     private void getRec(int n, int factor, List<List<Integer>> res, List<Integer> tmp){
-        if(n==1){
+        if(n == 1){
             if(!tmp.isEmpty()) res.add(new ArrayList<>(tmp));
             return ;
         }
-        for(int i=factor;i<=Math.sqrt(n);i++){
-            if(n%i==0){
+        for(int i = factor; i <= Math.sqrt(n); i++){
+            if(n % i == 0){
                 tmp.add(i);
                 tmp.add(n/i);
                 res.add(new ArrayList<>(tmp));
-                tmp.remove(tmp.size()-1);
+                tmp.remove(tmp.size() - 1);
                 getRec(n/i, i, res, tmp);
-                tmp.remove(tmp.size()-1);
+                tmp.remove(tmp.size() - 1);
             }
         }
     }
