@@ -5,16 +5,19 @@ public class LC298_BinaryTreeLongestConsecutiveSequence {
         TreeNode right;
         TreeNode(int x){ val = x; }
     }
-    int max = Integer.MIN_VALUE;
+    private int max = Integer.MIN_VALUE;
+
     public int longestConsecutive(TreeNode root) {
+        if(root == null) return 0;
+
         find(root, null, 0);
         return max;
     }
     private void find(TreeNode root, TreeNode parent, int cur){
-        if(parent==null || root.val-parent.val!=1) cur = 1;
+        if(parent == null || root.val - parent.val != 1) cur = 1;
         else cur++;
         max = Math.max(cur, max);
-        if(root.left!=null) find(root.left, root, cur);
-        if(root.right!=null) find(root.right, root, cur);
+        if(root.left != null) find(root.left, root, cur);
+        if(root.right != null) find(root.right, root, cur);
     }
 }
