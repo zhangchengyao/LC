@@ -2,24 +2,21 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class LC288_UniqueWordAbbreviation {
-    HashMap<String, HashSet<String>> map;
+    private HashMap<String, String> map;
+
     public LC288_UniqueWordAbbreviation(String[] dictionary) {
         map = new HashMap<>();
-        for(String dict: dictionary){
-            if(dict.length()>=3){
-                String abbre = dict.charAt(0)+""+(dict.length()-2)+dict.charAt(dict.length()-1);
-                HashSet<String> set = map.getOrDefault(abbre, new HashSet<>());
-                set.add(dict);
-                map.put(abbre, set);
-            }
+        for(String word: dictionary) {
+            String abbr = word.length() > 2 ? word.charAt(0) + Integer.toString(word.length() - 2) + word.charAt(word.length() - 1) : word;
+            if(map.get(abbr) != null && !map.get(abbr).equals(word)) map.put(abbr, "*");
+            else map.put(abbr, word);
         }
     }
 
     public boolean isUnique(String word) {
-        if(word.length()<3) return true;
-        else{
-            String abbre = word.charAt(0)+""+(word.length()-2)+word.charAt(word.length()-1);
-            return !map.containsKey(abbre) || (map.get(abbre).size()==1 && map.get(abbre).contains(word));
-        }
+        String abbr = word.length() > 2 ? word.charAt(0) + Integer.toString(word.length() - 2) + word.charAt(word.length() - 1) : word;
+
+        if(!map.containsKey(abbr) || map.get(abbr).equals(word)) return true;
+        else return false;
     }
 }
