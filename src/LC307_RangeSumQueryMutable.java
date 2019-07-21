@@ -3,27 +3,27 @@ public class LC307_RangeSumQueryMutable {
     private int[] bit;
 
     public LC307_RangeSumQueryMutable(int[] nums) {
-        this.nums = new int[nums.length+1];
-        bit = new int[nums.length+1];
-        for(int i=0;i<nums.length;i++){
+        this.nums = new int[nums.length + 1];
+        bit = new int[nums.length + 1];
+        for(int i = 0; i < nums.length; i++){
             update(i, nums[i]);
         }
     }
 
     public void update(int i, int val) {
-        int diff = val-nums[i];
-        for(int k=i+1;k<bit.length;k+=(k&-k)){
+        int diff = val - nums[i];
+        for(int k = i + 1; k < bit.length; k += (k & -k)){
             bit[k] += diff;
         }
         nums[i] = val;
     }
 
     public int sumRange(int i, int j) {
-        return getSum(j+1)-getSum(i);
+        return getSum(j+1) - getSum(i);
     }
     private int getSum(int i){
         int res = 0;
-        for(int k=i;k>0;k-=(k&-k)){
+        for(int k = i; k > 0; k -= (k & -k)){
             res += bit[k];
         }
         return res;
