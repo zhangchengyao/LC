@@ -7,54 +7,54 @@ public class LC333_LargestBSTSubtree {
     }
 
     class Result{
-        TreeNode root;
-        int min;
-        int max;
-        int num;
-        Result(TreeNode _root, int _min, int _max, int _num){
-            root = _root;
-            min = _min;
-            max = _max;
-            num = _num;
+        boolean isBST;
+        int size;
+        int maxVal;
+        int minVal;
+        Result(boolean isBST, int size, int maxVal, int minVal) {
+            this.isBST = isBST;
+            this.size = size;
+            this.maxVal = maxVal;
+            this.minVal = minVal;
         }
     }
-    private Result best = null;
+
+    private int largest = 0;
+
     public int largestBSTSubtree(TreeNode root) {
         if(root == null) return 0;
-
-        helper(root);
-        return best.num;
+        checkBST(root);
+        return largest;
     }
 
-    private Result helper(TreeNode root){
-        if(root == null) return null;
+    private Result checkBST(TreeNode root) {
+        Result left = null;
+        Result right = null;
+        if(root.left != null) {
+            left = checkBST(root.left);
+        }
+        if(root.right != null) {
+            right = checkBST(root.right);
+        }
 
-        Result leftRes = helper(root.left);
-        Result rightRes = helper(root.right);
+        int min = root.val;
+        int max = root.val;
+        if(left != null) {
+            min = Math.min(left.minVal, min);
+            max = Math.max(left.maxVal, max);
+        }
+        if(right != null) {
+            min = Math.min(right.minVal, min);
+            max = Math.max(right.maxVal, max);
+        }
 
-        Result res = null;
-        if(leftRes == null && rightRes == null){
-            if(root.left == null && root.right == null){
-                res = new Result(root, root.val, root.val, 1);
-            }
-        } else if(leftRes == null){
-            if(root.left == null && root.val < rightRes.min){
-                res = new Result(root, root.val, rightRes.max, rightRes.num + 1);
-            }
-        } else if(rightRes == null){
-            if(root.right == null && root.val > leftRes.max){
-                res = new Result(root, leftRes.min, root.val, leftRes.num + 1);
-            }
+        if((left == null || (left.isBST && left.maxVal < root.val)) &&
+                (right ==null || (right.isBST && right.minVal > root.val))) {
+            int size = (left == null ? 0 : left.size) + (right == null ? 0 : right.size) + 1;
+            if(size > largest) largest = size;
+            return new Result(true, size, max, min);
         } else {
-            if(root.val > leftRes.max && root.val < rightRes.min){
-                res = new Result(root, leftRes.min, rightRes.max, leftRes.num + rightRes.num + 1);
-            }
+            return new Result(false, -1, max, min);
         }
-
-        if(res != null && (best == null || res.num > best.num)){
-            best = res;
-        }
-
-        return res;
     }
 }
