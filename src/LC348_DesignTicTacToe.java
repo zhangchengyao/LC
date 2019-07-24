@@ -21,19 +21,19 @@ public class LC348_DesignTicTacToe {
      2: Player 2 wins. */
     public int move(int row, int col, int player) {
         int n = rows.length;
-        if(player==1){
+        if(player == 1){
             rows[row]++;
             cols[col]++;
-            if(row==col) diag++;
-            if(row+col==n-1) antiDiag++;
+            if(row == col) diag++;
+            if(row + col == n-1) antiDiag++;
         }else{
             rows[row]--;
             cols[col]--;
-            if(row==col) diag--;
-            if(row+col==n-1) antiDiag--;
+            if(row == col) diag--;
+            if(row + col == n-1) antiDiag--;
         }
-        if(rows[row]==n || cols[col]==n || diag==n || antiDiag==n) return 1;
-        else if(rows[row]==-n || cols[col]==-n || diag==-n || antiDiag==-n) return 2;
+        if(rows[row] == n || cols[col] == n || diag == n || antiDiag == n) return 1;
+        else if(rows[row] == -n || cols[col] == -n || diag == -n || antiDiag == -n) return 2;
         else return 0;
     }
 }
