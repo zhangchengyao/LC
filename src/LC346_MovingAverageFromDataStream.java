@@ -2,25 +2,24 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class LC346_MovingAverageFromDataStream {
-    Queue<Integer> q;
-    int size;
-    int sum;
+
+    private Queue<Integer> q;
+    private double sum;
+    private int size;
+
     /** Initialize your data structure here. */
     public LC346_MovingAverageFromDataStream(int size) {
         q = new LinkedList<>();
-        this.size = size;
         sum = 0;
+        this.size = size;
     }
 
     public double next(int val) {
-        if(q.size()<size){
-            q.offer(val);
-            sum += val;
+        if(q.size() == size) {
+            sum -= q.poll();
         }
-        else{
-            sum += val-q.poll();
-            q.offer(val);
-        }
-        return sum/(double)q.size();
+        sum += val;
+        q.offer(val);
+        return sum / q.size();
     }
 }
