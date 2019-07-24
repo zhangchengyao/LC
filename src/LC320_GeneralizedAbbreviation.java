@@ -4,24 +4,27 @@ import java.util.List;
 
 public class LC320_GeneralizedAbbreviation {
     public List<String> generateAbbreviations(String word) {
-        HashSet<String> set = new HashSet<>();
-        if(word == null) return new ArrayList<>();
+        List<String> list = new ArrayList<>();
+        if(word == null) return list;
 
-        abbreviate(word, 0, "", set, true);
+        abbreviate(word, 0, 0, "", list);
 
-        return new ArrayList<>(set);
+        return list;
     }
 
-    private void abbreviate(String word, int start, String tmp, HashSet<String> res, boolean leadingNum) {
-        if(start == word.length()) {
+    private void abbreviate(String word, int cur, int cnt, String tmp, List<String> res) {
+        if(cur == word.length()) {
+            if(cnt > 0) tmp += cnt;
             res.add(tmp);
             return;
         }
-        for(int i = start + 1; i <= word.length(); i++) {
-            abbreviate(word, i, tmp + word.substring(start, i), res, true);
-            if(leadingNum) {
-                abbreviate(word, i, tmp + (i - start), res, false);
-            }
+        abbreviate(word, cur + 1, cnt + 1, tmp, res);
+
+        // not abbreviate
+        if(cnt > 0) {
+            abbreviate(word, cur + 1, 0, tmp + cnt + word.charAt(cur), res);
+        } else {
+            abbreviate(word, cur + 1, 0, tmp + word.charAt(cur), res);
         }
     }
 }
