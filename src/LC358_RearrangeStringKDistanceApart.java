@@ -2,34 +2,36 @@ import java.util.*;
 
 public class LC358_RearrangeStringKDistanceApart {
     public String rearrangeString(String s, int k) {
-        if(k==0 || k==1) return s;
-        HashMap<Character, Integer> map = new HashMap<>();
-        for(int i=0;i<s.length();i++){
-            char c = s.charAt(i);
-            map.put(c, map.getOrDefault(c, 0)+1);
+        if(k == 0 || k == 1) return s;
+
+        int[] count = new int[26];
+        for(char c: s.toCharArray()) {
+            count[c - 'a']++;
         }
-        PriorityQueue<Map.Entry<Character, Integer>> pq = new PriorityQueue<>(11, new Comparator<Map.Entry<Character, Integer>>(){
-            public int compare(Map.Entry<Character, Integer> a, Map.Entry<Character, Integer> b){
-                return a.getValue().equals(b.getValue())?a.getKey()-b.getKey():b.getValue()-a.getValue();
+
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] == b[1] ? a[0] - b[0] : b[1] - a[1]);
+        for(int i = 0; i < count.length; i++) {
+            if(count[i] > 0){
+                pq.offer(new int[]{i, count[i]});
             }
-        });
-        for(Map.Entry<Character, Integer> entry: map.entrySet()) pq.offer(entry);
+        }
+
         StringBuilder sb = new StringBuilder();
-        while(!pq.isEmpty()){
-            int cnt = 0;
-            ArrayList<Map.Entry<Character, Integer>> tmp = new ArrayList<>();
-            for(;cnt<k;cnt++){
-                if(pq.isEmpty()){
-                    if(!tmp.isEmpty()) return "";
-                    else break;
-                }
-                Map.Entry<Character, Integer> entry = pq.poll();
-                entry.setValue(entry.getValue()-1);
-                if(entry.getValue()>0) tmp.add(entry);
-                sb.append(entry.getKey());
+        while(!pq.isEmpty()) {
+            List<int[]> tmp = new ArrayList<>();
+            int cnt =  Math.min(k, pq.size());
+            for(int i = 0; i < cnt; i++) {
+                int[] pair = pq.poll();
+                pair[1]--;
+                if(pair[1] > 0) tmp.add(pair);
+                sb.append((char)('a' + pair[0]));
             }
-            for(Map.Entry<Character, Integer> entry: tmp) pq.offer(entry);
+            if(cnt < k && !tmp.isEmpty()) return "";
+            for(int[] pair: tmp) {
+                pq.offer(pair);
+            }
         }
+
         return sb.toString();
     }
 }
