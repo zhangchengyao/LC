@@ -1,6 +1,6 @@
 public class LC362_DesignHitCounter {
-    int[] time;
-    int[] hits;
+    private int[] time;
+    private int[] hits;
     /** Initialize your data structure here. */
     public LC362_DesignHitCounter() {
         time = new int[300];
@@ -11,7 +11,7 @@ public class LC362_DesignHitCounter {
      @param timestamp - The current timestamp (in seconds granularity). */
     public void hit(int timestamp) {
         int index = timestamp%300;
-        if(time[index]==timestamp) hits[index]++;
+        if(time[index] == timestamp) hits[index]++;
         else{
             time[index] = timestamp;
             hits[index] = 1;
@@ -22,8 +22,8 @@ public class LC362_DesignHitCounter {
      @param timestamp - The current timestamp (in seconds granularity). */
     public int getHits(int timestamp) {
         int res = 0;
-        for(int i=0;i<300;i++){
-            if(time[i]>timestamp-300) res += hits[i];
+        for(int i = 0; i < 300; i++){
+            if(time[i] > timestamp - 300) res += hits[i];
         }
         return res;
     }
