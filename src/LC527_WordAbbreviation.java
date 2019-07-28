@@ -1,35 +1,38 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class LC527_WordAbbreviation {
-    public String[] wordsAbbreviation(String[] dict) {
-        ArrayList<String> arr = new ArrayList<>();
-        Collections.addAll(arr, dict);
-        String[] res = new String[dict.length];
-        HashMap<String, String> map = new HashMap<>();
+    public List<String> wordsAbbreviation(List<String> dict) {
+        List<String> res = new ArrayList<>();
+        if(dict == null || dict.isEmpty()) return res;
+
+        HashMap<String, String> abbr2word = new HashMap<>();
+        HashMap<String, String> word2abbr = new HashMap<>();
         boolean finish = false;
-        int size = 1;
-        while(!finish){
+        int prefixLen = 1;
+        while(!finish) {
             finish = true;
-            for(int i=0;i<dict.length;i++){
-                if(res[i]!=null) continue;
-                String abb = getAbbr(dict[i], size);
-                if(map.containsKey(abb)){
-                    int index = arr.indexOf(map.get(abb));
-                    res[index] = null;
+            for(String word: dict) {
+                if(word.length() < 4 || word2abbr.containsKey(word) || prefixLen >= word.length() - 2) continue;
+
+                String abbr = word.substring(0, prefixLen) + (word.length() - prefixLen - 1) + word.charAt(word.length() - 1);
+                if(abbr2word.containsKey(abbr)) {
                     finish = false;
-                }else{
-                    map.put(abb, dict[i]);
-                    res[i] = abb;
+                    word2abbr.remove(abbr2word.get(abbr));
+                } else {
+                    abbr2word.put(abbr, word);
+                    word2abbr.put(word, abbr);
                 }
             }
-            size++;
+            prefixLen++;
         }
+
+        for(String word: dict) {
+            res.add(word2abbr.getOrDefault(word, word));
+        }
+
         return res;
-    }
-    private String getAbbr(String str, int size){
-        if(size>=str.length()-2) return str;
-        return str.substring(0, size)+(str.length()-size-1)+str.charAt(str.length()-1);
     }
 }
