@@ -17,5 +17,4 @@ public class Test {
 //        System.out.println(e.length);
     }
     // 792， 72
-    // premium: 360，291
 }
