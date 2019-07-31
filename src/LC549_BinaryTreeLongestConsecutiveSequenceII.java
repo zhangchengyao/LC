@@ -5,27 +5,40 @@ public class LC549_BinaryTreeLongestConsecutiveSequenceII {
         TreeNode right;
         TreeNode(int x){ val = x; }
     }
-    int max = Integer.MIN_VALUE;
-    public int longestConsecutive2(TreeNode root) {
-        find(root);
-        return max;
+    class Result {
+        int inc;
+        int desc;
 
+        Result(int _inc, int _desc) {
+            inc = _inc;
+            desc = _desc;
+        }
     }
-    private int[] find(TreeNode root){
-        if(root==null) return null;
-        int[] l = find(root.left);
-        int[] r = find(root.right);
-        int asc = 1;
+
+    private int longest = 0;
+
+    public int longestConsecutive(TreeNode root) {
+        helper(root);
+        return longest;
+    }
+
+    private Result helper(TreeNode root) {
+        if(root == null) return null;
+
+        Result left = helper(root.left);
+        Result right = helper(root.right);
+        int inc = 1;
         int desc = 1;
-        if(l!=null){
-            if(root.val-root.left.val==-1) asc = Math.max(asc, l[0]+1);
-            if(root.val-root.left.val==1) desc = Math.max(desc, l[1]+1);
+        if(left != null) {
+            if(root.val == root.left.val + 1) desc += left.desc;
+            else if(root.val == root.left.val - 1) inc += left.inc;
         }
-        if(r!=null){
-            if(root.val-root.right.val==-1) asc = Math.max(asc, r[0]+1);
-            if(root.val-root.right.val==1) desc = Math.max(desc, r[1]+1);
+        if(right != null) {
+            if(root.val == root.right.val + 1) desc = Math.max(desc, 1 + right.desc);
+            else if(root.val == root.right.val - 1) inc = Math.max(inc, 1 + right.inc);
         }
-        max = Math.max(max, asc+desc-1);
-        return new int[]{asc, desc};
+
+        longest = Math.max(longest, inc + desc - 1);
+        return new Result(inc, desc);
     }
 }
