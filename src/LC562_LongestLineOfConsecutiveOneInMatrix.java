@@ -1,45 +1,41 @@
 public class LC562_LongestLineOfConsecutiveOneInMatrix {
     public int longestLine(int[][] M) {
-        if(M==null || M.length==0) return 0;
-        int res = Integer.MIN_VALUE;
-        for(int i=0;i<M.length;i++){
-            for(int j=0;j<M[0].length;j++){
-                if(M[i][j]==1){
-                    if(j==0||M[i][j-1]!=1){
-                        // go horizontal
-                        int k = j;
-                        while(k<M[0].length && M[i][k]==1) k++;
-                        res = Math.max(res, k-j);
+        if(M == null || M.length == 0) return 0;
+
+        int m = M.length;
+        int n = M[0].length;
+        int longest = 0;
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                if(M[i][j] == 1) {
+                    // check horizontal
+                    if(j == 0 || M[i][j - 1] == 0) {
+                        int k = j + 1;
+                        while(k < n && M[i][k] == 1) k++;
+                        longest = Math.max(longest, k - j);
                     }
-                    if(i==0||M[i-1][j]!=1){
-                        //go vertical
-                        int k = i+1;
-                        while(k<M.length && M[k][j]==1) k++;
-                        res = Math.max(res, k-i);
+                    // check vertical
+                    if(i == 0 || M[i - 1][j] == 0) {
+                        int k = i + 1;
+                        while(k < m && M[k][j] == 1) k++;
+                        longest = Math.max(longest, k - i);
                     }
-                    if(i==0||j==0||M[i-1][j-1]!=1){
-                        // go diagonal
-                        int k = i+1;
-                        int t = j+1;
-                        while(k<M.length && t<M[0].length && M[k][t]==1){
-                            k++;
-                            t++;
-                        }
-                        res = Math.max(res, k-i);
+                    // check diagonal
+                    if(i == 0 || j == 0 || M[i - 1][j - 1] == 0) {
+                        int len = 1;
+                        while(i + len < m && j + len < n && M[i + len][j + len] == 1) len++;
+                        longest = Math.max(longest, len);
                     }
-                    if(i==0||j==M[0].length-1||M[i-1][j+1]!=1){
-                        // go anti-diagonal
-                        int k = i+1;
-                        int t = j-1;
-                        while(k<M.length && t>=0 && M[k][t]==1){
-                            k++;
-                            t--;
-                        }
-                        res = Math.max(res, k-i);
+                    // check anti-diagonal
+                    if(i == 0 || j == n - 1 || M[i - 1][j + 1] == 0) {
+                        int len = 1;
+                        while(i + len < m && j - len >= 0 && M[i + len][j - len] == 1) len++;
+                        longest = Math.max(longest, len);
                     }
                 }
             }
         }
-        return res==Integer.MIN_VALUE?0:res;
+
+        return longest;
     }
 }
