@@ -1,66 +1,95 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class LC499_TheMazeIII {
+    class State {
+        int r;
+        int c;
+        int dist;
+        String path;
+        State(int _r, int _c, int _dist, String _path) {
+            r = _r;
+            c = _c;
+            dist = _dist;
+            path = _path;
+        }
+    }
+
     public String findShortestWay(int[][] maze, int[] ball, int[] hole) {
-        int[][] dist = new int[maze.length][maze[0].length];
-        for(int i=0;i<dist.length;i++)
-            for(int j=0;j<dist[0].length;j++)
-                dist[i][j] = Integer.MAX_VALUE;
-        dist[ball[0]][ball[1]] = 0;
-        HashMap<String, String> map = new HashMap<>(); // pos => moves
-        int[] xMove = new int[]{-1, 1, 0, 0}; // up down left right
-        int[] yMove = new int[]{0, 0, -1, 1};
-        Queue<String> q = new LinkedList<>();
-        String cur = ball[0]+" "+ball[1];
-        q.offer(cur);
-        while(!q.isEmpty()){
-            cur = q.poll();
-            int[] coord = getCoord(cur);
-            for(int i=0;i<xMove.length;i++){
-                int x = coord[0];
-                int y = coord[1];
-                String pos = coord[0]+" "+coord[1];
-                while(x>=0 && x<maze.length && y>=0 && y<maze[0].length && maze[x][y]!=1 && !(x==hole[0] && y==hole[1])){
-                    x += xMove[i];
-                    y += yMove[i];
-                }
-                if(x==hole[0] && y==hole[1]){
-                    int d = dist[coord[0]][coord[1]] + Math.abs(x-coord[0])+Math.abs(y-coord[1]);
-                    if(dist[x][y]>=d){
-                        String move = "";
-                        if(i==0) move = map.getOrDefault(pos, "")+'u';
-                        else if(i==1) move = map.getOrDefault(pos, "")+'d';
-                        else if(i==2) move = map.getOrDefault(pos, "")+'l';
-                        else move = map.getOrDefault(pos, "")+'r';
-                        if(dist[x][y]>d || (dist[x][y]==d&&map.get(x+" "+y).compareTo(move)>0)){
-                            map.put(x+" "+y, move);
-                            dist[x][y] = d;
+        int n = maze[0].length;
+        int[][] directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        int holePos = hole[0] * n + hole[1];
+
+        HashSet<Integer> visited = new HashSet<>();
+        Queue<State> q = new LinkedList<>();
+        HashMap<Integer, Integer> shortestForState = new HashMap<>();
+
+        visited.add(ball[0] * n + ball[1]);
+        q.offer(new State(ball[0], ball[1], 0, ""));
+        shortestForState.put(ball[0] * n + ball[1], 0);
+
+        int shortest = Integer.MAX_VALUE;
+        String shortestPath = "z";
+        while(!q.isEmpty()) {
+            State cur = q.poll();
+            for(int[] dir: directions) {
+                State next = getNextState(maze, cur, dir, hole);
+                int pos = cur.r * n + cur.c;
+                int nextPos = next.r * n + next.c;
+                if(pos != nextPos && (!visited.contains(nextPos) || shortestForState.get(nextPos) >= next.dist)) {
+                    if(nextPos == holePos) {
+                        if(next.dist < shortest) {
+                            shortest = next.dist;
+                            shortestPath = next.path;
+                        } else if(next.dist == shortest) {
+                            if(shortestPath.compareTo(next.path) > 0) {
+                                shortestPath = next.path;
+                            }
                         }
+                    } else {
+                        visited.add(nextPos);
+                        q.offer(next);
+                        shortestForState.put(nextPos, next.dist);
                     }
-                    continue;
-                }
-                else if(x==coord[0] && y==coord[1]) continue;
-                else if(x==coord[0]) y -= yMove[i];
-                else x -= xMove[i];
-                int d = dist[coord[0]][coord[1]] + Math.abs(x-coord[0])+Math.abs(y-coord[1]);
-                String move;
-                if(i==0) move = map.getOrDefault(pos, "")+'u';
-                else if(i==1) move = map.getOrDefault(pos, "")+'d';
-                else if(i==2) move = map.getOrDefault(pos, "")+'l';
-                else move = map.getOrDefault(pos, "")+'r';
-                if(dist[x][y]>d || (dist[x][y]==d&&map.containsKey(x+" "+y)&&map.get(x+" "+y).compareTo(move)>0)){
-                    q.offer(x+" "+y);
-                    map.put(x+" "+y, move);
-                    dist[x][y] = d;
                 }
             }
         }
-        return map.get(hole[0]+" "+hole[1])==null?"impossible":map.get(hole[0]+" "+hole[1]);
+
+        return shortestPath.equals("z") ? "impossible" : shortestPath;
     }
-    private int[] getCoord(String s){
-        String[] str = s.split(" ");
-        return new int[]{Integer.parseInt(str[0]), Integer.parseInt(str[1])};
+
+    private State getNextState(int[][] maze, State cur, int[] dir, int[] hole) {
+        int m = maze.length;
+        int n = maze[0].length;
+        State next = new State(cur.r, cur.c, cur.dist, cur.path);
+
+        while(valid(m, n, next.r, next.c) && maze[next.r][next.c] == 0 && !(next.r == hole[0] && next.c == hole[1])) {
+            next.r += dir[0];
+            next.c += dir[1];
+            next.dist ++;
+        }
+        if(!(next.r == hole[0] && next.c == hole[1])) {
+            next.r -= dir[0];
+            next.c -= dir[1];
+            next.dist--;
+        }
+
+        if(dir[0] == 0 && dir[1] == 1) {
+            next.path += 'r';
+        } else if(dir[0] == 0 && dir[1] == -1) {
+            next.path += 'l';
+        } else if(dir[0] == -1 && dir[1] == 0) {
+            next.path += 'u';
+        } else {
+            next.path += 'd';
+        }
+
+        return next;
+    }
+
+    private boolean valid(int m, int n, int r, int c) {
+        return r >= 0 && r < m && c >= 0 && c < n;
     }
 }
