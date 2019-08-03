@@ -14,31 +14,36 @@ public class LC489_RobotRoomCleaner {
         // Clean the current cell.
          public void clean();
     }
-    HashSet<String> visited = new HashSet<>();
-    int[] dirX = new int[]{-1, 0, 1, 0};
-    int[] dirY = new int[]{0, 1, 0, -1};
-    int x = 0;
-    int y = 0;
-    int dir = 0;
+    private int[][] directions = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+    private int x = 0;
+    private int y = 0;
+    private int curDir = 0;
+    private HashSet<String> visited = new HashSet<>();
+
     public void cleanRoom(Robot robot) {
-        String pos = x+" "+y;
-        if(visited.contains(pos)) return ;
+        String pos = x + " " + y;
+        if(visited.contains(pos)) {
+            return ;
+        }
         visited.add(pos);
         robot.clean();
-        for(int i=0;i<4;i++){
-            if(robot.move()){
-                x += dirX[dir];
-                y += dirY[dir];
+
+        for(int i = 0; i < 4; i++) {
+            int[] direction = directions[curDir];
+            if(robot.move()) {
+                x += direction[0];
+                y += direction[1];
                 cleanRoom(robot);
                 robot.turnRight();
                 robot.turnRight();
                 robot.move();
-                x -= dirX[dir];
-                y -= dirY[dir];
+                x -= direction[0];
+                y -= direction[1];
                 robot.turnLeft();
+            } else {
+                robot.turnRight();
             }
-            else robot.turnRight();
-            dir = (dir+1)%4;
+            curDir = (curDir + 1) % 4;
         }
     }
 }
