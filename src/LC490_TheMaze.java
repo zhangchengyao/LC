@@ -4,7 +4,6 @@ import java.util.Queue;
 
 public class LC490_TheMaze {
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
-        int m = maze.length;
         int n = maze[0].length;
         int[][] directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
