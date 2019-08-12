@@ -1,8 +1,8 @@
 import java.util.Stack;
 
 public class LC716_MaxStack {
-    Stack<Integer> maxStack;
-    Stack<Integer> stack;
+    private Stack<Integer> maxStack;
+    private Stack<Integer> stack;
     /** initialize your data structure here. */
     public LC716_MaxStack() {
         maxStack = new Stack<>();
