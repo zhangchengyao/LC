@@ -1,21 +1,25 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class LC734_SentenceSimilarity {
-    public boolean areSentencesSimilar(String[] words1, String[] words2, String[][] pairs) {
-        if(words1.length!=words2.length) return false;
-        HashMap<String, HashSet<String>> map = new HashMap<>();
-        for(String[] pair: pairs){
-            HashSet<String> set = map.getOrDefault(pair[0], new HashSet<String>());
-            set.add(pair[1]);
-            map.put(pair[0], set);
-            set = map.getOrDefault(pair[1], new HashSet<String>());
-            set.add(pair[0]);
-            map.put(pair[1], set);
+    public boolean areSentencesSimilar(String[] words1, String[] words2, List<List<String>> pairs) {
+        if(words1.length != words2.length) return false;
+
+        HashMap<String, HashSet<String>> sim = new HashMap<>();
+        for(List<String> pair: pairs) {
+            String word1 = pair.get(0);
+            String word2 = pair.get(1);
+            sim.putIfAbsent(word1, new HashSet<>());
+            sim.get(word1).add(word2);
+            sim.putIfAbsent(word2, new HashSet<>());
+            sim.get(word2).add(word1);
         }
-        for(int i=0;i<words1.length;i++){
-            if(!words1[i].equals(words2[i]) && !(map.get(words1[i])!=null && map.get(words1[i]).contains(words2[i]))) return false;
+
+        for(int i = 0; i < words1.length; i++) {
+            if(!words1[i].equals(words2[i]) && (!sim.containsKey(words1[i]) || !sim.get(words1[i]).contains(words2[i]))) return false;
         }
+
         return true;
     }
 }
