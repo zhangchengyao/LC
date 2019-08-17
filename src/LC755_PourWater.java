@@ -6,11 +6,7 @@ public class LC755_PourWater {
                 heights[l]++;
             } else {
                 int r = indexRightMin(heights, K);
-                if(r != K){
-                    heights[r]++;
-                } else {
-                    heights[K]++;
-                }
+                heights[r]++;
             }
             V--;
         }
