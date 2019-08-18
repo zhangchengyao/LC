@@ -7,19 +7,21 @@ public class LC776_SplitBST {
     }
     public TreeNode[] splitBST(TreeNode root, int V) {
         TreeNode[] res = new TreeNode[2];
-        if(root==null) return res;
-        if(root.val<=V){
-            TreeNode[] right = splitBST(root.right, V);
-            res[1] = right[1];
-            root.right = right[0];
+
+        if(root == null) return res;
+
+        if(root.val <= V) {
             res[0] = root;
-        }
-        else{
-            TreeNode[] left = splitBST(root.left, V);
-            res[0] = left[0];
-            root.left = left[1];
+            TreeNode[] rightRes = splitBST(root.right, V);
+            root.right = rightRes[0];
+            res[1] = rightRes[1];
+        } else {
             res[1] = root;
+            TreeNode[] leftRes = splitBST(root.left, V);
+            root.left = leftRes[1];
+            res[0] = leftRes[0];
         }
+
         return res;
     }
 }
