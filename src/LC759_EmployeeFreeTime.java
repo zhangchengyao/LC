@@ -21,20 +21,16 @@ public class LC759_EmployeeFreeTime {
                     k++;
                 } else {
                     if(overlap(working.get(k), it)){
-                        union(working.get(k), it);
+                        merge(working.get(k), it);
+                        while(k < working.size() - 1 && overlap(working.get(k), working.get(k + 1))) {
+                            merge(working.get(k), working.get(k + 1));
+                            working.remove(k + 1);
+                        }
                     } else {
                         working.add(k, it);
                         k++;
                     }
                 }
-            }
-        }
-
-        for(int i = 0; i < working.size() - 1; i++){
-            if(overlap(working.get(i), working.get(i + 1))){
-                union(working.get(i), working.get(i + 1));
-                working.remove(i + 1);
-                i--;
             }
         }
 
@@ -49,7 +45,7 @@ public class LC759_EmployeeFreeTime {
         return !(a.end < b.start || a.start > b.end);
     }
 
-    private void union(Interval a, Interval b){
+    private void merge(Interval a, Interval b){
         a.start = Math.min(a.start, b.start);
         a.end = Math.max(a.end, b.end);
     }
