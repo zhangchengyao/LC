@@ -10,15 +10,15 @@ public class LC636_ExclusiveTimeOfFunctions {
             String[] info = log.split(":");
             int id = Integer.parseInt(info[0]);
             int time = Integer.parseInt(info[2]);
-            if(info[1].equals("start")){
-                if(!stack.isEmpty()) res[stack.peek()] += time-last;
+            if(info[1].equals("start")) {
+                if(!stack.isEmpty()) res[stack.peek()] += time - last;
                 stack.push(id);
                 last = time;
             }
-            else{
-                res[id] += time-last+1;
+            else {
+                res[id] += time - last + 1;
                 stack.pop();
-                last = time+1;
+                last = time + 1;
             }
         }
         return res;
