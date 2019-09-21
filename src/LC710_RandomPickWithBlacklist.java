@@ -22,7 +22,6 @@ public class LC710_RandomPickWithBlacklist {
 
     public int pick() {
         int cand = (int)(Math.random() * size);
-        if(map.containsKey(cand)) return map.get(cand);
-        else return cand;
+        return map.getOrDefault(cand, cand);
     }
 }
