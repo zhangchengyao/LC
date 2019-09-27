@@ -3,10 +3,8 @@ public class LC831_MaskingPersonalInformation {
         if(S.contains("@")) {
             S = S.toLowerCase();
             int atIdx = S.indexOf("@");
-            StringBuilder sb = new StringBuilder();
-            sb.append(S.charAt(0)).append("*****").append(S.substring(atIdx - 1));
 
-            return sb.toString();
+            return S.charAt(0) + "*****" + S.substring(atIdx - 1);
         } else {
             StringBuilder sb = new StringBuilder();
             int digitCount = 0;
