@@ -18,28 +18,29 @@ public class LC855_ExamRoom {
 
     private PriorityQueue<Interval> pq;
     private int n;
+
     public LC855_ExamRoom(int N) {
         n = N;
-        pq = new PriorityQueue<>((a, b) -> a.dist==b.dist?a.start-b.start:b.dist-a.dist);
+        pq = new PriorityQueue<>((a, b) -> a.dist == b.dist ? a.start - b.start : b.dist - a.dist);
         pq.offer(new Interval(-1, N, N));
     }
 
     public int seat() {
         Interval cur = pq.poll();
-        if(cur.start==-1){
+        if(cur.start == -1) {
             cur.start = 0;
-            cur.dist = (cur.end-cur.start)/2;
+            cur.dist = (cur.end - cur.start) / 2;
             pq.offer(cur);
             return 0;
-        }else if(cur.end==n){
-            cur.end = n-1;
-            cur.dist = (cur.end-cur.start)/2;
+        } else if(cur.end == n) {
+            cur.end = n - 1;
+            cur.dist = (cur.end - cur.start) / 2;
             pq.offer(cur);
-            return n-1;
-        }else{
-            int pos = cur.start+cur.dist;
-            Interval it1 = new Interval(cur.start, pos, (pos-cur.start)/2);
-            Interval it2 = new Interval(pos, cur.end, (cur.end-pos)/2);
+            return n - 1;
+        } else {
+            int pos = cur.start + cur.dist;
+            Interval it1 = new Interval(cur.start, pos, (pos - cur.start) / 2);
+            Interval it2 = new Interval(pos, cur.end, (cur.end - pos) / 2);
             pq.offer(it1);
             pq.offer(it2);
             return pos;
@@ -51,16 +52,19 @@ public class LC855_ExamRoom {
         Interval left = null;
         Interval right = null;
         for(Interval it: list){
-            if(it.end==p) left = it;
-            else if(it.start==p) right = it;
-            if(left!=null && right!=null) break;
+            if(it.end == p) left = it;
+            else if(it.start == p) right = it;
+            if(left != null && right != null) break;
         }
+
         pq.remove(left);
         pq.remove(right);
-        if(p==0) pq.add(new Interval(-1, right.end, right.end));
-        else if(p==n-1) pq.add(new Interval(left.start, n, n-1-left.start));
-        else pq.add(new Interval(left.start, right.end, (right.end-left.start)/2));
+
+        if(p == 0) pq.offer(new Interval(-1, right.end, right.end));
+        else if(p == n - 1) pq.offer(new Interval(left.start, n, n - 1 - left.start));
+        else pq.offer(new Interval(left.start, right.end, (right.end - left.start) / 2));
     }
+
 //    int n;
 //    TreeSet<Integer> tset;
 //    public LC855_ExamRoom(int N) {
