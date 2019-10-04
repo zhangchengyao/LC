@@ -1,6 +1,29 @@
 import java.util.Arrays;
 
 public class LC869_ReorderedPowerOf2 {
+    // enumerate all possible powers of 2 and check
+//    public boolean reorderedPowerOf2(int N) {
+//        int[] digitCount = count(N);
+//
+//        for(int i = 0; i < 31; i++) {
+//            int[] cand = count(1 << i);
+//            if(Arrays.equals(digitCount, cand)) return true;
+//        }
+//
+//        return false;
+//    }
+//
+//    private int[] count(int N) {
+//        int[] res = new int[10];
+//        while(N > 0) {
+//            int digit = N % 10;
+//            res[digit]++;
+//            N /= 10;
+//        }
+//
+//        return res;
+//    }
+
     // Permutation
     public boolean reorderedPowerOf2(int N) {
         int[] digits = new int[10];
