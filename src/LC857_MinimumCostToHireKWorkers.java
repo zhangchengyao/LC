@@ -10,21 +10,24 @@ public class LC857_MinimumCostToHireKWorkers {
         Worker(int quality, int wage){
             Q = quality;
             W = wage;
-            ratio = Q*1.0/W;
+            ratio = Q * 1.0 / W;
         }
     }
     public double mincostToHireWorkers(int[] quality, int[] wage, int K) {
         Worker[] workers = new Worker[quality.length];
-        for(int i=0;i<workers.length;i++) workers[i] = new Worker(quality[i], wage[i]);
+        for(int i = 0; i < workers.length ; i++) workers[i] = new Worker(quality[i], wage[i]);
+
         Arrays.sort(workers, (a, b) -> Double.compare(b.ratio, a.ratio));
+
         PriorityQueue<Worker> maxHeap = new PriorityQueue<>((a, b) -> b.Q-a.Q);
+
         double res = Double.MAX_VALUE;
         double sum = 0.0;
-        for(int i=0;i<workers.length;i++){
-            maxHeap.offer(workers[i]);
-            sum += workers[i].Q;
-            if(maxHeap.size()>K) sum -= maxHeap.poll().Q;
-            if(maxHeap.size()==K) res = Math.min(res, sum/workers[i].ratio);
+        for (Worker worker : workers) {
+            maxHeap.offer(worker);
+            sum += worker.Q;
+            if (maxHeap.size() > K) sum -= maxHeap.poll().Q;
+            if (maxHeap.size() == K) res = Math.min(res, sum / worker.ratio);
         }
         return res;
     }
