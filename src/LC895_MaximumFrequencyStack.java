@@ -1,35 +1,28 @@
-import java.util.HashMap;
-import java.util.Stack;
+import java.util.*;
 
 public class LC895_MaximumFrequencyStack {
-    private HashMap<Integer, Integer> count;
-    private HashMap<Integer, Stack<Integer>> freq2Stack;
-    private int maxFreq;
+    private Map<Integer, Integer> freq;
+    private List<Stack<Integer>> stacks;
 
     public LC895_MaximumFrequencyStack() {
-        count = new HashMap<>();
-        freq2Stack = new HashMap<>();
-        maxFreq = 0;
+        freq = new HashMap<>();
+        stacks = new ArrayList<>();
     }
 
     public void push(int x) {
-        count.put(x, count.getOrDefault(x, 0) + 1);
-        if(count.get(x) > maxFreq){
-            maxFreq = count.get(x);
-        }
-        freq2Stack.putIfAbsent(count.get(x), new Stack<>());
-        freq2Stack.get(count.get(x)).push(x);
+        int cnt = freq.getOrDefault(x, 0) + 1;
+        freq.put(x, cnt);
+
+        if(stacks.size() < cnt) stacks.add(new Stack<>());
+        stacks.get(cnt - 1).push(x);
     }
 
     public int pop() {
-        int num = freq2Stack.get(maxFreq).pop();
-        if(freq2Stack.get(maxFreq).isEmpty()){
-            freq2Stack.remove(maxFreq);
-            maxFreq--;
+        int res = stacks.get(stacks.size() - 1).pop();
+        if(stacks.get(stacks.size() - 1).isEmpty()) {
+            stacks.remove(stacks.size() - 1);
         }
-
-        count.put(num, count.get(num) - 1);
-        if(count.get(num) == 0) count.remove(num);
-        return num;
+        freq.put(res, freq.get(res) - 1);
+        return res;
     }
 }
