@@ -2,22 +2,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LC802_FindEventualSafeStates {
+    private int[] memo;
+
     public List<Integer> eventualSafeNodes(int[][] graph) {
+        memo = new int[graph.length];
+
         List<Integer> res = new ArrayList<>();
-        int[] color = new int[graph.length];
-        for(int i=0;i<graph.length;i++){
-            if(dfs(i, color, graph)) res.add(i);
+        for(int i = 0; i < graph.length; i++) {
+            if(memo[i] == 0) dfs(graph, i);
+            if(memo[i] == 1) res.add(i);
         }
+
         return res;
     }
-    private boolean dfs(int i, int[] color, int[][] graph){
-        if(color[i]==2) return true;
-        if(color[i]==1) return false;
-        color[i] = 1;
-        for(int j=0;j<graph[i].length;j++){
-            if(color[graph[i][j]]==1 || !dfs(graph[i][j], color, graph)) return false;
+
+    private boolean dfs(int[][] graph, int cur) {
+        if(memo[cur] == -1) return false;
+        if(memo[cur] == 1) return true;
+
+        memo[cur] = -1;
+        for(int neighbor: graph[cur]) {
+            if(!dfs(graph, neighbor)) {
+                return false;
+            }
         }
-        color[i] = 2;
+
+        memo[cur] = 1;
         return true;
     }
 }
