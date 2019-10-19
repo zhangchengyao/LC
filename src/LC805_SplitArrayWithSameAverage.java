@@ -24,11 +24,10 @@ public class LC805_SplitArrayWithSameAverage {
             dp[i][0].add(0);
         }
         for(int k = 1; k <= n / 2; k++){
-            for(int i = 1; i <= n; i++){
-                if(i < k) continue;
+            for(int i = k; i <= n; i++){
                 dp[i][k] = new HashSet<>();
                 if(dp[i - 1][k] != null){
-                    for(int num: dp[i - 1][k]) dp[i][k].add(num);
+                    dp[i][k].addAll(dp[i - 1][k]);
                 }
                 if(dp[i - 1][k - 1] != null){
                     for(int num: dp[i - 1][k - 1]) dp[i][k].add(num + A[i - 1]);
