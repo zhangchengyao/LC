@@ -30,19 +30,20 @@ public class LC827_MakingALargeIsland {
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 if(grid[i][j] == 0) {
-                    Map<Integer, Integer> islands = new HashMap<>();
+                    visited = new HashSet<>();
+                    int area = 0;
                     for(int[] direction: directions) {
                         int r = i + direction[0];
                         int c = j + direction[1];
                         if(valid(r, c) && grid[r][c] == 1) {
                             int pos = parent[r * n + c];
-                            islands.put(pos, sizes.get(pos));
+                            if(!visited.contains(pos)) {
+                                visited.add(pos);
+                                area += sizes.get(pos);
+                            }
                         }
                     }
-                    int area = 0;
-                    for(int island: islands.values()) {
-                        area += island;
-                    }
+
                     largest = Math.max(largest, area + 1);
                 }
             }
