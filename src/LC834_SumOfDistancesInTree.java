@@ -22,26 +22,23 @@ public class LC834_SumOfDistancesInTree {
         dfs(graph, 0, -1);
         dfs2(graph, 0, -1);
 
-
         return ans;
     }
 
     private void dfs(List<List<Integer>> graph, int root, int parent) {
         for(int neighbor: graph.get(root)) {
-            if(neighbor != parent) {
-                dfs(graph, neighbor, root);
-                count[root] += count[neighbor];
-                ans[root] += ans[neighbor] + count[neighbor];
-            }
+            if(neighbor == parent) continue;
+            dfs(graph, neighbor, root);
+            count[root] += count[neighbor];
+            ans[root] += ans[neighbor] + count[neighbor];
         }
     }
 
     private void dfs2(List<List<Integer>> graph, int root, int parent) {
         for(int neighbor: graph.get(root)) {
-            if(neighbor != parent) {
-                ans[neighbor] = ans[root] - count[neighbor] + graph.size() - count[neighbor];
-                dfs2(graph, neighbor, root);
-            }
+            if(neighbor == parent) continue;
+            ans[neighbor] = ans[root] - count[neighbor] + graph.size() - count[neighbor];
+            dfs2(graph, neighbor, root);
         }
     }
 }
