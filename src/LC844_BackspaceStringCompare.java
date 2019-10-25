@@ -1,48 +1,28 @@
 public class LC844_BackspaceStringCompare {
     public boolean backspaceCompare(String S, String T) {
-        int p = S.length()-1;
-        int q = T.length()-1;
-        int cnt1 = 0;
-        int cnt2 = 0;
-        while(p>=0&&q>=0){
-            if(S.charAt(p)=='#') cnt1++;
-            if(T.charAt(q)=='#') cnt2++;
-            if(cnt1>0 && cnt2>0){
-                if(S.charAt(p)!='#') cnt1--;
-                if(T.charAt(q)!='#') cnt2--;
-                p--;
-                q--;
+        int i = S.length() - 1;
+        int j = T.length() - 1;
+        int skipS = 0;
+        int skipT = 0;
+
+        while(i >= 0 || j >= 0) {
+            while(i >= 0 && (skipS > 0 || S.charAt(i) == '#')) {
+                if(S.charAt(i) == '#') skipS++;
+                else skipS--;
+                i--;
             }
-            else if(cnt1>0){
-                if(S.charAt(p)!='#') cnt1--;
-                p--;
+            while(j >= 0 && (skipT > 0 || T.charAt(j) == '#')) {
+                if(T.charAt(j) == '#') skipT++;
+                else skipT--;
+                j--;
             }
-            else if(cnt2>0){
-                if(T.charAt(q)!='#') cnt2--;
-                q--;
-            }
-            else{
-                if(S.charAt(p)!=T.charAt(q)) return false;
-                p--;
-                q--;
-            }
+
+            if(i < 0 && j < 0) return true;
+            else if(i < 0 || j < 0) return false;
+
+            if(S.charAt(i--) != T.charAt(j--)) return false;
         }
-        if(p<0){
-            while(q>=0){
-                if(T.charAt(q)=='#') cnt2++;
-                else cnt2--;
-                if(cnt2<0) return false;
-                q--;
-            }
-        }
-        else{
-            while(p>=0){
-                if(S.charAt(p)=='#') cnt1++;
-                else cnt1--;
-                if(cnt1<0) return false;
-                p--;
-            }
-        }
+
         return true;
     }
 }
