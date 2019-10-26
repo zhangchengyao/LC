@@ -19,7 +19,7 @@ public class LC755_PourWater {
         for(int i = K - 1; i >= 0; i--){
             if(heights[i] < heights[min]){
                 min = i;
-            } else if(heights[i] > heights[i+1]){
+            } else if(heights[i] > heights[i + 1]){
                 break;
             }
         }
@@ -32,7 +32,7 @@ public class LC755_PourWater {
         for(int i = K + 1; i < heights.length; i++){
             if(heights[i] < heights[min]){
                 min = i;
-            } else if(heights[i] > heights[i-1]){
+            } else if(heights[i] > heights[i - 1]){
                 break;
             }
         }
