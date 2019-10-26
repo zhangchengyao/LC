@@ -1,9 +1,10 @@
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class LC760_FindAnagramMappings {
     public int[] anagramMappings(int[] A, int[] B) {
-        HashMap<Integer, Stack<Integer>> map = new HashMap<>();
+        Map<Integer, Stack<Integer>> map = new HashMap<>();
         for(int i = 0; i < B.length; i++) {
             map.putIfAbsent(B[i], new Stack<>());
             map.get(B[i]).push(i);
