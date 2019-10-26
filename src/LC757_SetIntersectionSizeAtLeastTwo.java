@@ -10,12 +10,12 @@ public class LC757_SetIntersectionSizeAtLeastTwo {
         int l1 = -1;
         for(int[] interval: intervals) {
             if(l1 < interval[0]) {
-                l2 = interval[interval.length - 1] - 1;
-                l1 = interval[interval.length - 1];
+                l2 = interval[1] - 1;
+                l1 = interval[1];
                 size += 2;
             } else if(l2 < interval[0]) {
                 l2 = l1;
-                l1 = interval[interval.length - 1];
+                l1 = interval[1];
                 size++;
             }
         }
