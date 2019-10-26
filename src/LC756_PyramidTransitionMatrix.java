@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LC756_PyramidTransitionMatrix {
     public boolean pyramidTransition(String bottom, List<String> allowed) {
-        HashMap<String, List<Character>> map = new HashMap<>();
+        Map<String, List<Character>> map = new HashMap<>();
         for(String str: allowed) {
             String key = str.substring(0, 2);
             map.putIfAbsent(key, new ArrayList<>());
@@ -14,7 +15,7 @@ public class LC756_PyramidTransitionMatrix {
         return canBuild(bottom, new StringBuilder(), 0, map);
     }
 
-    private boolean canBuild(String cur, StringBuilder next, int idx, HashMap<String, List<Character>> map) {
+    private boolean canBuild(String cur, StringBuilder next, int idx, Map<String, List<Character>> map) {
         if(cur.length() == 1) return true;
 
         if(idx == cur.length() - 1) return canBuild(next.toString(), new StringBuilder(), 0, map);
