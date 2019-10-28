@@ -20,7 +20,6 @@ public class LC774_MinimizeMaxDistanceToGasStation {
             cnt += Math.ceil((stations[i + 1] - stations[i]) / dist - 1);
         }
 
-
         return cnt <= K;
     }
 }
