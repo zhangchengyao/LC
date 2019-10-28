@@ -1,96 +1,59 @@
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
 
 public class LC773_SlidingPuzzle {
     public int slidingPuzzle(int[][] board) {
-        int startX = 0;
-        int startY = 0;
+        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        String target = "123450";
+        int m = board.length;
+        int n = board[0].length;
+        StringBuilder state = new StringBuilder();
+        for (int[] row : board) {
+            for (int j = 0; j < n; j++) {
+                state.append(row[j]);
+            }
+        }
+        if(state.toString().equals(target)) return 0;
+
         Queue<String> q = new LinkedList<>();
-        HashSet<String> visited = new HashSet<>();
-        for(int i=0;i<2;i++){
-            for(int j=0;j<3;j++){
-                if(board[i][j]==0){
-                    startX = i;
-                    startY = j;
+        Set<String> visited = new HashSet<>();
+        q.offer(state.toString());
+        visited.add(state.toString());
+
+        int move = 1;
+        while(!q.isEmpty()) {
+            int cnt = q.size();
+            for(; cnt > 0; cnt--){
+                state = new StringBuilder(q.poll());
+                int idx = state.indexOf("0");
+                int r = idx / n;
+                int c = idx % n;
+                for(int[] dir: directions) {
+                    int nextR = r + dir[0];
+                    int nextC = c + dir[1];
+                    if(nextR < 0 || nextR >= m || nextC < 0 || nextC >= n) continue;
+
+                    String next = swap(state, idx, nextR * n + nextC);
+                    if(next.equals(target)) return move;
+                    if(!visited.contains(next)) {
+                        visited.add(next);
+                        q.offer(next);
+                    }
+                    swap(state, idx, nextR * n + nextC);
                 }
             }
+            move++;
         }
-        String state = getState(board);
-        q.offer(state);
-        visited.add(state);
-        int cnt = 1;
-        int res = 0;
-        while(!q.isEmpty()){
-            for(int t=0;t<cnt;t++){
-                String cur = q.poll();
-                if(cur.equals("123450")) return res;
-                int x = 0;
-                int y = 0;
-                for(int i=0;i<2;i++){
-                    for(int j=0;j<3;j++){
-                        board[i][j] = cur.charAt(i*3+j)-'0';
-                        if(board[i][j]==0){
-                            x = i;
-                            y = j;
-                        }
-                    }
-                }
-                if(x>0){
-                    board[x][y] = board[x-1][y];
-                    board[x-1][y] = 0;
-                    state = getState(board);
-                    if(!visited.contains(state)){
-                        q.offer(state);
-                        visited.add(state);
-                    }
-                    board[x-1][y] = board[x][y];
-                    board[x][y] = 0;
-                }
-                if(x<1){
-                    board[x][y] = board[x+1][y];
-                    board[x+1][y] = 0;
-                    state = getState(board);
-                    if(!visited.contains(state)){
-                        q.offer(state);
-                        visited.add(state);
-                    }
-                    board[x+1][y] = board[x][y];
-                    board[x][y] = 0;
-                }
-                if(y>0){
-                    board[x][y] = board[x][y-1];
-                    board[x][y-1] = 0;
-                    state = getState(board);
-                    if(!visited.contains(state)){
-                        q.offer(state);
-                        visited.add(state);
-                    }
-                    board[x][y-1] = board[x][y];
-                    board[x][y] = 0;
-                }
-                if(y<2){
-                    board[x][y] = board[x][y+1];
-                    board[x][y+1] = 0;
-                    state = getState(board);
-                    if(!visited.contains(state)){
-                        q.offer(state);
-                        visited.add(state);
-                    }
-                    board[x][y+1] = board[x][y];
-                    board[x][y] = 0;
-                }
-            }
-            cnt = q.size();
-            res++;
-        }
+
         return -1;
     }
-    private String getState(int[][] board){
-        StringBuilder sb = new StringBuilder();
-        for(int i=0;i<2;i++){
-            for(int j=0;j<3;j++) sb.append(board[i][j]);
-        }
+
+    private String swap(StringBuilder sb, int a, int b) {
+        char t = sb.charAt(a);
+        sb.setCharAt(a, sb.charAt(b));
+        sb.setCharAt(b, t);
         return sb.toString();
     }
 }
