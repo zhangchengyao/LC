@@ -7,7 +7,7 @@ public class LC707_DesignLinkedList {
         }
     }
 
-    private Node root;
+    private Node head;
     private int size;
 
     /** Initialize your data structure here. */
@@ -19,7 +19,7 @@ public class LC707_DesignLinkedList {
     public int get(int index) {
         if(index < 0 || index >= size) return -1;
 
-        Node cur = root;
+        Node cur = head;
         for(int i = 0; i < index; i++) {
             cur = cur.next;
         }
@@ -28,20 +28,20 @@ public class LC707_DesignLinkedList {
 
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     public void addAtHead(int val) {
-        Node newRoot = new Node(val);
-        newRoot.next = root;
-        root = newRoot;
+        Node newHead = new Node(val);
+        newHead.next = head;
+        head = newHead;
         size++;
     }
 
     /** Append a node of value val to the last element of the linked list. */
     public void addAtTail(int val) {
-        if(root == null) {
-            root = new Node(val);
+        if(head == null) {
+            head = new Node(val);
             return;
         }
 
-        Node cur = root;
+        Node cur = head;
         while(cur.next != null) cur = cur.next;
         cur.next = new Node(val);
         size++;
@@ -56,7 +56,7 @@ public class LC707_DesignLinkedList {
         } else if(index == size) {
             addAtTail(val);
         } else {
-            Node cur = root;
+            Node cur = head;
             for(int i = 0; i < index - 1; i++) {
                 cur = cur.next;
             }
@@ -72,9 +72,9 @@ public class LC707_DesignLinkedList {
         if(index < 0 || index >= size) return;
 
         if(index == 0) {
-            root = root.next;
+            head = head.next;
         } else {
-            Node cur = root;
+            Node cur = head;
             for(int i = 0; i < index - 1; i++) {
                 cur = cur.next;
             }
