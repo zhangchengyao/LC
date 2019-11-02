@@ -1,51 +1,44 @@
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 
 public class LC715_RangeModule {
-    //todo
-    TreeMap<Integer, Integer> tmap;
+    class Range {
+        int left;
+        int right;
+        Range(int l, int r) {
+            left = l;
+            right = r;
+        }
+    }
+
+    private TreeSet<Range> tset;
+
     public LC715_RangeModule() {
-        tmap = new TreeMap<>();
+        tset = new TreeSet<>(Comparator.comparingInt(a -> a.right));
     }
 
     public void addRange(int left, int right) {
-        if(left>=right) return ;
-        Integer start = tmap.floorKey(left);
-        Integer end = tmap.floorKey(right);
-        if(start==null && end==null){
-            tmap.put(left, right);
+        Range cur = tset.ceiling(new Range(0, left));
+        while(cur != null && cur.left <= right) {
+            left = Math.min(left, cur.left);
+            right = Math.max(right, cur.right);
+            tset.remove(cur);
+            cur = tset.higher(cur);
         }
-        else if(start!=null && tmap.get(start)>=left){
-            tmap.put(start, Math.max(tmap.get(start), Math.max(tmap.get(end), right)));
-        }
-        else{
-            tmap.put(left, Math.max(tmap.get(end), right));
-        }
-        Map<Integer, Integer> subMap = tmap.subMap(left, false, right ,true);
-        Set<Integer> set = new HashSet<>(subMap.keySet());
-        tmap.keySet().removeAll(set);
+        tset.add(new Range(left, right));
     }
 
     public boolean queryRange(int left, int right) {
-        if(left>=right) return false;
-        Integer start = tmap.floorKey(left);
-        return start!=null && right<=tmap.get(start);
+        Range cur = tset.ceiling(new Range(left, right));
+        return cur != null && cur.left <= left;
     }
 
     public void removeRange(int left, int right) {
-        if(left>=right) return;
-        Integer start = tmap.floorKey(left);
-        Integer end = tmap.floorKey(right);
-        if(end!=null && tmap.get(end)>right){
-            tmap.put(right, tmap.get(end));
+        Range cur = tset.higher(new Range(0, left));
+        while(cur != null && cur.left < right) {
+            tset.remove(cur);
+            if(cur.left < left) tset.add(new Range(cur.left, left));
+            if(cur.right > right) tset.add(new Range(right, cur.right));
+            cur = tset.higher(cur);
         }
-        if(start!=null && tmap.get(start)>left){
-            tmap.put(start, left);
-        }
-        Map<Integer, Integer> subMap = tmap.subMap(left, true, right, false);
-        Set<Integer> set = new HashSet<>(subMap.keySet());
-        tmap.keySet().removeAll(set);
     }
 }
