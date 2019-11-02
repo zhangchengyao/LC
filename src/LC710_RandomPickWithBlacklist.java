@@ -1,12 +1,14 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class LC710_RandomPickWithBlacklist {
-    private HashMap<Integer, Integer> map;
+    private Map<Integer, Integer> map;
     private int size;
 
     public LC710_RandomPickWithBlacklist(int N, int[] blacklist) {
-        HashSet<Integer> set = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for(int n: blacklist) set.add(n);
 
         map = new HashMap<>();
