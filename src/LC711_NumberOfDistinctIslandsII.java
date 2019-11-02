@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class LC711_NumberOfDistinctIslandsII {
     public int numDistinctIslands2(int[][] grid) {
@@ -9,7 +6,7 @@ public class LC711_NumberOfDistinctIslandsII {
         int n = grid[0].length;
 
         boolean[][] visited = new boolean[m][n];
-        HashSet<String> islands = new HashSet<>();
+        Set<String> islands = new HashSet<>();
 
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
@@ -36,7 +33,7 @@ public class LC711_NumberOfDistinctIslandsII {
         }
     }
 
-    private void addShape(List<Integer> shape, HashSet<String> islands, int n) {
+    private void addShape(List<Integer> shape, Set<String> islands, int n) {
         int[] xs = new int[shape.size()];
         int[] ys = new int[shape.size()];
         int[] pos = new int[shape.size()];
