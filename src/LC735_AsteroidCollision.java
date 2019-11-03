@@ -1,34 +1,21 @@
 public class LC735_AsteroidCollision {
     public int[] asteroidCollision(int[] asteroids) {
-        int left = 0;
-        int right = 1;
-
-        while(right < asteroids.length) {
-            if(left == -1) {
-                left++;
-                asteroids[left] = asteroids[right];
-                right++;
-            } else if(asteroids[right] < 0 && asteroids[left] > 0) {
-                if(asteroids[left] == -asteroids[right]) {
-                    left--;
-                    right++;
-                } else if(asteroids[left] < -asteroids[right]) {
-                    left--;
-                } else {
-                    right++;
-                }
+        int i = -1;
+        for(int j = 0; j < asteroids.length; j++) {
+            if(asteroids[j] > 0) {
+                asteroids[++i] = asteroids[j];
             } else {
-                left++;
-                asteroids[left] = asteroids[right];
-                right++;
+                while(i >= 0 && asteroids[i] > 0 && asteroids[i] < Math.abs(asteroids[j])) i--;
+                if(i < 0 || asteroids[i] < 0) {
+                    asteroids[++i] = asteroids[j];
+                } else if(asteroids[i] == Math.abs(asteroids[j])) {
+                    i--;
+                }
             }
         }
 
-        int[] res = new int[left + 1];
-        for(int i = 0; i <= left; i++) {
-            res[i] = asteroids[i];
-        }
-
+        int[] res = new int[i + 1];
+        while(i >= 0) res[i] = asteroids[i--];
         return res;
     }
 }
