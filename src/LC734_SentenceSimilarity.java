@@ -1,12 +1,10 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class LC734_SentenceSimilarity {
     public boolean areSentencesSimilar(String[] words1, String[] words2, List<List<String>> pairs) {
         if(words1.length != words2.length) return false;
 
-        HashMap<String, HashSet<String>> sim = new HashMap<>();
+        Map<String, Set<String>> sim = new HashMap<>();
         for(List<String> pair: pairs) {
             String word1 = pair.get(0);
             String word2 = pair.get(1);
