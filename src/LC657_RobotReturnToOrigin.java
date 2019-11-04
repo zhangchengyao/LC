@@ -1,28 +1,26 @@
 public class LC657_RobotReturnToOrigin {
     public boolean judgeCircle(String moves) {
-        int U = 0;
-        int D = 0;
-        int L = 0;
-        int R = 0;
-        for(int i=0;i<moves.length();i++){
-            char c = moves.charAt(i);
-            switch(c){
+        int r = 0;
+        int c = 0;
+        for(int i = 0; i < moves.length(); i++){
+            char ch = moves.charAt(i);
+            switch(ch){
                 case 'U':
-                    U++;
+                    r--;
                     break;
                 case 'D':
-                    D++;
+                    r++;
                     break;
                 case 'L':
-                    L++;
+                    c--;
                     break;
                 case 'R':
-                    R++;
+                    c++;
                     break;
                 default:
                     break;
             }
         }
-        return U==D && L==R;
+        return r == 0 && c == 0;
     }
 }
