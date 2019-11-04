@@ -1,14 +1,10 @@
 public class LC651_4KeysKeyboard {
     public int maxA(int N) {
-        if(N < 7) return N;
-
         int[] dp = new int[N + 1];
-        for(int i = 1; i < 7; i++) {
-            dp[i] = i;
-        }
 
-        for(int i = 7; i <= N; i++) {
-            for(int j = i - 3; j > 1; j--) {
+        for(int i = 1; i <= N; i++) {
+            dp[i] = i;
+            for(int j = i - 3; j >= 1; j--) {
                 dp[i] = Math.max(dp[i], dp[j] * (i - j - 1));
             }
         }
