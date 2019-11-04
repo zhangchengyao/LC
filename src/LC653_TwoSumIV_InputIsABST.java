@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class LC653_TwoSumIV_InputIsABST {
     class TreeNode {
@@ -8,16 +8,16 @@ public class LC653_TwoSumIV_InputIsABST {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
+
     public boolean findTarget(TreeNode root, int k) {
-        List<Integer> lst = new ArrayList<>();
-        return preOrder(root, k, lst);
+        return inorder(root, k, new HashSet<>());
     }
-    private boolean preOrder(TreeNode root, int k, List<Integer> lst){
-        if(root==null) return false;
-        if(lst.contains(k-root.val)) return true;
-        else{
-            lst.add(root.val);
-            return preOrder(root.left, k, lst) || preOrder(root.right, k, lst);
-        }
+
+    private boolean inorder(TreeNode root, int k, Set<Integer> numbers) {
+        if(root == null) return false;
+        if(inorder(root.left, k, numbers)) return true;
+        if(numbers.contains(k - root.val)) return true;
+        numbers.add(root.val);
+        return inorder(root.right, k, numbers);
     }
 }
