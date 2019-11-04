@@ -1,82 +1,78 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC745_PrefixAndSuffixSearch {
     class Node{
-        char val;
-        boolean isWord;
+        String word;
         int weight;
         Node[] children;
         Node(){
-            isWord = false;
             children = new Node[26];
         }
     }
-    Node prefixRoot;
-    Node suffixRoot;
+    private Node prefixRoot;
+    private Node suffixRoot;
+
     public LC745_PrefixAndSuffixSearch(String[] words) {
         prefixRoot = new Node();
         suffixRoot = new Node();
         int w = 0;
         for(String word: words){
             Node cur = prefixRoot;
-            for(int i=0;i<word.length();i++){
-                if(cur.children[word.charAt(i)-'a']==null){
-                    cur.children[word.charAt(i)-'a'] = new Node();
-                    cur.children[word.charAt(i)-'a'].val = word.charAt(i);
+            for(int i = 0; i < word.length(); i++){
+                if(cur.children[word.charAt(i) - 'a'] == null){
+                    cur.children[word.charAt(i) - 'a'] = new Node();
                 }
-                cur = cur.children[word.charAt(i)-'a'];
+                cur = cur.children[word.charAt(i) - 'a'];
             }
-            cur.isWord = true;
+            cur.word = word;
             cur.weight = w;
             cur = suffixRoot;
-            for(int i=word.length()-1;i>=0;i--){
-                if(cur.children[word.charAt(i)-'a']==null){
-                    cur.children[word.charAt(i)-'a'] = new Node();
-                    cur.children[word.charAt(i)-'a'].val = word.charAt(i);
+            for(int i = word.length() - 1; i >= 0; i--){
+                if(cur.children[word.charAt(i) - 'a'] == null){
+                    cur.children[word.charAt(i) - 'a'] = new Node();
                 }
-                cur = cur.children[word.charAt(i)-'a'];
+                cur = cur.children[word.charAt(i) - 'a'];
             }
-            cur.isWord = true;
+            cur.word = word;
             cur.weight = w;
             w++;
         }
     }
 
     public int f(String prefix, String suffix) {
-        HashMap<String, Integer> map = new HashMap<>(); // word => weight
+        Map<String, Integer> map = new HashMap<>(); // word => weight
         Node cur = prefixRoot;
-        for(int i=0;i<prefix.length();i++){
-            cur = cur.children[prefix.charAt(i)-'a'];
-            if(cur==null) return -1;
+        for(int i = 0; i < prefix.length(); i++){
+            cur = cur.children[prefix.charAt(i) - 'a'];
+            if(cur == null) return -1;
         }
-        if(cur.isWord) map.put(prefix, cur.weight);
+        if(cur.word != null) map.put(prefix, cur.weight);
         for(Node child: cur.children){
-            if(child!=null) dfs(prefix, child, map);
+            if(child != null) dfs(child, map);
         }
 
-        HashMap<String, Integer> map2 = new HashMap<>();
+        Map<String, Integer> map2 = new HashMap<>();
         cur = suffixRoot;
-        for(int i=suffix.length()-1;i>=0;i--){
-            cur = cur.children[suffix.charAt(i)-'a'];
-            if(cur==null) return -1;
+        for(int i = suffix.length() - 1; i >= 0; i--){
+            cur = cur.children[suffix.charAt(i) - 'a'];
+            if(cur == null) return -1;
         }
-        if(cur.isWord) map2.put(suffix, cur.weight);
+        if(cur.word != null) map2.put(suffix, cur.weight);
         for(Node child: cur.children){
-            if(child!=null) dfs(suffix, child, map2);
+            if(child != null) dfs(child, map2);
         }
 
         int max = -1;
-        for(Integer weight: map.values()){
-            for(Integer weight2: map2.values()){
-                if(weight.equals(weight2)) max = Math.max(max, weight);
-            }
+        for(String word: map.keySet()) {
+            if(map2.containsKey(word)) max = Math.max(max, map.get(word));
         }
         return max;
     }
-    private void dfs(String str, Node cur, HashMap<String, Integer> map){
-        if(cur==null) return;
-        if(cur.isWord) map.put(str+cur.val, cur.weight);
+    private void dfs(Node cur, Map<String, Integer> map){
+        if(cur == null) return;
+        if(cur.word != null) map.put(cur.word, cur.weight);
         for(Node child: cur.children)
-            if(child!=null) dfs(str+cur.val, child, map);
+            if(child != null) dfs(child, map);
     }
 }
