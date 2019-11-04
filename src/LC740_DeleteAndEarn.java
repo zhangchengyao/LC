@@ -9,23 +9,20 @@ public class LC740_DeleteAndEarn {
             if(count[num] == 1) kinds++;
         }
 
-        int[] dp = new int[kinds];
-        int prev = -1;
+        int[] dp = new int[kinds + 1];
+        int prev = -2;
         int cur = 0;
-        for(int i = 0; i < kinds; i++) {
+        for(int i = 1; i <= kinds; i++) {
             while(count[cur] == 0) cur++;
-            if(prev == -1) dp[i] = cur * count[cur];
-            else {
-                if(prev + 1 == cur) {
-                    dp[i] = Math.max(cur * count[cur] + (i > 1 ? dp[i - 2] : 0), dp[i - 1]);
-                } else {
-                    dp[i] = dp[i - 1] + cur * count[cur];
-                }
+            if(prev + 1 == cur) {
+                dp[i] = Math.max(cur * count[cur] + dp[i - 2], dp[i - 1]);
+            } else {
+                dp[i] = dp[i - 1] + cur * count[cur];
             }
             prev = cur;
             cur++;
         }
 
-        return dp[kinds - 1];
+        return dp[kinds];
     }
 }
