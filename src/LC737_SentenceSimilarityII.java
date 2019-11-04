@@ -1,11 +1,12 @@
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LC737_SentenceSimilarityII {
     public boolean areSentencesSimilarTwo(String[] words1, String[] words2, List<List<String>> pairs) {
         if(words1.length != words2.length) return false;
 
-        HashMap<String, String> parent = new HashMap<>();
+        Map<String, String> parent = new HashMap<>();
         for(List<String> pair: pairs) {
             String w1 = pair.get(0);
             String w2 = pair.get(1);
@@ -26,14 +27,14 @@ public class LC737_SentenceSimilarityII {
         return true;
     }
 
-    private void union(HashMap<String, String> parent, String a, String b) {
+    private void union(Map<String, String> parent, String a, String b) {
         String root1 = find(parent, a);
         String root2 = find(parent, b);
         if(root1.equals(root2)) return;
         parent.put(root1, root2);
     }
 
-    private String find(HashMap<String, String> parent, String a) {
+    private String find(Map<String, String> parent, String a) {
         while(!a.equals(parent.get(a))) {
             parent.put(a, parent.get(parent.get(a)));
             a = parent.get(a);
