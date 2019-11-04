@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC742_ClosestLeafInABinaryTree {
     public class TreeNode {
@@ -21,7 +22,7 @@ public class LC742_ClosestLeafInABinaryTree {
     private int val = 0;
 
     public int findClosestLeaf(TreeNode root, int k) {
-        HashMap<TreeNode, Integer> distMap = new HashMap<>();
+        Map<TreeNode, Integer> distMap = new HashMap<>();
 
         searchTarget(root, k, distMap);
         closestLeaf(root, distMap);
@@ -29,7 +30,7 @@ public class LC742_ClosestLeafInABinaryTree {
         return val;
     }
 
-    private int searchTarget(TreeNode root, int k, HashMap<TreeNode, Integer> distMap) {
+    private int searchTarget(TreeNode root, int k, Map<TreeNode, Integer> distMap) {
         if(root == null) return -1;
         if(root.val == k) {
             distMap.put(root, 0);
@@ -46,7 +47,7 @@ public class LC742_ClosestLeafInABinaryTree {
         return distMap.get(root);
     }
 
-    private SearchRes closestLeaf(TreeNode root, HashMap<TreeNode, Integer> distMap) {
+    private SearchRes closestLeaf(TreeNode root, Map<TreeNode, Integer> distMap) {
         if(root == null) return new SearchRes(-1, Integer.MAX_VALUE);
         if(root.left == null && root.right == null) {
             SearchRes res = new SearchRes(root.val, 0);
