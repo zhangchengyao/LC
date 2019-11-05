@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC663_EqualTreePartition {
     public class TreeNode {
@@ -8,7 +9,7 @@ public class LC663_EqualTreePartition {
         TreeNode(int x) { val = x; }
     }
 
-    private HashMap<TreeNode, Integer> treeSum = new HashMap<>();
+    private Map<TreeNode, Integer> treeSum = new HashMap<>();
 
     public boolean checkEqualTree(TreeNode root) {
         dfs(root);
