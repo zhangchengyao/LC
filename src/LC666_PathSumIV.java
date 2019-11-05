@@ -1,10 +1,11 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC666_PathSumIV {
     private int res = 0;
 
     public int pathSum(int[] nums) {
-        HashMap<Integer, Integer> treeMap = new HashMap<>();
+        Map<Integer, Integer> treeMap = new HashMap<>();
         for(int n: nums) {
             treeMap.put(n / 10, n % 10);
         }
@@ -13,7 +14,7 @@ public class LC666_PathSumIV {
         return res;
     }
 
-    private void getSum(int pos, HashMap<Integer, Integer> treeMap, int sum) {
+    private void getSum(int pos, Map<Integer, Integer> treeMap, int sum) {
         if(!treeMap.containsKey(pos)) return ;
 
         sum += treeMap.get(pos);
