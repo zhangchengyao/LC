@@ -1,26 +1,48 @@
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
 public class LC677_MapSumPairs {
-    HashMap<String, Integer> map;
+    class TrieNode {
+        String word;
+        int val;
+        TrieNode[] children;
+        TrieNode() {
+            children = new TrieNode[26];
+        }
+    }
+
+    private TrieNode root;
+
     /** Initialize your data structure here. */
     public LC677_MapSumPairs() {
-        map = new HashMap<>();
+        root = new TrieNode();
     }
 
     public void insert(String key, int val) {
-        map.put(key, val);
+        TrieNode cur = root;
+        for(char c: key.toCharArray()) {
+            if(cur.children[c - 'a'] == null) {
+                cur.children[c - 'a'] = new TrieNode();
+            }
+            cur = cur.children[c - 'a'];
+        }
+        cur.word = key;
+        cur.val = val;
     }
 
     public int sum(String prefix) {
-        int sum = 0;
-        Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
-        while(it.hasNext()){
-            Map.Entry<String, Integer> cur = it.next();
-            if(cur.getKey().length()<prefix.length()) continue;
-            if(cur.getKey().substring(0, prefix.length()).equals(prefix)) sum += cur.getValue();
+        TrieNode cur = root;
+        for(char c: prefix.toCharArray()) {
+            if(cur.children[c - 'a'] == null) return 0;
+            cur = cur.children[c - 'a'];
         }
-        return sum;
+        return dfs(cur);
+    }
+
+    private int dfs(TrieNode root) {
+        if(root == null) return 0;
+
+        int res = root.word == null ? 0 : root.val;
+        for(TrieNode child: root.children) {
+            res += dfs(child);
+        }
+        return res;
     }
 }
