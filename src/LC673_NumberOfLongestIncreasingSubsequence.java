@@ -8,7 +8,7 @@ public class LC673_NumberOfLongestIncreasingSubsequence {
         int[] count = new int[nums.length];
         Arrays.fill(length, 1);
         Arrays.fill(count, 1);
-        int longest = 0;
+        int longest = 1;
 
         for(int i = 1; i < nums.length; i++) {
             for(int j = 0; j < i; j++) {
@@ -21,12 +21,12 @@ public class LC673_NumberOfLongestIncreasingSubsequence {
                     }
                 }
             }
-            if(length[i] > length[longest]) longest = i;
+            longest = Math.max(longest, length[i]);
         }
 
         int res = 0;
         for(int i = 0; i < length.length; i++) {
-            if(length[i] == length[longest]) res += count[i];
+            if(length[i] == longest) res += count[i];
         }
 
         return res;
