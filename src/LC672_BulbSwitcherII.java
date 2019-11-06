@@ -1,10 +1,10 @@
 public class LC672_BulbSwitcherII {
+    // the first 3 bulbs uniquely determine the whole sequence
     public int flipLights(int n, int m) {
-        if(n==0 || m==0) return 1;
-        if(n==1) return 2;
-        if(n==2) return m==1?3:4;
-        if(m==1) return 4;
-        else if (m==2) return 7;
-        else return 8;
+        n = Math.min(n, 3);
+        if(m == 0) return 1;
+        if(m == 1) return n == 1 ? 2 : n == 2 ? 3 : 4;
+        if(m == 2) return n == 1 ? 2 : n == 2 ? 4 : 7;
+        return n == 1 ? 2 : n == 2 ? 4 :  8;
     }
 }
