@@ -20,12 +20,6 @@ public class LC670_MaximumSwap {
             }
         }
 
-        int res = 0;
-        for(char c: digits) {
-            int n = c - '0';
-            res = n + 10 * res;
-        }
-
-        return res;
+        return Integer.parseInt(new String(digits));
     }
 }
