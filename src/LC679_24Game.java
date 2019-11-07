@@ -1,49 +1,51 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class LC679_24Game {
-    double eps = 0.001;
+    private double eps = 1e-4;
+
     public boolean judgePoint24(int[] nums) {
-        List<Double> list = new ArrayList<>();
-        for(int i=0;i<nums.length;i++) list.add(nums[i]*1.0);
-        return judge(list);
+        double[] numbers = new double[nums.length];
+        for(int i = 0; i < nums.length; i++) numbers[i] = nums[i];
+
+        return judge24(numbers);
     }
-    private boolean judge(List<Double> list){
-        if(list.size()==1) return Math.abs(list.get(0)-24.0)<eps;
-        for(int i=0;i<list.size()-1;i++){
-            for(int j=i+1;j<list.size();j++){
-                double a = list.get(i);
-                double b = list.get(j);
-                list.remove(j);
-                list.remove(i);
 
-                list.add(a+b);
-                if(judge(new ArrayList<>(list))) return true;
-                list.remove((a+b));
-                list.add(a-b);
-                if(judge(new ArrayList<>(list))) return true;
-                list.remove((a-b));
-                list.add(b-a);
-                if(judge(new ArrayList<>(list))) return true;
-                list.remove((b-a));
-                list.add(a*b);
-                if(judge(new ArrayList<>(list))) return true;
-                list.remove((a*b));
-                if(b!=0){
-                    list.add(a/b);
-                    if(judge(new ArrayList<>(list))) return true;
-                    list.remove((a/b));
-                }
-                if(a!=0){
-                    list.add(b/a);
-                    if(judge(new ArrayList<>(list))) return true;
-                    list.remove((b/a));
+    private boolean judge24(double[] nums) {
+        if(nums[1] == Integer.MIN_VALUE && nums[2] == Integer.MIN_VALUE && nums[3] == Integer.MIN_VALUE) return Math.abs(nums[0] - 24) < eps;
+
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] == Integer.MIN_VALUE) continue;
+            for(int j = i + 1; j < nums.length; j++) {
+                if(nums[j] == Integer.MIN_VALUE) continue;
+                double a = nums[i];
+                double b = nums[j];
+
+                nums[i] = a + b;
+                nums[j] = Integer.MIN_VALUE;
+                if(judge24(nums)) return true;
+
+                nums[i] = a - b;
+                if(judge24(nums)) return true;
+
+                nums[i] = b - a;
+                if(judge24(nums)) return true;
+
+                nums[i] = a * b;
+                if(judge24(nums)) return true;
+
+                if(b != 0) {
+                    nums[i] = a / b;
+                    if(judge24(nums)) return true;
                 }
 
-                list.add(i, a);
-                list.add(j, b);
+                if(a != 0) {
+                    nums[i] = b / a;
+                    if(judge24(nums)) return true;
+                }
+
+                nums[i] = a;
+                nums[j] = b;
             }
         }
+
         return false;
     }
 }
