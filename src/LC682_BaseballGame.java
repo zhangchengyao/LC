@@ -9,7 +9,7 @@ public class LC682_BaseballGame {
                 case "+": {
                     int a = validScores.pop();
                     int b = validScores.peek();
-                    validScores.add(a);
+                    validScores.push(a);
                     validScores.push(a + b);
                     scores += a + b;
                     break;
