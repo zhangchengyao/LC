@@ -13,19 +13,19 @@ public class LC687_LongestUnivaluePath {
         return longest;
     }
 
-    private int dfs(TreeNode root){
-        if(root==null) return 0;
+    private int dfs(TreeNode root) {
+        if(root == null) return 0;
 
         int left = dfs(root.left);
         int right = dfs(root.right);
 
-        if(root.left!=null && root.val==root.left.val) left++;
+        if(root.left != null && root.val == root.left.val) left++;
         else left = 0;
 
-        if(root.right!=null && root.val==root.right.val) right++;
+        if(root.right != null && root.val == root.right.val) right++;
         else right = 0;
 
-        longest = Math.max(longest, left+right);
+        longest = Math.max(longest, left + right);
 
         return Math.max(left, right);
     }
