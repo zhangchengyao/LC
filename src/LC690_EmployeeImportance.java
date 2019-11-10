@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LC690_EmployeeImportance {
     class Employee {
@@ -13,7 +14,7 @@ public class LC690_EmployeeImportance {
     }
 
     public int getImportance(List<Employee> employees, int id) {
-        HashMap<Integer, Employee> eMap = new HashMap<>();
+        Map<Integer, Employee> eMap = new HashMap<>();
         for(Employee e: employees) {
             eMap.put(e.id, e);
         }
@@ -21,7 +22,7 @@ public class LC690_EmployeeImportance {
         return getImportance(eMap, id);
     }
 
-    private int getImportance(HashMap<Integer, Employee> eMap, int id) {
+    private int getImportance(Map<Integer, Employee> eMap, int id) {
         Employee cur = eMap.get(id);
         int imp = cur.importance;
         for(int eid: cur.subordinates) {
