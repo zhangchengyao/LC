@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LC697_DegreeOfAnArray {
     public int findShortestSubArray(int[] nums) {
-        HashMap<Integer, int[]> map = new HashMap<>();
+        Map<Integer, int[]> map = new HashMap<>();
         int degree = 0;
         for(int i = 0; i < nums.length; i++) {
             map.putIfAbsent(nums[i], new int[3]);
