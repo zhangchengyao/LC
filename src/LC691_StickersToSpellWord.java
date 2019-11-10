@@ -9,7 +9,7 @@ public class LC691_StickersToSpellWord {
         for(int i = 0; i < n; i++) {
             if(dp[i] == Integer.MAX_VALUE) continue;
 
-            for(String sticker:stickers) {
+            for(String sticker: stickers) {
                 int cur = i;
                 for(char c: sticker.toCharArray()) {
                     for(int k = 0; k < target.length(); k++) {
