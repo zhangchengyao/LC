@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LC609_FindDuplicateFileInSystem {
     public List<List<String>> findDuplicate(String[] paths) {
-        HashMap<String, List<String>> map = new HashMap<>();
+        Map<String, List<String>> map = new HashMap<>();
         for(String path: paths) {
             String[] info = path.split(" ");
             String dir = info[0];
