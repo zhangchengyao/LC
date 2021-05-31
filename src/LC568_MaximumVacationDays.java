@@ -1,7 +1,4 @@
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class LC568_MaximumVacationDays {
     public int maxVacationDays(int[][] flights, int[][] days) {

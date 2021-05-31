@@ -1,5 +1,3 @@
-import java.util.HashSet;
-
 public class LC467_UniqueSubstringsInWraparoundString {
     public int findSubstringInWraproundString(String p) {
         int[] dp = new int[p.length()];

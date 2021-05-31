@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 public class LC10_RegularExpressionMatching {
     public boolean isMatch(String s, String p) {
         return match(s, 0, p, 0);

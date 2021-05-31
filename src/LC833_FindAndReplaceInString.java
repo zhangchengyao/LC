@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class LC833_FindAndReplaceInString {
     public String findReplaceString(String S, int[] indexes, String[] sources, String[] targets) {

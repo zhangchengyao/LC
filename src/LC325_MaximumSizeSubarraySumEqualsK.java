@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class LC325_MaximumSizeSubarraySumEqualsK {
     public int maxSubArrayLen(int[] nums, int k) {

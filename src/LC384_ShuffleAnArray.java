@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class LC384_ShuffleAnArray {
     int[] data;
     public LC384_ShuffleAnArray(int[] nums) {
