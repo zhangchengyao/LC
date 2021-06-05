@@ -6,24 +6,33 @@ public class LC349_IntersectionOfTwoArrays {
     public int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        int i = 0;
-        int j = 0;
+        
         List<Integer> res = new ArrayList<>();
-        while(i<nums1.length && j<nums2.length){
-            if(nums1[i]==nums2[j]){
-                res.add(nums1[i]);
-                while(++i<nums1.length && nums1[i]==res.get(res.size()-1)){}
-                while(++j<nums2.length && nums2[j]==res.get(res.size()-1)){}
-            }else if(nums1[i]>nums2[j]){
-                while(++j<nums2.length && nums2[j]<nums1[i]){}
-            }else{
-                while(++i<nums1.length && nums1[i]<nums2[j]){}
-            }
+        int idx = 0;
+        for (int i = 0; i < nums1.length; i++) {
+            if (i > 0 && nums1[i] == nums1[i - 1]) continue;
+            
+            idx = binarySearch(nums2, idx, nums1[i]);
+            if (idx == nums2.length) break;
+            
+            if (nums1[i] == nums2[idx]) res.add(nums1[i]);
         }
-        int[] resArray = new int[res.size()];
-        for(i=0;i<res.size();i++){
-            resArray[i] = res.get(i);
+        
+        int[] resArr = new int[res.size()];
+        for (int i = 0; i < res.size(); i++) resArr[i] = res.get(i);
+        return resArr;
+    }
+    
+    private int binarySearch(int[] arr, int left, int target) {
+        int l = left;
+        int r = arr.length - 1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (arr[mid] == target) return mid;
+            else if (arr[mid] > target) r = mid - 1;
+            else l = mid + 1;
         }
-        return resArray;
+        
+        return l;
     }
 }
